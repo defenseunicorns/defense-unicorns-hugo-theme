@@ -28,7 +28,7 @@ proxy = "direct"
 [[module.imports]]
 path = "github.com/defenseunicorns/defense-unicorns-hugo-them"
 [[module.imports]]
-path = "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies"
+path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
 EOL
 hugo server
 {{< /tab >}}
@@ -47,7 +47,7 @@ path = "github.com/defenseunicorns/defense-unicorns-hugo-them"^
 
 [[module.imports]]^
 
-path = "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies")>>config.toml
+path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies")>>config.toml
 hugo server
 {{< /tab >}}
 {{< /tabpane >}}
@@ -111,7 +111,7 @@ Add the settings in the following snippet at the end of your site's [configurati
     path = "github.com/defenseunicorns/defense-unicorns-hugo-them"
     disable = false
   [[module.imports]]
-    path = "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies"
+    path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
     disable = false
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
@@ -123,7 +123,7 @@ module:
   imports:
     - path: github.com/defenseunicorns/defense-unicorns-hugo-them
       disable: false
-    - path: github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies
+    - path: github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies
       disable: false
 {{< /tab >}}
 {{< tab header="hugo.json"  lang="json" >}}
@@ -140,7 +140,7 @@ module:
         "disable": false
       },
       {
-        "path": "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies",
+        "path": "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies",
         "disable": false
       }
     ]

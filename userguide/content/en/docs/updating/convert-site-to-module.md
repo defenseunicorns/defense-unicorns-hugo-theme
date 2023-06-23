@@ -23,7 +23,7 @@ proxy = "direct"
 [[module.imports]]
 path = "github.com/defenseunicorns/defense-unicorns-hugo-them"
 [[module.imports]]
-path = "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies"
+path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
 EOL
 hugo server
 {{< /tab >}}
@@ -43,7 +43,7 @@ path = "github.com/defenseunicorns/defense-unicorns-hugo-them"^
 
 [[module.imports]]^
 
-path = "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies")>>config.toml
+path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies")>>config.toml
 hugo server
 {{< /tab >}}
 {{< /tabpane >}}
@@ -97,17 +97,17 @@ Change this line to:
 {{< tabpane >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="config.toml" lang="toml" >}}
-theme = ["github.com/defenseunicorns/defense-unicorns-hugo-them", "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies"]
+theme = ["github.com/defenseunicorns/defense-unicorns-hugo-them", "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"]
 {{< /tab >}}
 {{< tab header="config.yaml" lang="yaml" >}}
 theme:
   - github.com/defenseunicorns/defense-unicorns-hugo-them
-  - github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies
+  - github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies
 {{< /tab >}}
 {{< tab header="config.json" lang="json" >}}
 "theme": [
   "github.com/defenseunicorns/defense-unicorns-hugo-them",
-  "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies"
+  "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
 ]
 {{< /tab >}}
 {{< /tabpane >}}
@@ -128,7 +128,7 @@ Alternatively, you can omit this line altogether and replace it with the setting
     path = "github.com/defenseunicorns/defense-unicorns-hugo-them"
     disable = false
   [[module.imports]]
-    path = "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies"
+    path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
     disable = false
 {{< /tab >}}
 {{< tab header="config.yaml" lang="yaml" >}}
@@ -140,7 +140,7 @@ module:
   imports:
     - path: github.com/defenseunicorns/defense-unicorns-hugo-them
       disable: false
-    - path: github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies
+    - path: github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies
       disable: false
 {{< /tab >}}
 {{< tab header="config.json" lang="json" >}}
@@ -157,7 +157,7 @@ module:
         "disable": false
       },
       {
-        "path": "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies",
+        "path": "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies",
         "disable": false
       }
     ]
@@ -186,9 +186,9 @@ To make sure that your configuration settings are correct, run the command `hugo
 hugo mod graph
 hugo: collected modules in 1092 ms
 github.com/me/my-existing-site github.com/defenseunicorns/defense-unicorns-hugo-them@v{{% param "version" %}}
-github.com/me/my-existing-site github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies@v{{% param "version" %}}
-github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies@v{{% param "version" %}} github.com/twbs/bootstrap@v5.2.3+incompatible
-github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies@v{{% param "version" %}} github.com/FortAwesome/Font-Awesome@v0.0.0-20230327165841-0698449d50f2
+github.com/me/my-existing-site github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies@v{{% param "version" %}}
+github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies@v{{% param "version" %}} github.com/twbs/bootstrap@v5.2.3+incompatible
+github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies@v{{% param "version" %}} github.com/FortAwesome/Font-Awesome@v0.0.0-20230327165841-0698449d50f2
 ```
 
 Make sure that three lines with dependencies `docsy`, `bootstrap` and `Font-Awesome` are listed. If not, please double check your config settings.
@@ -201,7 +201,7 @@ hugo mod clean
 hugo: collected modules in 995 ms
 hugo: cleaned module cache for "github.com/FortAwesome/Font-Awesome"
 hugo: cleaned module cache for "github.com/defenseunicorns/defense-unicorns-hugo-them"
-hugo: cleaned module cache for "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies"
+hugo: cleaned module cache for "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
 hugo: cleaned module cache for "github.com/twbs/bootstrap"
 ```
 {{% /alert %}}

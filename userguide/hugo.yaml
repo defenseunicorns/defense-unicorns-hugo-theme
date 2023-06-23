@@ -78,18 +78,18 @@ params:
       enable: true
       'yes': >-
         Glad to hear it! Please <a
-        href="https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues/new">tell us how we can
+        href="https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/new">tell us how we can
         improve</a>.
       'no': >-
         Sorry to hear that. Please <a
-        href="https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues/new">tell us how we can
+        href="https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/new">tell us how we can
         improve</a>.
     readingtime:
       enable: false
   links:
     user:
       - name: GitHub Discussions
-        url: https://github.com/defenseunicorns/defense-unicorns-hugo-them/discussions
+        url: https://github.com/defenseunicorns/defense-unicorns-hugo-theme/discussions
         icon: fa-brands fa-github
         desc: Discussion and help from your fellow users
       - name: User mailing list

@@ -31,7 +31,7 @@ proxy = "direct"
 [[module.imports]]
 path = "github.com/defenseunicorns/defense-unicorns-hugo-them"
 [[module.imports]]
-path = "github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies"
+path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
 EOL
 hugo server
 ```
@@ -82,16 +82,16 @@ npm run serve
 ## Contributing ![GitHub](https://img.shields.io/github/contributors/defenseunicorns/defense-unicorns-hugo-them)
 
 Please read
-[CONTRIBUTING.md](https://github.com/defenseunicorns/defense-unicorns-hugo-them/blob/main/CONTRIBUTING.md)
+[CONTRIBUTING.md](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/CONTRIBUTING.md)
 for details on our code of conduct, and the process for submitting pull requests
 to us. See also the list of
-[contributors](https://github.com/defenseunicorns/defense-unicorns-hugo-them/graphs/contributors) who
+[contributors](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/graphs/contributors) who
 participated in this project.
 
 ## License ![GitHub](https://img.shields.io/github/license/defenseunicorns/defense-unicorns-hugo-them)
 
 This project is licensed under the Apache License 2.0 - see the
-[LICENSE.md](https://github.com/defenseunicorns/defense-unicorns-hugo-them/blob/main/LICENSE) file for
+[LICENSE.md](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/LICENSE) file for
 details
 
 [Deploys]: https://app.netlify.com/sites/docsydocs/deploys

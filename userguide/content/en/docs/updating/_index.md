@@ -14,6 +14,6 @@ all the new commits or changes that have been merged since the point in time tha
 submodule, or last updated. Updating won't affect any modifications that you made in your own project to
 [override the Docsy look and feel](/docs/adding-content/lookandfeel/), as your overrides
 don't modify the theme itself. For details about what has changed in the theme since your last update, see the list of
-[Docsy commits](https://github.com/defenseunicorns/defense-unicorns-hugo-them/commits/main).
+[Docsy commits](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commits/main).
 
 If you have been using the theme as a Git submodule, you can also update your site to use [Docsy as a Hugo Module](/docs/get-started/docsy-as-module/). This is the latest and simplest way to pull in a Hugo theme from its repository. If you're not ready to migrate to Hugo Modules yet, don't worry, your site will still work and you can continue to update your submodule as before.

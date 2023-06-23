@@ -40,7 +40,7 @@ This project follows
 
 ### Creating issues
 
-Alternatively, if there's something you'd like to see in Docsy (or if you've found something that isn't working the way you'd expect), but you're not sure how to fix it yourself, please create an [issue](https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues).
+Alternatively, if there's something you'd like to see in Docsy (or if you've found something that isn't working the way you'd expect), but you're not sure how to fix it yourself, please create an [issue](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues).
 
 ## Contributing to these docs
 

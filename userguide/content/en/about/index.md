@@ -126,7 +126,7 @@ Because Docsy helps you create and serve a well-organized, navigable technical d
 
 Docsy is an open source project and we love getting patches and contributions to make Docsy and its docs even better. We hope to continue to make improvements to the theme along with the Docsy community.
 
-Visit our [Issues](https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues) to see what we're currently working on. If there's something you'd like to see in Docsy, please create an issue yourself - or assign yourself an issue if you'd like to fix or add something! See our [contribution guidelines](/docs/contribution-guidelines/) for more information.
+Visit our [Issues](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues) to see what we're currently working on. If there's something you'd like to see in Docsy, please create an issue yourself - or assign yourself an issue if you'd like to fix or add something! See our [contribution guidelines](/docs/contribution-guidelines/) for more information.
 
 You can find out how to update your site to the latest version of Docsy in [Keeping the theme up to date](/docs/updating/).
 <!-- There must not be a blank line at the end of this file otherwise it creates an empty paragraph in the rendered page -->
