@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v1.0.4...v1.0.5) (2023-06-23)
+
+
+### Bug Fixes
+
+* Update configs ([bc820e8](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/bc820e889495282d7750ab223570b9491ed4f871))
+* Upgrade Go version ([7619e28](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/7619e2810c5db6fdd76e40f707f612547f1d0433))
+
 ## [1.0.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v1.0.3...v1.0.4) (2023-06-23)
 
 
