@@ -17,5 +17,4 @@ jobs:
         id: tag
         uses: google-github-actions/release-please-action@v3
         with:
-          release-type: simple
           command: manifest # use configs in release-please-config.json
