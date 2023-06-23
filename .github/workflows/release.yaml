@@ -13,7 +13,9 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v3
+      - name: Create release tag
+        id: tag
+        uses: google-github-actions/release-please-action@v3
         with:
-          release-type: node
-          package-name: defense-unicorns-hugo-theme
+          release-type: simple
+          command: manifest # use configs in release-please-config.json

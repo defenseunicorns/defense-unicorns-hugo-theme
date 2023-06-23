@@ -1,0 +1,15 @@
+{
+    "packages": {
+      ".": {
+        "release-type": "node",
+        "draft": false,
+        "extra-files": [
+          "go.mod"
+        ]
+      },
+      "./dependencies": {
+        "release-type": "go",
+        "draft": false
+      }
+    }
+  }
