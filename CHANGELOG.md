@@ -1,6 +1,15 @@
+# Changelog
+
+## 1.0.0 (2023-06-23)
+
+
+### Bug Fixes
+
+* commit package-lock.json ([b105980](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/b10598035b6bc6e878a56b5cdf5d649ef45786be))
+* **deps:** update dependency bootstrap to v5.3.0 ([171eae2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/171eae2e59dbe8b624ec79dc285aa68eb811b2e2))
+
 <!--
   cSpell:ignore gtag
 -->
 
-# Changelog
-
+## Changelog
