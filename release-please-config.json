@@ -1,5 +1,4 @@
 {
-  "tag-separator": "/",
   "packages": {
     ".": {
       "release-type": "node",
