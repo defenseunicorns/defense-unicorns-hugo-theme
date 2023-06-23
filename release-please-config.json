@@ -7,7 +7,7 @@
           "go.mod"
         ]
       },
-      "./dependencies": {
+      "dependencies": {
         "release-type": "simple",
         "draft": false
       }
