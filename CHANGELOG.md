@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/defense-unicorns-hugo-theme-v0.1.2...defense-unicorns-hugo-theme-v0.1.3) (2023-06-23)
+
+
+### Bug Fixes
+
+* correct dependency tagging ([2f9956f](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/2f9956f2416e0a9ef65ccead212bdd31a7ef2386))
+
 ## [0.1.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/defense-unicorns-hugo-theme-v0.1.1...defense-unicorns-hugo-theme-v0.1.2) (2023-06-23)
 
 
