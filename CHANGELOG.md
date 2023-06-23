@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v1.0.2...v1.0.3) (2023-06-23)
+
+
+### Bug Fixes
+
+* Dependency version number ([669f779](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/669f779557c05e7e7cd83b9da420b285ca05afaa))
+
 ## [1.0.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v1.0.1...v1.0.2) (2023-06-23)
 
 
