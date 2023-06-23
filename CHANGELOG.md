@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v1.0.1...v1.0.2) (2023-06-23)
+
+
+### Bug Fixes
+
+* More spelling errors ([96b64ef](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/96b64ef3f810f5749a81e14cb8f91a84623a705e))
+
 ## [1.0.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v1.0.0...v1.0.1) (2023-06-23)
 
 
