@@ -67,7 +67,7 @@ params:
   googleAnalytics][alias-discussion].
 
   [alias-discussion]: https://discourse.gohugo.io/t/config-is-services-googleanalytics-id-an-alias-for-googleanalytics/39469
-  [unexpected behavior]: https://github.com/google/docsy/issues/921
+  [unexpected behavior]: https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues/921
 
 {{% /alert %}}
 
@@ -205,7 +205,7 @@ Here's what the 4 columns represent:
 
 [events]:
   https://developers.google.com/analytics/devguides/collection/analyticsjs/events
-[pr]: https://github.com/google/docsy/pull/1/files
+[pr]: https://github.com/defenseunicorns/defense-unicorns-hugo-them/pull/1/files
 
 The underlying Google Analytics infrastructure that stores the "was this page
 helpful?" data is called [Events][events]. See [docsy pull request #1][pr] to
@@ -316,7 +316,7 @@ partial. For details, see [Customizing templates]({{< ref "lookandfeel#customizi
 [gtag.js]: https://support.google.com/analytics/answer/10220869
 [hugo-ga]: https://gohugo.io/templates/internal/#google-analytics
 [internal templates]: https://gohugo.io/templates/internal/
-[layouts/partials/page-description.html]: https://github.com/google/docsy/blob/main/layouts/partials/page-description.html
+[layouts/partials/page-description.html]: https://github.com/defenseunicorns/defense-unicorns-hugo-them/blob/main/layouts/partials/page-description.html
 [site `params`]: https://gohugo.io/variables/site/#the-siteparams-variable
 [summary]: https://gohugo.io/content-management/summaries/
 [configure]: #setup-1

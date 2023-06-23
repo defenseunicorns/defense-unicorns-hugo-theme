@@ -56,8 +56,8 @@ params:
   archived_version: false
   version: 0.7.0
   url_latest_version: https://example.com
-  github_repo: https://github.com/google/docsy
-  github_project_repo: https://github.com/google/docsy
+  github_repo: https://github.com/defenseunicorns/defense-unicorns-hugo-them
+  github_project_repo: https://github.com/defenseunicorns/defense-unicorns-hugo-them
   github_subdir: userguide
   time_format_blog: Monday, January 02, 2006
   time_format_default: January 2, 2006
@@ -78,18 +78,18 @@ params:
       enable: true
       'yes': >-
         Glad to hear it! Please <a
-        href="https://github.com/google/docsy/issues/new">tell us how we can
+        href="https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues/new">tell us how we can
         improve</a>.
       'no': >-
         Sorry to hear that. Please <a
-        href="https://github.com/google/docsy/issues/new">tell us how we can
+        href="https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues/new">tell us how we can
         improve</a>.
     readingtime:
       enable: false
   links:
     user:
       - name: GitHub Discussions
-        url: https://github.com/google/docsy/discussions
+        url: https://github.com/defenseunicorns/defense-unicorns-hugo-them/discussions
         icon: fa-brands fa-github
         desc: Discussion and help from your fellow users
       - name: User mailing list
@@ -106,7 +106,7 @@ params:
         desc: Practical questions and curated answers
     developer:
       - name: GitHub
-        url: https://github.com/google/docsy
+        url: https://github.com/defenseunicorns/defense-unicorns-hugo-them
         icon: fa-brands fa-github
         desc: Development takes place here!
 

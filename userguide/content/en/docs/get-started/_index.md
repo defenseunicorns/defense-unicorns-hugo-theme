@@ -19,7 +19,7 @@ This page describes Docsy's installation options and helps you choose the approp
 
 Hugo offers multiple options for using themes, all of which are supported by Docsy.
 
-* **Adding the theme as a Hugo Module**: [Hugo Modules](https://gohugo.io/hugo-modules/) are the simplest and latest way to use Hugo themes. Hugo uses the modules mechanism to pull in the theme files from the main Docsy repo at your chosen revision, and it's easy to keep the theme up to date in your site. Our [example site](https://github.com/google/docsy-example) uses Docsy as a Hugo Module.
+* **Adding the theme as a Hugo Module**: [Hugo Modules](https://gohugo.io/hugo-modules/) are the simplest and latest way to use Hugo themes. Hugo uses the modules mechanism to pull in the theme files from the main Docsy repo at your chosen revision, and it's easy to keep the theme up to date in your site. Our [example site](https://github.com/defenseunicorns/defense-unicorns-hugo-them-example) uses Docsy as a Hugo Module.
 * **Adding the theme as a Git submodule**: Adding the theme as a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) also lets Hugo use the theme files from their own repo, though is more complicated to maintain than the Hugo modules approach. This is the approach used in older versions of the Docsy example site and is still supported.
 * **Cloning the theme files**: If you don't want Hugo to have to get the theme files from an external repo (for example, if you want to customize and maintain your own copy of the theme directly, or your deployment choice requires you to include a copy of the theme in your repository), you can clone the files directly into your site source.
 

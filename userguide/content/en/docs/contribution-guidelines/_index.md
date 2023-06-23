@@ -8,7 +8,7 @@ Docsy is an open source project and we love getting patches and contributions to
 
 ## Contributing to Docsy
 
-The Docsy theme itself lives in <https://github.com/google/docsy>.
+The Docsy theme itself lives in <https://github.com/defenseunicorns/defense-unicorns-hugo-them>.
 
 ### Contributor License Agreement
 
@@ -31,7 +31,7 @@ information on using pull requests.
 
 ### Previewing your changes
 
-As Docsy is a theme rather than a site, you can't serve the theme directly to check your changes work. Instead use your updated local theme in a local copy of the Docsy example site (copy or make your changes in the `themes/docsy` directory) and [preview](/docs/deployment/) from there. Alternatively, clone the [Docsy theme repo](https://github.com/google/docsy) and test your changes in a local copy of this site, as described [below](#previewing-your-changes-locally).
+As Docsy is a theme rather than a site, you can't serve the theme directly to check your changes work. Instead use your updated local theme in a local copy of the Docsy example site (copy or make your changes in the `themes/docsy` directory) and [preview](/docs/deployment/) from there. Alternatively, clone the [Docsy theme repo](https://github.com/defenseunicorns/defense-unicorns-hugo-them) and test your changes in a local copy of this site, as described [below](#previewing-your-changes-locally).
 
 ### Community guidelines
 
@@ -40,7 +40,7 @@ This project follows
 
 ### Creating issues
 
-Alternatively, if there's something you'd like to see in Docsy (or if you've found something that isn't working the way you'd expect), but you're not sure how to fix it yourself, please create an [issue](https://github.com/google/docsy/issues).
+Alternatively, if there's something you'd like to see in Docsy (or if you've found something that isn't working the way you'd expect), but you're not sure how to fix it yourself, please create an [issue](https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues).
 
 ## Contributing to these docs
 
@@ -50,7 +50,7 @@ We use [Netlify](https://www.netlify.com/) to manage the deployment of the site 
 
 ### Quick start with Netlify
 
-1. Fork the [Docsy repo](https://github.com/google/docsy) on GitHub: this site's files live in the `userguide` subdirectory.
+1. Fork the [Docsy repo](https://github.com/defenseunicorns/defense-unicorns-hugo-them) on GitHub: this site's files live in the `userguide` subdirectory.
 1. Make your changes and send a pull request (PR).
 1. If you're not yet ready for a review, add "WIP" to the PR name to indicate
   it's a work in progress. (**Don't** add the Hugo property
@@ -79,10 +79,10 @@ If you've just spotted something you'd like to change while using the docs, Docs
 If you want to run your own local Hugo server to preview your changes as you work:
 
 1. Follow the instructions in [Getting started](/docs/getting-started) to install Hugo and any other tools you need.
-1. Fork the [Docsy](https://github.com/google/docsy) repo into your own project, then create a local copy using `git clone`:
+1. Fork the [Docsy](https://github.com/defenseunicorns/defense-unicorns-hugo-them) repo into your own project, then create a local copy using `git clone`:
 
     ```sh
-    git clone https://github.com/google/docsy.git
+    git clone https://github.com/defenseunicorns/defense-unicorns-hugo-them.git
     ```
 
 1. Change to the `userguide` directory and run the following Hugo command to build the site and start the Hugo server.
@@ -130,7 +130,7 @@ locally with Docker, without installing any additional dependencies.
   1.  Run the container:
 
       ```bash
-      DOCSY_USER=$(id -u):$(id -g) docker-compose up
+      THEME_USER=$(id -u):$(id -g) docker-compose up
       ```
 
 Open `http://localhost:1313` in your web browser to load the docsy user guide.
@@ -145,6 +145,6 @@ Press **Ctrl + C** to stop the container.
 
 ### Creating an issue
 
-If there's something you'd like to see in the docs, but you're not sure how to fix it yourself, please create an issue in [this repository](https://github.com/google/docsy). You can also create an issue about a specific page by clicking the **Create Issue** button in the top right hand corner of the page.
+If there's something you'd like to see in the docs, but you're not sure how to fix it yourself, please create an issue in [this repository](https://github.com/defenseunicorns/defense-unicorns-hugo-them). You can also create an issue about a specific page by clicking the **Create Issue** button in the top right hand corner of the page.
 
 

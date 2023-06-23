@@ -17,9 +17,9 @@ locally, without having to install all Docsy's dependencies.
    Desktop](https://www.docker.com/get-started).  On Linux, install [Docker
    engine](https://docs.docker.com/engine/install/#server) and [Docker
    compose](https://docs.docker.com/compose/install/).
-   
+
    The installation may require you to reboot your computer for the changes to
-   take effect. 
+   take effect.
 
 1. [Install git](https://github.com/git-guides/install-git).
 
@@ -28,7 +28,7 @@ locally, without having to install all Docsy's dependencies.
 The docsy-example repository provides a basic site structure that you can use
 as starting point to create your own documentation.
 
-1. Use the [docsy-example template](https://github.com/google/docsy-example)
+1. Use the [docsy-example template](https://github.com/defenseunicorns/defense-unicorns-hugo-them-example)
    to [create your own repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 
 1. Download the code to your local machine by [cloning your newly created

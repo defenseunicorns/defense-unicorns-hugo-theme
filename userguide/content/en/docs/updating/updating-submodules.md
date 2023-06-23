@@ -21,7 +21,7 @@ If you are using the [Docsy theme as a submodule](/docs/get-started/other-option
     ```bash
     git submodule update --remote
     ```
-    
+
 1. Add and then commit the change to your project:
 
     ```bash
@@ -45,7 +45,7 @@ the `themes` folder in your project, then you use the `git pull` command:
     ```bash
     cd themes
 
-1. Ensure that `origin` is set to `https://github.com/google/docsy.git`:
+1. Ensure that `origin` is set to `https://github.com/defenseunicorns/defense-unicorns-hugo-them.git`:
 
     ```bash
     git remote -v

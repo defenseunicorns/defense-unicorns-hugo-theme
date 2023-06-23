@@ -1,4 +1,4 @@
-module github.com/google/docsy/dependencies
+module github.com/defenseunicorns/defense-unicorns-hugo-them/dependencies
 
 go 1.12
 

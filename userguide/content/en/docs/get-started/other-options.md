@@ -161,7 +161,7 @@ your project's root directory:
 1.  Install Docsy as a Git submodule:
 
     ```sh
-    git submodule add https://github.com/google/docsy.git themes/docsy
+    git submodule add https://github.com/defenseunicorns/defense-unicorns-hugo-them.git themes/docsy
     cd themes/docsy
     git checkout v{{% param version %}}
     ```
@@ -170,7 +170,7 @@ your project's root directory:
     run the following command instead:
 
     ```sh
-    git submodule add --depth 1 https://github.com/google/docsy.git themes/docsy
+    git submodule add --depth 1 https://github.com/defenseunicorns/defense-unicorns-hugo-them.git themes/docsy
     ```
 
 2.  Add Docsy as a theme, for example:
@@ -229,7 +229,7 @@ the following commands from your project's root directory:
 
 ```sh
 cd themes
-git clone -b v{{% param version %}} https://github.com/google/docsy
+git clone -b v{{% param version %}} https://github.com/defenseunicorns/defense-unicorns-hugo-them
 cd docsy
 npm install
 ```
@@ -259,7 +259,7 @@ You can use Docsy as an NPM module as follows:
 2.  Install Docsy, and postCSS (as [instructed earlier](#install-postcss)):
 
     ```console
-    npm install --save-dev google/docsy#semver:{{% param version %}} autoprefixer postcss-cli postcss
+    npm install --save-dev defenseunicorns/defense-unicorns-hugo-them#semver:{{% param version %}} autoprefixer postcss-cli postcss
     ```
 
 3.  Build or serve your new site using the usual Hugo commands, specifying the
@@ -315,7 +315,7 @@ from scratch as it provides defaults for many required configuration parameters.
 - Add some [basic site configuration](/docs/get-started/basic-configuration/)
 - [Add content and customize your site](/docs/adding-content/)
 - Get some ideas from our
-  [Example Site](https://github.com/google/docsy-example) and other
+  [Example Site](https://github.com/defenseunicorns/defense-unicorns-hugo-them-example) and other
   [Examples](/docs/examples/).
 - [Publish your site](/docs/deployment/).
 

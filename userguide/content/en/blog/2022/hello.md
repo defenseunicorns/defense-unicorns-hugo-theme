@@ -11,11 +11,11 @@ It may seem strange to see a "Hello" post from a project that's several years ol
 
 ### Discuss amongst yourselves
 
-Our [Discussions](https://github.com/google/docsy/discussions) are really hopping lately! Don't miss our notice of the [upcoming deprecation of the Font-Awesome and Bootstrap git submodules](https://github.com/google/docsy/discussions/950) or our announcement of our [new governance model](https://github.com/google/docsy/discussions/798)!
+Our [Discussions](https://github.com/defenseunicorns/defense-unicorns-hugo-them/discussions) are really hopping lately! Don't miss our notice of the [upcoming deprecation of the Font-Awesome and Bootstrap git submodules](https://github.com/defenseunicorns/defense-unicorns-hugo-them/discussions/950) or our announcement of our [new governance model](https://github.com/defenseunicorns/defense-unicorns-hugo-them/discussions/798)!
 
 ### Milestones, releases, and roadmaps
 
-We are planning our first official release of Docsy soon—check out the [milestones for 0.2.0](https://github.com/google/docsy/milestone/2). Got a suggestion for the roadmap? Open an [issue](https://github.com/google/docsy/issues).
+We are planning our first official release of Docsy soon—check out the [milestones for 0.2.0](https://github.com/defenseunicorns/defense-unicorns-hugo-them/milestone/2). Got a suggestion for the roadmap? Open an [issue](https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues).
 
 ### Coming soon: project metrics
 
@@ -23,11 +23,11 @@ Starting next month, we'll publish project metrics here on this blog.
 
 ### Introducing the PSC
 
-Docsy now has a Project Steering Committee! The PSC members are [@chalin][], [@LisaFC][], [@geriom][], and [@emckean][]. If you're interested in serving on the PSC, open an [issue](https://github.com/google/docsy/issues) and nominate yourself!
+Docsy now has a Project Steering Committee! The PSC members are [@chalin][], [@LisaFC][], [@geriom][], and [@emckean][]. If you're interested in serving on the PSC, open an [issue](https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues) and nominate yourself!
 
 ### Contribute to the blog!
 
-Also coming soon: contribution guidelines. Got an idea for a blog post? Open an [issue](https://github.com/google/docsy/issues)!
+Also coming soon: contribution guidelines. Got an idea for a blog post? Open an [issue](https://github.com/defenseunicorns/defense-unicorns-hugo-them/issues)!
 
 [@chalin]: https://github.com/chalin
 [@LisaFC]: https://github.com/LisaFC

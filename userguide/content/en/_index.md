@@ -34,8 +34,8 @@ As well as our example site, there's a growing number of projects using Docsy fo
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fa-brands fa-github" title="Contributions welcome!" url="https://github.com/google/docsy" %}}
-We do a [Pull Request](https://github.com/google/docsy/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fa-brands fa-github" title="Contributions welcome!" url="https://github.com/defenseunicorns/defense-unicorns-hugo-them" %}}
+We do a [Pull Request](https://github.com/defenseunicorns/defense-unicorns-hugo-them/pulls) contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
 
