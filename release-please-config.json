@@ -9,7 +9,7 @@
     },
     "dependencies": {
       "release-type": "simple",
-      "package-name": "dependencies"
+      "component": "dependencies"
     }
   }
 }
