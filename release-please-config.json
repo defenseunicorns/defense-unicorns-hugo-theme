@@ -9,7 +9,8 @@
       },
       "dependencies": {
         "release-type": "simple",
-        "package-name": "dependencies"
+        "package-name": "dependencies",
+        "tag-separator": "/"
       }
     }
   }
