@@ -376,7 +376,7 @@ weight: 20
 
 Docsy's `blog` layout also gives you a left nav menu (like the `docs` layout), and a list-type index page for your blog that's applied to `/blog/_index.md` and automatically displays snippets of all your recent posts in reverse chronological order.
 
-To create different blog categories to organize your posts, create subfolders in `blog/`. For instance, in our [example site](https://github.com/defenseunicorns/defense-unicorns-hugo-them-example/tree/main/content/en/blog) we have `news` and `releases`. Each category needs to have its own `_index.md` or `_index.html` landing page file specifying the category title for it to appear properly in the left nav and top-level blog landing page. Here's the index page for `releases`:
+To create different blog categories to organize your posts, create subfolders in `blog/`. For instance, in our [example site](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example/tree/main/content/en/blog) we have `news` and `releases`. Each category needs to have its own `_index.md` or `_index.html` landing page file specifying the category title for it to appear properly in the left nav and top-level blog landing page. Here's the index page for `releases`:
 
 {{< tabpane persistLang=false >}}
 {{< tab header="Front matter:" disabled=true />}}
@@ -503,7 +503,7 @@ The `community` landing page template has boilerplate content that's automatical
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
-	url = "https://github.com/defenseunicorns/defense-unicorns-hugo-them"
+	url = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.developer]]
@@ -535,7 +535,7 @@ params:
         desc: Practical questions and curated answers
     developer:
       - name: GitHub
-        url: 'https://github.com/defenseunicorns/defense-unicorns-hugo-them'
+        url: 'https://github.com/defenseunicorns/defense-unicorns-hugo-theme'
         icon: fab fa-github
         desc: Development takes place here!
       - name: Slack
@@ -574,7 +574,7 @@ params:
       "developer": [
         {
           "name": "GitHub",
-          "url": "https://github.com/defenseunicorns/defense-unicorns-hugo-them",
+          "url": "https://github.com/defenseunicorns/defense-unicorns-hugo-theme",
           "icon": "fa-brands fa-github",
           "desc": "Development takes place here!"
         },

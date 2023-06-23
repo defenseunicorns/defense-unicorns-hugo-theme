@@ -27,14 +27,14 @@ The URL for your site's source repository. This is used to generate the **Edit t
 {{< tabpane persistLang=false >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
-github_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-them"
+github_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
-github_repo: 'https://github.com/defenseunicorns/defense-unicorns-hugo-them'
+github_repo: 'https://github.com/defenseunicorns/defense-unicorns-hugo-theme'
 {{< /tab >}}
 {{< tab header="hugo.json" lang="json" >}}
 {
-  "github_repo": "https://github.com/defenseunicorns/defense-unicorns-hugo-them"
+  "github_repo": "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 }
 {{< /tab >}}
 {{< /tabpane >}}
@@ -65,14 +65,14 @@ Specify a value here if you have a separate project repo and you'd like your use
 {{< tabpane persistLang=false >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
-github_project_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-them"
+github_project_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
-github_project_repo: 'https://github.com/defenseunicorns/defense-unicorns-hugo-them'
+github_project_repo: 'https://github.com/defenseunicorns/defense-unicorns-hugo-theme'
 {{< /tab >}}
 {{< tab header="hugo.json" lang="json" >}}
 {
-  "github_project_repo": "https://github.com/defenseunicorns/defense-unicorns-hugo-them"
+  "github_project_repo": "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 }
 {{< /tab >}}
 {{< /tabpane >}}

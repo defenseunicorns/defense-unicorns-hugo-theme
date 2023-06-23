@@ -1,4 +1,4 @@
-module github.com/defenseunicorns/defense-unicorns-hugo-them
+module github.com/defenseunicorns/defense-unicorns-hugo-theme
 
 go 1.12
 

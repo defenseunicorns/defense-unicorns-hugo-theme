@@ -15,13 +15,13 @@ Run the following from the command line:
 {{< tab header="Unix shell" lang="Bash" >}}
 cd /path/to/my-existing-site
 hugo mod init github.com/me-at-github/my-existing-site
-hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-them@v{{% param "version" %}}
+hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-theme@v{{% param "version" %}}
 sed -i '/theme = \["docsy"\]/d' config.toml
 cat >> config.toml <<EOL
 [module]
 proxy = "direct"
 [[module.imports]]
-path = "github.com/defenseunicorns/defense-unicorns-hugo-them"
+path = "github.com/defenseunicorns/defense-unicorns-hugo-theme"
 [[module.imports]]
 path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
 EOL
@@ -30,7 +30,7 @@ hugo server
 {{< tab header="Windows command line" lang="Batchfile" >}}
 cd  my-existing-site
 hugo mod init github.com/me-at-github/my-existing-site
-hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-them@v{{% param "version" %}}
+hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-theme@v{{% param "version" %}}
 findstr /v /c:"theme = [\"docsy\"]" config.toml > config.toml.temp
 move /Y config.toml.temp config.toml
 (echo [module]^
@@ -39,7 +39,7 @@ proxy = "direct"^
 
 [[module.imports]]^
 
-path = "github.com/defenseunicorns/defense-unicorns-hugo-them"^
+path = "github.com/defenseunicorns/defense-unicorns-hugo-theme"^
 
 [[module.imports]]^
 
@@ -70,7 +70,7 @@ This creates two new files, `go.mod` for the module definitions and `go.sum` whi
 Next declare the Docsy theme module as a dependency for your site.
 
 ```bash
-hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-them@v{{% param "version" %}}
+hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-theme@v{{% param "version" %}}
 ```
 
 This command adds the `docsy` theme module to your definition file `go.mod`.
@@ -97,16 +97,16 @@ Change this line to:
 {{< tabpane >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="config.toml" lang="toml" >}}
-theme = ["github.com/defenseunicorns/defense-unicorns-hugo-them", "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"]
+theme = ["github.com/defenseunicorns/defense-unicorns-hugo-theme", "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"]
 {{< /tab >}}
 {{< tab header="config.yaml" lang="yaml" >}}
 theme:
-  - github.com/defenseunicorns/defense-unicorns-hugo-them
+  - github.com/defenseunicorns/defense-unicorns-hugo-theme
   - github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies
 {{< /tab >}}
 {{< tab header="config.json" lang="json" >}}
 "theme": [
-  "github.com/defenseunicorns/defense-unicorns-hugo-them",
+  "github.com/defenseunicorns/defense-unicorns-hugo-theme",
   "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
 ]
 {{< /tab >}}
@@ -120,12 +120,12 @@ Alternatively, you can omit this line altogether and replace it with the setting
 [module]
   proxy = "direct"
   # uncomment line below for temporary local development of module
-  # replacements = "github.com/defenseunicorns/defense-unicorns-hugo-them -> ../../docsy"
+  # replacements = "github.com/defenseunicorns/defense-unicorns-hugo-theme -> ../../docsy"
   [module.hugoVersion]
     extended = true
     min = "0.73.0"
   [[module.imports]]
-    path = "github.com/defenseunicorns/defense-unicorns-hugo-them"
+    path = "github.com/defenseunicorns/defense-unicorns-hugo-theme"
     disable = false
   [[module.imports]]
     path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
@@ -138,7 +138,7 @@ module:
     extended: true
     min: 0.73.0
   imports:
-    - path: github.com/defenseunicorns/defense-unicorns-hugo-them
+    - path: github.com/defenseunicorns/defense-unicorns-hugo-theme
       disable: false
     - path: github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies
       disable: false
@@ -153,7 +153,7 @@ module:
     },
     "imports": [
       {
-        "path": "github.com/defenseunicorns/defense-unicorns-hugo-them",
+        "path": "github.com/defenseunicorns/defense-unicorns-hugo-theme",
         "disable": false
       },
       {
@@ -185,7 +185,7 @@ To make sure that your configuration settings are correct, run the command `hugo
 ```bash
 hugo mod graph
 hugo: collected modules in 1092 ms
-github.com/me/my-existing-site github.com/defenseunicorns/defense-unicorns-hugo-them@v{{% param "version" %}}
+github.com/me/my-existing-site github.com/defenseunicorns/defense-unicorns-hugo-theme@v{{% param "version" %}}
 github.com/me/my-existing-site github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies@v{{% param "version" %}}
 github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies@v{{% param "version" %}} github.com/twbs/bootstrap@v5.2.3+incompatible
 github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies@v{{% param "version" %}} github.com/FortAwesome/Font-Awesome@v0.0.0-20230327165841-0698449d50f2
@@ -200,7 +200,7 @@ In order to clean up your module cache, issue the command `hugo mod clean`
 hugo mod clean
 hugo: collected modules in 995 ms
 hugo: cleaned module cache for "github.com/FortAwesome/Font-Awesome"
-hugo: cleaned module cache for "github.com/defenseunicorns/defense-unicorns-hugo-them"
+hugo: cleaned module cache for "github.com/defenseunicorns/defense-unicorns-hugo-theme"
 hugo: cleaned module cache for "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
 hugo: cleaned module cache for "github.com/twbs/bootstrap"
 ```

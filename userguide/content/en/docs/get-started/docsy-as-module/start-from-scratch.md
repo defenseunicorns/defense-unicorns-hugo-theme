@@ -21,12 +21,12 @@ At your command prompt, run the following:
 hugo new site my-new-site
 cd  my-new-site
 hugo mod init github.com/me/my-new-site
-hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-them@v{{% param "version" %}}
+hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-theme@v{{% param "version" %}}
 cat >> config.toml <<EOL
 [module]
 proxy = "direct"
 [[module.imports]]
-path = "github.com/defenseunicorns/defense-unicorns-hugo-them"
+path = "github.com/defenseunicorns/defense-unicorns-hugo-theme"
 [[module.imports]]
 path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
 EOL
@@ -36,14 +36,14 @@ hugo server
 hugo new site my-new-site
 cd  my-new-site
 hugo mod init github.com/me/my-new-site
-hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-them@v{{% param "version" %}}
+hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-theme@v{{% param "version" %}}
 (echo [module]^
 
 proxy = "direct"^
 
 [[module.imports]]^
 
-path = "github.com/defenseunicorns/defense-unicorns-hugo-them"^
+path = "github.com/defenseunicorns/defense-unicorns-hugo-theme"^
 
 [[module.imports]]^
 
@@ -57,7 +57,7 @@ You now can preview your new site inside your browser at [http://localhost:1313]
 
 ## Detailed Setup instructions
 
-Specifying the [Docsy theme](https://github.com/defenseunicorns/defense-unicorns-hugo-them) as Hugo Module for your minimal site gives you all the theme-y goodness, but you'll need to specify your own site structure.
+Specifying the [Docsy theme](https://github.com/defenseunicorns/defense-unicorns-hugo-theme) as Hugo Module for your minimal site gives you all the theme-y goodness, but you'll need to specify your own site structure.
 
 ### Create your new skeleton project
 
@@ -88,7 +88,7 @@ This creates two new files, `go.mod` for the module definitions and `go.sum` whi
 Next declare the Docsy theme module as a dependency for your site.
 
 ```bash
-hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-them@v{{% param "version" %}}
+hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-theme@v{{% param "version" %}}
 ```
 
 This command adds the `docsy` theme module to your definition file `go.mod`.
@@ -103,12 +103,12 @@ Add the settings in the following snippet at the end of your site's [configurati
 [module]
   proxy = "direct"
   # uncomment line below for temporary local development of module
-  # replacements = "github.com/defenseunicorns/defense-unicorns-hugo-them -> ../../docsy"
+  # replacements = "github.com/defenseunicorns/defense-unicorns-hugo-theme -> ../../docsy"
   [module.hugoVersion]
     extended = true
     min = "0.73.0"
   [[module.imports]]
-    path = "github.com/defenseunicorns/defense-unicorns-hugo-them"
+    path = "github.com/defenseunicorns/defense-unicorns-hugo-theme"
     disable = false
   [[module.imports]]
     path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
@@ -121,7 +121,7 @@ module:
     extended: true
     min: 0.73.0
   imports:
-    - path: github.com/defenseunicorns/defense-unicorns-hugo-them
+    - path: github.com/defenseunicorns/defense-unicorns-hugo-theme
       disable: false
     - path: github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies
       disable: false
@@ -136,7 +136,7 @@ module:
     },
     "imports": [
       {
-        "path": "github.com/defenseunicorns/defense-unicorns-hugo-them",
+        "path": "github.com/defenseunicorns/defense-unicorns-hugo-theme",
         "disable": false
       },
       {
@@ -168,7 +168,7 @@ You may get Hugo errors for missing parameters and values when you try to build 
 
 * Add some [basic configuration](/docs/get-started/basic-configuration/)
 * [Add content and customize your site](/docs/adding-content/)
-* Get some ideas from our [Example Site](https://github.com/defenseunicorns/defense-unicorns-hugo-them-example) and other [Examples](/docs/examples/).
+* Get some ideas from our [Example Site](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example) and other [Examples](/docs/examples/).
 * [Publish your site](/docs/deployment/).
 
 [configuration file]: https://gohugo.io/getting-started/configuration/#configuration-file

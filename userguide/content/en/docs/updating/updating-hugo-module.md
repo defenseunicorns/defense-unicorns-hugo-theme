@@ -15,7 +15,7 @@ cd /path/to/my-existing-site
 Then invoke hugo's module `get` subcommand with the update flag:
 
 ```bash
-hugo mod get -u github.com/defenseunicorns/defense-unicorns-hugo-them
+hugo mod get -u github.com/defenseunicorns/defense-unicorns-hugo-theme
 ```
 
 Hugo automatically pulls in the latest theme version. That's it, your update is
@@ -28,13 +28,13 @@ simply specify the name of the tag representing this version when updating your
 theme, for example:
 
 ```bash
-hugo mod get -u github.com/defenseunicorns/defense-unicorns-hugo-them@v{{% param "version" %}}
+hugo mod get -u github.com/defenseunicorns/defense-unicorns-hugo-theme@v{{% param "version" %}}
 ```
 
 Instead of a version tag, you can also specify a commit hash, for example:
 
 ```bash
-hugo mod get -u github.com/defenseunicorns/defense-unicorns-hugo-them@6c8a3afe
+hugo mod get -u github.com/defenseunicorns/defense-unicorns-hugo-theme@6c8a3afe
 ```
 
 {{% /alert %}}

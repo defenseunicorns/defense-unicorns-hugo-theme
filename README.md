@@ -1,6 +1,6 @@
 # Defense Unicorns Hugo Theme
 
-Forked from [Docsy](https://github.com/defenseunicorns/defense-unicorns-hugo-them), a [Hugo](https://gohugo.io) theme for technical documentation.
+Forked from [Docsy](https://github.com/defenseunicorns/defense-unicorns-hugo-theme), a [Hugo](https://gohugo.io) theme for technical documentation.
 
 ## Prerequisites
 
@@ -24,12 +24,12 @@ Add the theme as a Hugo module
 hugo new site my-new-site
 cd  my-new-site
 hugo mod init github.com/me/my-new-site
-hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-them
+hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-theme
 cat >> config.toml <<EOL
 [module]
 proxy = "direct"
 [[module.imports]]
-path = "github.com/defenseunicorns/defense-unicorns-hugo-them"
+path = "github.com/defenseunicorns/defense-unicorns-hugo-theme"
 [[module.imports]]
 path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
 EOL
@@ -41,7 +41,7 @@ For complete prerequisites and instructions, see our [Get started guides](https:
 ## Example and usage
 
 You can find an example project that uses Docsy in the [Docsy Example Project
-repo](https://github.com/defenseunicorns/defense-unicorns-hugo-them-example).The Docsy Example Project is
+repo](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example).The Docsy Example Project is
 hosted at [example.docsy.dev](https://example.docsy.dev). For
 real-life examples of sites that use Docsy (and their source repos), see our
 [Examples](https://www.docsy.dev/docs/examples/) page.
@@ -49,10 +49,10 @@ real-life examples of sites that use Docsy (and their source repos), see our
 To use the Docsy theme for your own site:
 
 - (Recommended) Use the [example
-  project](https://github.com/defenseunicorns/defense-unicorns-hugo-them-example), which includes the Docsy
+  project](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example), which includes the Docsy
   theme as a Hugo module, as a template to create your project. You can customize
   this pre-configured basic site into your own Docsy themed site. [Learn
-  more...](https://github.com/defenseunicorns/defense-unicorns-hugo-them-example)
+  more...](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example)
 
 - Add Docsy to your existing Hugo site. You can
   add Docsy as a Hugo module, as a Git submodule, or clone the Docsy theme into your
@@ -73,13 +73,13 @@ Alternatively you can use Hugo to generate and serve a local copy of the guide
 all the prerequisites listed above:
 
 ```console
-git clone --depth 1 https://github.com/defenseunicorns/defense-unicorns-hugo-them.git
+git clone --depth 1 https://github.com/defenseunicorns/defense-unicorns-hugo-theme.git
 cd docsy/userguide/
 npm install
 npm run serve
 ```
 
-## Contributing ![GitHub](https://img.shields.io/github/contributors/defenseunicorns/defense-unicorns-hugo-them)
+## Contributing ![GitHub](https://img.shields.io/github/contributors/defenseunicorns/defense-unicorns-hugo-theme)
 
 Please read
 [CONTRIBUTING.md](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/CONTRIBUTING.md)
@@ -88,7 +88,7 @@ to us. See also the list of
 [contributors](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/graphs/contributors) who
 participated in this project.
 
-## License ![GitHub](https://img.shields.io/github/license/defenseunicorns/defense-unicorns-hugo-them)
+## License ![GitHub](https://img.shields.io/github/license/defenseunicorns/defense-unicorns-hugo-theme)
 
 This project is licensed under the Apache License 2.0 - see the
 [LICENSE.md](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/LICENSE) file for

@@ -1,7 +1,7 @@
 {
   "name": "defense-unicorns-hugo-theme",
   "version": "1.0.1",
-  "repository": "github:defenseunicorns/defense-unicorns-hugo-them",
+  "repository": "github:defenseunicorns/defense-unicorns-hugo-theme",
   "homepage": "https://www.defenseunicorns.com/",
   "license": "Apache-2.0",
   "scripts": {
@@ -28,7 +28,10 @@
     "bootstrap": "5.3.0"
   },
   "devDependencies": {
-    "hugo-extended": "0.113.0"
+    "autoprefixer": "^10.4.14",
+    "hugo-extended": "0.113.0",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0"
   },
   "engines": {
     "node": ">=18"
