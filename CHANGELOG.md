@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v1.0.3...v1.0.4) (2023-06-23)
+
+
+### Bug Fixes
+
+* Remove link to dependencies module ([38f194d](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/38f194d64a30f8de1d2c65bb9a3d3961cc9ebf31))
+* Remove package-lock and update userguide hugo.yml ([b700a93](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/b700a93a6c433d7db1dc13faa8a9e1fdf6ac511b))
+
 ## [1.0.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v1.0.2...v1.0.3) (2023-06-23)
 
 
