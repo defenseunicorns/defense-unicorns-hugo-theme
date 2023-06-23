@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.1.2...v0.1.3) (2023-06-23)
+
+
+### Bug Fixes
+
+* change tag separator ([0cb1a6e](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/0cb1a6eeeef736e2bee38f10558a2ba09bbc9fa3))
+* test release ([051a1fb](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/051a1fb64cf873a2a71aa1663c5aec0c3f4a65c5))
+* Update release config ([0afe3e7](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/0afe3e7ba8ba29a5f8ed268b58ab0628be724df4))
+
 ## [0.1.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.1.1...v0.1.2) (2023-06-23)
 
 
