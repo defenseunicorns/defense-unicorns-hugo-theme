@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v1.0.0...v1.0.1) (2023-06-23)
+
+
+### Bug Fixes
+
+* correct module spelling ([6e507fd](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/6e507fd2decb13d021009ca1c07eb0fd48e4a8c6))
+
 ## 1.0.0 (2023-06-23)
 
 
