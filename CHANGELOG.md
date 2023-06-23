@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.1.3...v0.1.4) (2023-06-23)
+
+
+### Bug Fixes
+
+* configure build ([0474392](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/0474392974ceba5597768a30b0dddadad173e771))
+
 ## [0.1.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/defense-unicorns-hugo-theme-v0.1.2...defense-unicorns-hugo-theme-v0.1.3) (2023-06-23)
 
 
