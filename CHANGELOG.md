@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.2.1...v0.2.2) (2023-06-26)
+
+
+### Bug Fixes
+
+* add tag-separator to release config ([dd5419a](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/dd5419a5fbc8f55f5eced390f9afa52b8aa10460))
+* grammar ([d47ea11](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/d47ea11a38afb5e6d60108b08e3f21e9ac8b30e1))
+
 ## [0.2.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.2.0...v0.2.1) (2023-06-26)
 
 
