@@ -49,7 +49,7 @@ To use the Docsy theme for your own site:
 - (Recommended) Use the [example
   project](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example), which includes the Docsy
   theme as a Hugo module, as a template to create your project. You can customize
-  this pre-configured basic site into your own Docsy themed site. [Learn
+  this pre-configured basic site into your themed site. [Learn
   more...](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example)
 
 - Add Docsy to your existing Hugo site. You can
