@@ -36,9 +36,7 @@ EOL
 hugo server
 ```
 
-For complete prerequisites and instructions, see our [Get started guides](https://www.docsy.dev/docs/get-started/).
-
-## Example and usage
+## Example and Usage
 
 You can find an example project that uses Docsy in the [Docsy Example Project
 repo](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example).The Docsy Example Project is
@@ -93,6 +91,3 @@ participated in this project.
 This project is licensed under the Apache License 2.0 - see the
 [LICENSE.md](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/LICENSE) file for
 details
-
-[Deploys]: https://app.netlify.com/sites/docsydocs/deploys
-[Netlify]: https://netlify.com
