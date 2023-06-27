@@ -1,8 +1,8 @@
 {
   "name": "defense-unicorns-hugo-theme",
   "version": "0.0.2",
-  "repository": "github:defenseunicorns/defense-unicorns-hugo-theme",
   "homepage": "https://www.defenseunicorns.com/",
+  "repository": "github:defenseunicorns/defense-unicorns-hugo-theme",
   "license": "Apache-2.0",
   "scripts": {
     "_cd:docs": "cd userguide &&",
@@ -19,7 +19,6 @@
     "update:pkg:hugo": "npm install --save-exact -D hugo-extended@latest",
     "update:pkg:dep": "npm install --save-exact @fortawesome/fontawesome-free@latest bootstrap@latest"
   },
-  "spelling": "cSpell:ignore docsy hugo fortawesome fontawesome userguide ",
   "prettier": {
     "proseWrap": "always"
   },
@@ -35,5 +34,6 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "spelling": "cSpell:ignore docsy hugo fortawesome fontawesome userguide "
 }
