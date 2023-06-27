@@ -1,5 +1,5 @@
 DirectoryPath: public
-CheckDoctype: false # Sadly, this is false only because of `static/google*.html`
+CheckDoctype: true
 IgnoreAltMissing: true # FIXME
 IgnoreDirectoryMissingTrailingSlash: true # FIXME
 IgnoreDirs: [_print] # FIXME

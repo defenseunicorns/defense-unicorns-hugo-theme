@@ -4,6 +4,7 @@
     "caseSensitive": true,
     "words": [
         "hugo",
+        "pygments",
         "shortcode",
         "shortcodes"
     ]

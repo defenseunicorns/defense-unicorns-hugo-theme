@@ -15,7 +15,7 @@ The following are basic prerequisites for using this theme:
   directory of your project:
 
   ```bash
-  npm i -D autoprefixer postcss-cli postcss
+  npm i -D autoprefixer postcss-cli
   ```
 
 Add the theme as a Hugo module

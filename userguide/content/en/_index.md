@@ -2,7 +2,7 @@
 title: Docsy
 ---
 
-{{% blocks/cover title="Welcome to Docsy!" image_anchor="top" height="full" %}}
+{{% blocks/cover title="DevSecOps for Airgap" image_anchor="top" height="full" %}}
 <a class="btn btn-lg btn-primary me-3 mb-4" href="{{% relref "/about" %}}">
   Learn More <i class="fa-solid fa-circle-right ms-2"></i>
 </a>
