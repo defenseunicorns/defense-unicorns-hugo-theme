@@ -1,6 +1,6 @@
 baseURL: /
-title: &title defense-unicorns-hugo-theme
-description: &desc defense-unicorns-hugo-theme docs
+title: &title Defense Unicorns Hugo Theme
+description: &desc Theme for our documentation sites
 enableRobotsTXT: true
 theme: defense-unicorns-hugo-theme
 enableGitInfo: true
@@ -20,17 +20,17 @@ imaging:
   quality: 75
   anchor: Smart
 
-menu:
-  main:
-    - name: Example Site
-      weight: 40
-      url: https://example.docsy.dev
-      post: <sup><i class="ps-1 fa-solid fa-up-right-from-square fa-xs"
-        aria-hidden="true"></i></sup>
+# menu: # Uncomment to add ad hoc meu items
+#   main:
+#     - name: Example Site
+#       weight: 40
+#       url: https://example.docsy.dev
+#       post: <sup><i class="ps-1 fa-solid fa-up-right-from-square fa-xs"
+#         aria-hidden="true"></i></sup>
 
-services:
-  googleAnalytics:
-    id: UA-00000000-0
+# services:
+#   googleAnalytics:
+#     id: UA-00000000-0
 
 languages:
   en:
@@ -51,7 +51,6 @@ markup:
 
 params:
   copyright: Defense Unicorns
-  privacy_policy: https://policies.google.com/privacy
   version_menu: Releases
   archived_version: false
   version: 1.0.3
@@ -61,31 +60,29 @@ params:
   github_subdir: userguide
   time_format_blog: Monday, January 02, 2006
   time_format_default: January 2, 2006
-  rss_sections: [blog] # TODO: drop since this is the default
-  gcs_engine_id: 011217106833237091527:la2vtv2emlw
-  algolia_docsearch: false
-  offlineSearch: false
+  offlineSearch: true
   offlineSearchSummaryLength: 70
   offlineSearchMaxResults: 10
-  prism_syntax_highlighting: false
+  prism_syntax_highlighting: false # https://www.docsy.dev/docs/adding-content/lookandfeel/#code-highlighting-with-chroma
+
   ui:
     sidebar_menu_compact: true
     sidebar_menu_foldable: false
     sidebar_cache_limit: 10
     breadcrumb_disable: false
     sidebar_search_disable: false
-    feedback:
-      enable: true
-      'yes': >-
-        Glad to hear it! Please <a
-        href="https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/new">tell us how we can
-        improve</a>.
-      'no': >-
-        Sorry to hear that. Please <a
-        href="https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/new">tell us how we can
-        improve</a>.
+    # feedback:
+    #   enable: true
+    #   'yes': >-
+    #     Glad to hear it! Please <a
+    #     href="https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/new">tell us how we can
+    #     improve</a>.
+    #   'no': >-
+    #     Sorry to hear that. Please <a
+    #     href="https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/new">tell us how we can
+    #     improve</a>.
     readingtime:
-      enable: false
+      enable: true
   links:
     user:
       - name: GitHub Discussions

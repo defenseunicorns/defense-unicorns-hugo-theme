@@ -3,7 +3,9 @@
     "version": "0.2",
     "caseSensitive": true,
     "words": [
+        "drawio",
         "hugo",
+        "plantuml",
         "pygments",
         "shortcode",
         "shortcodes"
