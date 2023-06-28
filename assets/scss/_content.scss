@@ -4,6 +4,7 @@
 
 .td-content {
   order: 1;
+  color: shade-color($text-primary, 10%);
 
   p,
   li,
@@ -47,7 +48,6 @@
   blockquote {
     padding: 0 0 0 1rem;
     margin-bottom: $spacer;
-    color: $gray-600;
     border-left: 6px solid $secondary;
   }
 
@@ -58,6 +58,15 @@
 
   strong {
     font-weight: $font-weight-bold;
+  }
+
+  a {
+    color: $text-disabled;
+
+    &:hover {
+      color: shade-color($text-disabled, 20%);
+      text-decoration: none;
+    }
   }
 
   .footnotes,

@@ -47,10 +47,10 @@
     }
 
     a {
-      color: $gray-600;
+      color: shade-color($text-primary, 30%);
 
       &:hover {
-        color: $blue;
+        color: $text-disabled;
         text-decoration: none;
       }
     }
