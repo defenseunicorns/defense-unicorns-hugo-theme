@@ -13,6 +13,7 @@
     "check:links:all": "npm run cd:docs check:links:all",
     "check:links": "npm run cd:docs check:links",
     "docs-install": "npm run _cd:docs -- npm install",
+    "format:fix": "prettier --write '**/*.{js,jsx,yml,json,css,md}'",
     "get:submodule": "set -x && git submodule update --init ${DEPTH:- --depth 1}",
     "serve": "npm run cd:docs serve",
     "test": "npm run cd:docs test",
@@ -30,7 +31,9 @@
     "autoprefixer": "^10.4.14",
     "hugo-extended": "0.113.0",
     "postcss": "^8.4.24",
-    "postcss-cli": "^10.1.0"
+    "postcss-cli": "^10.1.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-go-template": "^0.0.13"
   },
   "engines": {
     "node": ">=18"
