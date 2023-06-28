@@ -45,7 +45,7 @@ your project variables file by setting the variables to `false`.
 
 ## Fonts
 
-The theme uses [Open Sans](https://fonts.google.com/specimen/Open+Sans) as its primary font. To disable Google Fonts and use a system font, set this SCSS variable in `assets/scss/_variables_project.scss`:
+The theme uses [Roboto](https://fonts.google.com/specimen/Roboto) as its primary font. To disable Google Fonts and use a system font, set this SCSS variable in `assets/scss/_variables_project.scss`:
 
 ```scss
 $td-enable-google-fonts: false;
@@ -54,8 +54,8 @@ $td-enable-google-fonts: false;
 To configure another Google Font:
 
 ```scss
-$google_font_name: "Open Sans";
-$google_font_family: "Open+Sans:300,300i,400,400i,700,700i";
+$google_font_name: "Roboto";
+$google_font_family: "Roboto:300,300i,400,400i,700,700i";
 ```
 
 Note that if you decide to go with a font with different weights (in the built-in configuration this is `300` (light), `400` (medium) and `700` (bold)), you also need to adjust the weight related variables, i.e. variables starting with `$font-weight-`.
