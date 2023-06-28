@@ -1,0 +1,103 @@
+baseURL = "https://example.com"
+title = "Defense Unicorns Hugo Theme"
+description = "Theme for our documentation sites"
+enableRobotsTXT = true
+theme = "defense-unicorns-hugo-theme"
+enableGitInfo = true
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+pygmentsUseClassic = false
+pygmentsStyle = "tango"
+
+[outputs]
+home = [ "HTML" ]
+page = [ "HTML" ]
+section = [ "HTML", "RSS", "print" ]
+
+[imaging]
+resampleFilter = "catmullRom"
+quality = 75
+anchor = "Smart"
+
+[languages.en]
+languageName = "English"
+
+  [languages.en.params]
+  title = "Defense Unicorns Hugo Theme"
+  description = "Theme for our documentation sites"
+
+[markup.goldmark.parser.attribute]
+block = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "tango"
+
+[params]
+copyright = "Defense Unicorns"
+version_menu = "Releases"
+archived_version = false
+version = "1.0.3"
+url_latest_version = "https://example.com"
+github_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+github_project_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+github_subdir = "userguide"
+time_format_blog = "Monday, January 02, 2006"
+time_format_default = "January 2, 2006"
+offlineSearch = true
+offlineSearchSummaryLength = 70
+offlineSearchMaxResults = 10
+prism_syntax_highlighting = false
+
+  [params.ui]
+  sidebar_menu_compact = true
+  sidebar_menu_foldable = false
+  sidebar_cache_limit = 10
+  breadcrumb_disable = false
+  sidebar_search_disable = false
+
+    [params.ui.readingtime]
+    enable = true
+
+[[params.links.user]]
+name = "GitHub Discussions"
+url = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme/discussions"
+icon = "fa-brands fa-github"
+desc = "Discussion and help from your fellow users"
+
+[[params.links.developer]]
+name = "GitHub"
+url = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+icon = "fa-brands fa-github"
+desc = "Development takes place here!"
+
+  [params.plantuml]
+  enable = true
+  theme = "default"
+  svg_image_url = "https://www.plantuml.com/plantuml/svg/"
+  svg = false
+
+  [params.print]
+  disable_toc = false
+
+  [params.markmap]
+  enable = true
+
+  [params.mermaid]
+  theme = "default"
+
+    [params.mermaid.flowchart]
+    diagramPadding = 20
+
+  [params.drawio]
+  enable = true
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[[module.mounts]]
+source = "content/en"
+target = "content"
