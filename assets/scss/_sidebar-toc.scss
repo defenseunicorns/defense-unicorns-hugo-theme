@@ -3,6 +3,7 @@
 //
 .td-sidebar-toc {
   border-left: 1px solid $border-color;
+  background: $navigation-base;
 
   @supports (position: sticky) {
     position: sticky;

@@ -25,7 +25,7 @@
   @extend .navbar;
   @extend .navbar-expand;
 
-  background: $primary;
+  background: $navigation-base;
   min-height: 4rem;
   margin: 0;
   z-index: 32;
@@ -119,7 +119,7 @@
       -webkit-font-smoothing: antialiased;
       font-family: $font-awesome-font-name;
       font-weight: 900;
-      content: "\f0d9";
+      content: '\f0d9';
       padding-left: 0.5em;
       padding-right: 0.5em;
     }
@@ -156,7 +156,7 @@ nav.foldable-nav {
     display: block;
   }
 
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     display: none;
   }
 
@@ -174,7 +174,7 @@ nav.foldable-nav {
     -webkit-font-smoothing: antialiased;
     font-family: $font-awesome-font-name;
     font-weight: 900;
-    content: "\f0da";
+    content: '\f0da';
     position: absolute;
     left: 0.1em;
     padding-left: 0.4em;
