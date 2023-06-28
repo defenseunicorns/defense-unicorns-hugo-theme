@@ -49,11 +49,11 @@
     }
   }
 
-  .taxo-text-tags {
-    li + li::before {
-      content: none;
-    }
-  }
+  // .taxo-text-tags {
+  //   li + li::before {
+  //     content: none;
+  //   }
+  // }
 
   .taxo-fruits {
     .taxonomy-count,
@@ -66,10 +66,10 @@
     }
 
     .taxonomy-count::before {
-      content: "(";
+      content: '(';
     }
     .taxonomy-count::after {
-      content: ")";
+      content: ')';
     }
   }
 }
@@ -122,6 +122,7 @@
   position: relative;
   margin: 0 0.5em 0.2em 0;
   text-decoration: none;
+  transition: color 0.2s;
   -webkit-transition: color 0.2s;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0.8em 100%, 0 50%, 0.8em 0);
   clip-path: polygon(100% 0, 100% 100%, 0.8em 100%, 0 50%, 0.8em 0);
@@ -141,6 +142,7 @@
 }
 
 // Example for simple tags layout
+
 .taxo-text-tags {
   .taxonomy-term {
     background: none;
@@ -162,9 +164,9 @@
       background: none;
       color: $link-color;
 
-      .taxonomy-count {
-        color: $dark !important;
-      }
+      // .taxonomy-count {
+      //   color: $dark !important;
+      // }
     }
 
     &:hover::before {
@@ -173,13 +175,12 @@
   }
 
   li + li::before {
-    content: "|";
+    content: '|';
     color: $gray-600;
     margin-right: 0.2em;
   }
 
   .taxonomy-count {
-    font-size: 1em;
     line-height: 1.25em;
     display: inline-block;
     padding: 0;
@@ -211,23 +212,23 @@
     display: inline-block;
   }
 
-  .taxonomy-term[data-taxonomy-term="apple"]::before {
-    content: "\f5d1";
+  .taxonomy-term[data-taxonomy-term='apple']::before {
+    content: '\f5d1';
     color: red;
   }
 
-  .taxonomy-term[data-taxonomy-term="carrot"]::before {
-    content: "\f787";
+  .taxonomy-term[data-taxonomy-term='carrot']::before {
+    content: '\f787';
     color: orange;
   }
 
-  .taxonomy-term[data-taxonomy-term="lemon"]::before {
-    content: "\f094";
+  .taxonomy-term[data-taxonomy-term='lemon']::before {
+    content: '\f094';
     color: limegreen;
   }
 
-  .taxonomy-term[data-taxonomy-term="pepper"]::before {
-    content: "\f816";
+  .taxonomy-term[data-taxonomy-term='pepper']::before {
+    content: '\f816';
     color: darkred;
   }
 
@@ -295,7 +296,7 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-family: $font-awesome-font-name;
-  content: "\f02d";
+  content: '\f02d';
   padding-right: 0.5em;
 }
 
@@ -306,7 +307,7 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-family: $font-awesome-font-name;
-  content: "\f781";
+  content: '\f781';
   padding-right: 0.5em;
 }
 
@@ -322,7 +323,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font-family: $font-awesome-font-name;
-    content: "\f122";
+    content: '\f122';
     padding-right: 0.5em;
   }
 }

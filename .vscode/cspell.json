@@ -5,10 +5,13 @@
     "words": [
         "Docsy",
         "drawio",
+        "drawioframe",
         "hugo",
+        "onscroll",
         "plantuml",
         "pygments",
         "shortcode",
-        "shortcodes"
+        "shortcodes",
+        "taxo"
     ]
 }
