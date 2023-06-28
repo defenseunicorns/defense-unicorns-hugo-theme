@@ -4,9 +4,10 @@ $enable-gradients: true !default;
 $enable-shadows: true !default;
 
 // Theme colors
+$light: #ffffff !default;
+$dark: #0a0e2e !default;
 
-// TODO: consider moving all of these theme-color definitions into the User
-// Guide SCSS, or declare theme here, but namespaced:
+// Defense Unicorns theme colors: https://www.figma.com/file/aNnt9Ip7IFTs9hnfqrYGl4/Unicorn-UI?type=design&node-id=546-30095&mode=design&t=8xNE9eG5aNvew9SR-0
 
 $primary: #e0e0e0 !default;
 $secondary: #68c4ff !default;
@@ -17,23 +18,38 @@ $info: #0288d1 !default;
 $error: #f44336 !default;
 $danger: #f44336 !default;
 $disabled: rgba(255, 255, 255, 0.5) !default;
+$background: $dark;
+$divider: rgba(255, 255, 255, 0.5);
 
-// $primary: #30638e !default;
-// $secondary: #ffa630 !default;
-// $success: #3772ff !default;
-// $info: #c0e0de !default;
-// $warning: #ed6a5a !default;
-// $danger: #ed6a5a !default;
-$light: #ffffff !default; // TODO: consider using BS value
-$dark: #0a0e2e !default; // TODO: consider using BS value
+$on-disabled: rgb(84, 84, 84);
+$on-primary: rgba(0, 0, 0, 0.87);
+$on-secondary: rgba(0, 0, 0, 0.87);
+$on-surface: #ffffff;
+$on-success: rgba(0, 0, 0, 0.87);
+$on-warning: rgba(0, 0, 0, 0.87);
+$on-info: #ffffff;
+$on-error: #ffffff;
+$on-background: #ffffff;
 
-$body-bg: $dark !default;
-$body-color: shade-color($dark, 20%) !default;
+$textField-inactive: rgba(255, 255, 255, 0.6);
+$textField-hover: #ffffff;
+$textField-background: rgba(255, 255, 255, 0.1);
+$textField-backgroundHover: rgba(255, 255, 255, 0.3);
+$textField-bottomLineHover: rgba(255, 255, 255, 0.8);
+
+$text-primary: #ffffff;
+$text-secondary: rgba(0, 0, 0, 0.12);
+$text-hint: rgba(0, 0, 0, 0.38);
+$text-disabled: #87ffff;
+$text-icon: rgba(255, 255, 255, 0.8);
+
+$body-bg: $background !default;
+$body-color: shade-color($background, 20%) !default;
 
 $code-color: shade-color($secondary, 40%) !default;
 
 // UI element colors
-$navigation-base: lighten($dark, 5);
+$navigation-base: lighten($background, 5);
 
 $border-color: $gray-300 !default;
 $td-sidebar-tree-root-color: $primary !default;
@@ -50,10 +66,10 @@ $td-box-colors: $dark, $primary, $secondary, $info, $white, $gray-600, $success,
 
 $link-shade-percentage: 30% !default;
 
-$link-color:                              $primary !default;
-$link-decoration:                         none !default;
-$link-hover-color:                        darken($link-color, 15%) !default;
-$link-hover-decoration:                   underline !default;
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
 
 // Fonts
 
@@ -106,7 +122,6 @@ $navbar-dark-hover-color: rgba($white, 0.5) !default; // TODO: consider moving i
 // Footer
 
 $list-inline-padding: $spacer;
-
 
 /*
 $navbar-dark-color:                 rgba($white, .5) !default;
