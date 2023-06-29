@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.2...v0.0.3) (2023-06-29)
+
+
+### Bug Fixes
+
+* add images ([2873cc2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/2873cc2289e13600c5d8dd7919dcbe787c81335f))
+* configure sidebar ([ca64dc6](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/ca64dc638e0279fb888869e82ee7a12b71781647))
+* Correct text color ([cdbb74a](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/cdbb74af59a32fabc1997d36714fc561c0e03305))
+* resolve minor errors ([6b39350](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/6b393502f0f3554b7198bc56414defd07505dc3e))
+
 ## [0.0.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.1...v0.0.2) (2023-06-26)
 
 
