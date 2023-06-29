@@ -11,7 +11,7 @@ The following are basic prerequisites for using this theme:
   [Hugo release page](https://github.com/gohugoio/hugo/releases), make sure you download the `_extended` version which
   supports SCSS.
 
-- Install `PostCSS` so that the site build can create the final CSS assets. You can install it locally by running the
+- Install `PostCSS` so that the build can create the final CSS assets. You can install it locally by running the
   following commands from the root directory of your project:
 
   ```bash
