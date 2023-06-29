@@ -7,6 +7,10 @@ $enable-shadows: true !default;
 $light: #ffffff !default;
 $dark: #0a0e2e !default;
 
+$yiq-text-dark:             $blue !default;
+$yiq-text-light:            $white !default;
+$text-muted:                  $gray-600 !default;
+
 // Defense Unicorns theme colors: https://www.figma.com/file/aNnt9Ip7IFTs9hnfqrYGl4/Unicorn-UI?type=design&node-id=546-30095&mode=design&t=8xNE9eG5aNvew9SR-0
 
 $primary: #e0e0e0 !default;
@@ -44,9 +48,8 @@ $text-disabled: #87ffff;
 $text-icon: rgba(255, 255, 255, 0.8);
 
 $body-bg: $background !default;
-$body-color: shade-color($background, 20%) !default;
-
-$code-color: shade-color($secondary, 40%) !default;
+$body-color: shade-color($text-primary, 30%) !default;
+$code-color: shade-color($text-primary, 30%) !default;
 
 // UI element colors
 $navigation-base: lighten($background, 5);
