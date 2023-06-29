@@ -3,12 +3,10 @@
 
 filename="./dependencies/assets/bootstrap/README.md"
 
-ver=`awk '/Version/ {print $2}' $filename`
+commit=`git rev-parse --short HEAD`
 
-dummy='v.0.0.0'
+content=`head -5 $filename`
 
-sed "s/$ver/$dummy/" $filename > "$filename.tmp"
-
-mv $filename.tmp $filename
+echo "$content\n\n$commit\n" > $filename
 
 git add $filename
