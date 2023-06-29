@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.3...v0.0.4) (2023-06-29)
+
+
+### Bug Fixes
+
+* Enable major releases ([93ce008](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/93ce0084f3d6f70508d469c0a325c8bb13861dca))
+* Fix force release ([e8a97ac](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/e8a97acce24898adba949f526c752c66b6f72a1b))
+
 ## [0.0.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.2...v0.0.3) (2023-06-29)
 
 ### Bug Fixes
