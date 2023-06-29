@@ -3,7 +3,6 @@ baseURL = "https://example.com"
 description = "Theme for our documentation sites"
 enableRobotsTXT = true
 theme = "defense-unicorns-hugo-theme"
-logo = '/images/zarf-logo-small.svg'
 
 enableGitInfo = true
 pygmentsCodeFences = true

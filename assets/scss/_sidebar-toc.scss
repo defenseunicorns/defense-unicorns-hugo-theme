@@ -2,8 +2,8 @@
 // Right side toc
 //
 .td-sidebar-toc {
-  border-left: 1px solid $border-color;
-  background: $navigation-base;
+  border-left: 1px solid $disabled;
+  background: $td-sidebar-toc-bg-color;
 
   @supports (position: sticky) {
     position: sticky;
@@ -22,7 +22,10 @@
   a {
     display: block;
     font-weight: $font-weight-medium;
-  }
+    &:hover {
+      color: $text-disabled;
+      text-decoration: none;
+    }  }
 }
 
 .td-toc {

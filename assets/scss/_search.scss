@@ -46,7 +46,7 @@
     }
 
     &.form-control:focus {
-      border-color: tint-color($primary, 95%);
+      border-color: tint-color($secondary, 95%);
       box-shadow: 0 0 0 2px tint-color($primary, 40%);
       color: inherit;
     }

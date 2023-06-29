@@ -7,9 +7,9 @@ $enable-shadows: true !default;
 $light: #ffffff !default;
 $dark: #0a0e2e !default;
 
-$yiq-text-dark:             $blue !default;
-$yiq-text-light:            $white !default;
-$text-muted:                  $gray-600 !default;
+$yiq-text-dark: $blue !default;
+$yiq-text-light: $white !default;
+$text-muted: $gray-600 !default;
 
 // Defense Unicorns theme colors: https://www.figma.com/file/aNnt9Ip7IFTs9hnfqrYGl4/Unicorn-UI?type=design&node-id=546-30095&mode=design&t=8xNE9eG5aNvew9SR-0
 
@@ -54,10 +54,12 @@ $code-color: shade-color($text-primary, 30%) !default;
 // UI element colors
 $navigation-base: lighten($background, 5);
 
-$border-color: $gray-300 !default;
+$border-color: $background !default;
+$td-navbar-color: $navigation-base !default;
 $td-sidebar-tree-root-color: $primary !default;
 $td-sidebar-bg-color: $navigation-base !default;
 $td-sidebar-border-color: $border-color !default;
+$td-sidebar-toc-bg-color: $background !default;
 
 // Background colors for the sections on home page etc. It is a paint by number
 // system, starting at 0, where the number is taken from the shortcode's ordinal

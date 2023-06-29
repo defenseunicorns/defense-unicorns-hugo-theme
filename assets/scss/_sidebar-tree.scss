@@ -42,7 +42,7 @@
 
     .active {
       font-weight: $font-weight-bold;
-      background: lighten($navigation-base, 6);
+      background: lighten($td-sidebar-bg-color, 6);
       color: $text-primary;
     }
 
