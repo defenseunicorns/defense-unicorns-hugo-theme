@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.0.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.2...v0.0.3) (2023-06-29)
+
+
+### Bug Fixes
+
+* add images ([2873cc2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/2873cc2289e13600c5d8dd7919dcbe787c81335f))
+* configure sidebar ([ca64dc6](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/ca64dc638e0279fb888869e82ee7a12b71781647))
+* correct sub-module versioning ([69a051e](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/69a051e129046856b4de6caf6d7519245190c859))
+* Correct text color ([cdbb74a](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/cdbb74af59a32fabc1997d36714fc561c0e03305))
+* Fix release-please ([320e930](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/320e930f7a560be137724140155cb8fb7e614e31))
+* resolve minor errors ([6b39350](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/6b393502f0f3554b7198bc56414defd07505dc3e))
+* test release ([d2a36df](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/d2a36dfc25b56c9649e3f0acf09a6792b0010ea8))
+* Update README ([8eeaa1b](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/8eeaa1bc326f67d39534f908862ff5a302f72f8c))
+
 ## [0.0.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.1...v0.0.2) (2023-06-26)
 
 

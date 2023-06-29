@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.0.2...dependencies/v0.0.3) (2023-06-29)
+
+
+### Bug Fixes
+
+* correct sub-module versioning ([69a051e](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/69a051e129046856b4de6caf6d7519245190c859))
+* Fix release-please ([320e930](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/320e930f7a560be137724140155cb8fb7e614e31))
+* Update README ([8eeaa1b](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/8eeaa1bc326f67d39534f908862ff5a302f72f8c))
+
 ## [0.0.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies-v0.0.1...dependencies/v0.0.2) (2023-06-26)
 
 
