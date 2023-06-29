@@ -15,7 +15,7 @@
     "docs-install": "npm run _cd:docs -- npm install",
     "format:fix": "prettier --write '**/*.{js,jsx,yml,json,css,md}'",
     "get:submodule": "set -x && git submodule update --init ${DEPTH:- --depth 1}",
-    "start": "npm run cd:docs serve",
+    "start": "npm run cd:docs start",
     "test": "npm run cd:docs test",
     "update:pkg:hugo": "npm install --save-exact -D hugo-extended@latest",
     "update:pkg:dep": "npm install --save-exact @fortawesome/fontawesome-free@latest bootstrap@latest",
