@@ -14,26 +14,26 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-(function ($) {
-  'use strict';
+;(function ($) {
+  'use strict'
 
   var Search = {
     init: function () {
       $(document).ready(function () {
         $(document).on('keypress', '.td-search input', function (e) {
           if (e.keyCode !== 13) {
-            return;
+            return
           }
 
-          var query = $(this).val();
-          var searchPage = '{{ "search/" | absURL }}?q=' + query;
-          document.location = searchPage;
+          var query = $(this).val()
+          var searchPage = '{{ "search/" | absURL }}?q=' + query
+          document.location = searchPage
 
-          return false;
-        });
-      });
+          return false
+        })
+      })
     },
-  };
+  }
 
-  Search.init();
-})(jQuery);
+  Search.init()
+})(jQuery)
