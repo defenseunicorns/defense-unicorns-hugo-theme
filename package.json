@@ -18,18 +18,19 @@
     "start": "npm run cd:docs serve",
     "test": "npm run cd:docs test",
     "update:pkg:hugo": "npm install --save-exact -D hugo-extended@latest",
-    "update:pkg:dep": "npm install --save-exact @fortawesome/fontawesome-free@latest bootstrap@latest"
-  },
-  "prettier": {
-    "proseWrap": "always"
+    "update:pkg:dep": "npm install --save-exact @fortawesome/fontawesome-free@latest bootstrap@latest",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.4.0",
     "bootstrap": "5.3.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
     "autoprefixer": "^10.4.14",
     "hugo-extended": "0.113.0",
+    "husky": "^8.0.3",
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
     "prettier": "^2.8.8",

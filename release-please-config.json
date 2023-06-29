@@ -8,7 +8,8 @@
     "dependencies": {
       "release-type": "simple",
       "tag-separator": "/",
-      "component": "dependencies"
+      "component": "dependencies",
+      "extra-files": ["README.txt"]
     }
   }
 }
