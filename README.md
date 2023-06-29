@@ -18,23 +18,23 @@ The following are basic prerequisites for using this theme:
   npm i -D autoprefixer postcss-cli
   ```
 
-Add the theme as a Hugo module
+- Add the theme as a Hugo module
 
-```bash
-hugo new site my-new-site
-cd  my-new-site
-hugo mod init github.com/me/my-new-site
-hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-theme
-cat >> config.toml <<EOL
-[module]
-  proxy = "direct"
-[[module.imports]]
-  path = "github.com/defenseunicorns/defense-unicorns-hugo-theme"
-[[module.imports]]
-  path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
-EOL
-hugo server
-```
+  ```bash
+  hugo new site my-new-site
+  cd  my-new-site
+  hugo mod init github.com/me/my-new-site
+  hugo mod get github.com/defenseunicorns/defense-unicorns-hugo-theme
+  cat >> config.toml <<EOL
+  [module]
+    proxy = "direct"
+  [[module.imports]]
+    path = "github.com/defenseunicorns/defense-unicorns-hugo-theme"
+  [[module.imports]]
+    path = "github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies"
+  EOL
+  hugo server
+  ```
 
 ## Documentation
 

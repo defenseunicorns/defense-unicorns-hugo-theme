@@ -8,8 +8,7 @@
     "dependencies": {
       "release-type": "simple",
       "tag-separator": "/",
-      "component": "dependencies",
-      "extra-files": ["assets/bootstrap/README.md"]
+      "component": "dependencies"
     }
   }
 }
