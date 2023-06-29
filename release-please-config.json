@@ -9,7 +9,7 @@
       "release-type": "simple",
       "tag-separator": "/",
       "component": "dependencies",
-      "extra-files": ["README.txt"]
+      "extra-files": ["assets/bootstrap/README.md"]
     }
   }
 }
