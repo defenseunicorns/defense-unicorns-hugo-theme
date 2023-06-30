@@ -10,8 +10,8 @@
   <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
     {{- /**/ -}}
     <span class="navbar-brand__logo navbar-logo">
-      {{- if ne .Site.Params.ui.navbar_logo false -}}
-        {{ with resources.Get "icons/logo.svg" -}}
+      {{- if .Site.Params.navbar_logo -}}
+        {{ with resources.Get .Site.Params.navbar_logo -}}
           {{ ( . | minify).Content | safeHTML -}}
         {{ end -}}
       {{ end -}}

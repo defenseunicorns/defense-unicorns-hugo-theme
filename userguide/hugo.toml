@@ -37,6 +37,8 @@ unsafe = true
 style = "tango"
 
 [params]
+navbar_logo = "img/zarf-logo.svg"
+
 copyright = "Defense Unicorns"
 version_menu = "Releases"
 archived_version = false
