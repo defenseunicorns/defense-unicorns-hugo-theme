@@ -4,6 +4,10 @@
 .td-sidebar-toc {
   border-left: 1px solid $disabled;
   background: $td-sidebar-toc-bg-color;
+  order: 2;
+  padding-top: calc(#{$logo-height} - 40px);
+  padding-bottom: 1.5rem;
+  vertical-align: top;
 
   @supports (position: sticky) {
     position: sticky;
@@ -11,11 +15,6 @@
     height: calc(100vh - 4rem);
     overflow-y: auto;
   }
-
-  order: 2;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-  vertical-align: top;
 }
 
 .td-page-meta {
@@ -25,7 +24,8 @@
     &:hover {
       color: $text-disabled;
       text-decoration: none;
-    }  }
+    }
+  }
 }
 
 .td-toc {
