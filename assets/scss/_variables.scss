@@ -1,4 +1,6 @@
 // Bootstrap options
+$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix !default;
 
 $enable-gradients: true !default;
 $enable-shadows: true !default;
@@ -21,9 +23,19 @@ $warning: #ffa726 !default;
 $info: #0288d1 !default;
 $error: #f44336 !default;
 $danger: #f44336 !default;
-$disabled: rgba(255, 255, 255, 0.5) !default;
+$emphasis: $danger !default;
+$disabled: rgba(255, 255, 255, 0.70) !default;
 $background: $dark;
 $divider: rgba(255, 255, 255, 0.5);
+
+// $body-color:                $primary !default;
+// $body-bg:                   $background !default;
+$body-secondary-color:      rgba($secondary, .75) !default;
+$body-secondary-bg:         rgba($secondary, .75) !default;
+$body-emphasis-color:       $success !default;
+
+$component-active-color:      $white !default;
+$component-active-bg:         $primary !default;
 
 $on-disabled: rgb(84, 84, 84);
 $on-primary: rgba(0, 0, 0, 0.87);
@@ -66,8 +78,7 @@ $td-sidebar-toc-bg-color: $background !default;
 // if not provided by the user. These colors are all part of the theme palette,
 // but the mix is fairly random to create variation. This can be overridden by
 // the project if needed.
-$td-box-colors: $dark, $primary, $secondary, $info, $white, $gray-600, $success, $warning, $dark, $danger, $primary,
-  $secondary, $info !default;
+$td-box-colors: $dark, $primary, $secondary, $info, $white, $gray-600, $success, $warning, $danger !default;
 
 $link-shade-percentage: 30% !default;
 
@@ -121,18 +132,27 @@ $pagination-disabled-color: $gray-300 !default; // TODO: consider using BS defau
 
 // Navbar
 
-$navbar-dark-color: rgba($white, 0.75) !default; // TODO: consider moving into UG SCSS
-$navbar-dark-hover-color: rgba($white, 0.5) !default; // TODO: consider moving into UG SCSS
+$navbar-dark-color: rgba($primary, 0.75) !default; // TODO: consider moving into UG SCSS
+$navbar-dark-hover-color: rgba($secondary, 0.5) !default; // TODO: consider moving into UG SCSS
 
 // Footer
 
 $list-inline-padding: $spacer;
 
-/*
-$navbar-dark-color:                 rgba($white, .5) !default;
-$navbar-dark-hover-color:           rgba($white, .75) !default;
-$navbar-dark-active-color:          $white !default;
-$navbar-dark-disabled-color:        rgba($white, .25) !default;
-$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
-*/
+// Defaults: https://github.com/twbs/bootstrap/blob/1ab75c8d14b101d7f2ab8d31f0addf549c70def7/scss/_variables.scss#L1152C13-L1152C13
+// scss-docs-start nav-variables
+$nav-link-color:                    var(--#{$prefix}link-color) !default;
+$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-disabled-color:           var(--#{$prefix}secondary-color) !default;
+
+$nav-tabs-border-color:             var(--#{$prefix}border-color) !default;
+$nav-tabs-link-hover-border-color:  var(--#{$prefix}secondary-bg) var(--#{$prefix}secondary-bg) $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        var(--#{$prefix}nav-link-color) !default;
+$nav-tabs-link-active-bg:           var(--#{$prefix}component-active-bg) !default;
+$nav-tabs-link-active-border-color: var(--#{$prefix}border-color) var(--#{$prefix}border-color) $nav-tabs-link-active-bg !default;
+
+$nav-pills-link-active-color:       $component-active-color !default;
+$nav-pills-link-active-bg:          $component-active-bg !default;
+
+$nav-underline-link-active-color:   var(--#{$prefix}emphasis-color) !default;
+// scss-docs-end nav-variables

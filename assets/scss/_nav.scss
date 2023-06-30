@@ -2,6 +2,7 @@
 // Main navbar
 //
 
+
 .td-navbar-cover {
   @include media-breakpoint-up(md) {
     background: transparent !important;
@@ -212,3 +213,30 @@ nav.foldable-nav {
     }
   }
 }
+
+// .nav-tabs {
+//   // scss-docs-start nav-tabs-css-vars
+//   --#{$prefix}nav-tabs-border-width: #{$nav-tabs-border-width};
+//   --#{$prefix}nav-tabs-border-color: #{$nav-tabs-border-color};
+//   --#{$prefix}nav-tabs-border-radius: #{$nav-tabs-border-radius};
+//   --#{$prefix}nav-tabs-link-hover-border-color: #{$nav-tabs-link-hover-border-color};
+//   --#{$prefix}nav-tabs-link-active-color: #{$nav-tabs-link-active-color};
+//   --#{$prefix}nav-tabs-link-active-bg: #{$nav-tabs-link-active-bg};
+//   --#{$prefix}nav-tabs-link-active-border-color: #{$nav-tabs-link-active-border-color};
+//   // scss-docs-end nav-tabs-css-vars
+
+//   border-bottom: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
+
+//   .nav-link {
+//     margin-bottom: calc(-1 * var(--#{$prefix}nav-tabs-border-width)); // stylelint-disable-line function-disallowed-list
+//     border: var(--#{$prefix}nav-tabs-border-width) solid transparent;
+//     @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
+
+//     &:hover,
+//     &:focus {
+//       // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
+//       isolation: isolate;
+//       border-color: var(--#{$prefix}nav-tabs-link-hover-border-color);
+//     }
+//   }
+// }
