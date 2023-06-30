@@ -38,7 +38,7 @@ style = "tango"
 
 [params]
 navbar_logo = "img/zarf-logo.svg"
-
+show_metalinks = false
 copyright = "Defense Unicorns"
 version_menu = "Releases"
 archived_version = false
