@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.5](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.4...v0.0.5) (2023-06-30)
+
+
+### Bug Fixes
+
+* make logo configurable ([c612e40](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/c612e40fd252d029e23c520f06c9c2cc29758a37))
+* Make logo size configurable ([1184337](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/11843377c294ff02810f4d3cc1f75c995fa2c83d))
+* make metalinks configurable ([3ace2ce](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/3ace2ce7a4bbd3fdcecdc5ec7020d8f2443f8fb0))
+* TOc alignment relative to logo ([207fe25](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/207fe255f3ee77e930acef069314b868e8923959))
+* validate release ([2707adb](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/2707adb84d04265be930833e4d255e077d29e61a))
+
 ## [0.0.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.3...v0.0.4) (2023-06-29)
 
 
