@@ -49,11 +49,11 @@
     }
   }
 
-  // .taxo-text-tags {
-  //   li + li::before {
-  //     content: none;
-  //   }
-  // }
+  .taxo-text-tags {
+    li + li::before {
+      content: none;
+    }
+  }
 
   .taxo-fruits {
     .taxonomy-count,
@@ -105,14 +105,13 @@
   margin-left: 0.6em;
   text-align: center;
   border-radius: 1em;
-  background-color: $white;
 }
 
 .taxonomy-term {
-  background: $gray-200;
+  background: $primary;
   border-width: 0;
   border-radius: 0 3px 3px 0;
-  color: $gray-600;
+  color: $dark;
   display: inline-block;
   font-size: 1em;
   line-height: 1.5em;
@@ -128,8 +127,8 @@
   clip-path: polygon(100% 0, 100% 100%, 0.8em 100%, 0 50%, 0.8em 0);
 
   &:hover {
-    background-color: $primary;
-    color: $white;
+    background-color: $secondary;
+    text-decoration: none;
 
     .taxonomy-count {
       color: $dark !important;
@@ -164,9 +163,9 @@
       background: none;
       color: $link-color;
 
-      // .taxonomy-count {
-      //   color: $dark !important;
-      // }
+      .taxonomy-count {
+        color: $dark !important;
+      }
     }
 
     &:hover::before {
@@ -181,13 +180,13 @@
   }
 
   .taxonomy-count {
+    background: none;
     line-height: 1.25em;
     display: inline-block;
     padding: 0;
     margin: 0;
     text-align: center;
     border-radius: 0;
-    background: none;
     vertical-align: super;
     font-size: 0.75em;
   }
@@ -205,7 +204,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font-family: $font-awesome-font-name;
-    // font-weight: 900;
+    font-weight: 900;
     padding-right: 0.5em;
     font-size: 2em;
     min-width: 1.5em;
