@@ -1,6 +1,7 @@
 //
 // Left side navigation
 //
+
 .td-sidebar-nav {
   padding-right: 0.5rem;
   margin-right: -15px;
@@ -106,7 +107,7 @@
 
 .td-sidebar {
   @include media-breakpoint-up(md) {
-    padding-top: 4rem;
+    padding-top: calc(#{$logo-height} + 40px);
     background-color: $td-sidebar-bg-color;
     padding-right: 1rem;
     border-right: 1px solid $td-sidebar-border-color;
