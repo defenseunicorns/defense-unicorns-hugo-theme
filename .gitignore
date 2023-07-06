@@ -1,5 +1,4 @@
 node_modules/
-package-lock.json
 
 # Hugo
 .hugo_build.lock
@@ -19,3 +18,4 @@ resources/
 # VS Code
 /.vscode/**
 !/.vscode/cspell.json
+userguide/package-lock.json
