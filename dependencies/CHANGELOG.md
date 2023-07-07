@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.6](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.0.5...dependencies/v0.0.6) (2023-07-07)
+
+
+### Bug Fixes
+
+* Make landing page configurable ([2bca209](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/2bca209c81dee65974bba387f4dbde21216cf9d5))
+
 ## [0.0.5](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.0.4...dependencies/v0.0.5) (2023-06-30)
 
 
