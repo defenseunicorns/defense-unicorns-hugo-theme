@@ -37,7 +37,6 @@ unsafe = true
 style = "tango"
 
 [params]
-navbar_logo = "img/zarf-logo.svg"
 show_metalinks = false
 copyright = "Defense Unicorns"
 version_menu = "Releases"
@@ -55,6 +54,7 @@ offlineSearchMaxResults = 10
 prism_syntax_highlighting = false
 
   [params.ui]
+  navbar_logo = "img/zarf-logo.svg"
   sidebar_menu_compact = true
   sidebar_menu_foldable = false
   sidebar_cache_limit = 10

@@ -8,13 +8,13 @@ description: Add and customize logos, icons, and images in your project.
 ## Add your logo
 
 By default, Docsy shows a site logo at the start of the navbar, that is, at the
-extreme left. Place your project's SVG logo in `assets/icons/logo.svg`. This
-overrides the default Docsy logo in the theme.
+extreme left. You may either place your project's SVG logo in `assets/icons/logo.svg` or define a custom path under the
+`assets/` folder. This overrides the default Docsy logo in the theme.
 
 If you don't want a logo to appear in the navbar, then set `navbar_logo` to
 `false` in your project's config:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
 navbar_logo = false
@@ -29,6 +29,23 @@ navbar_logo: false
 {{< /tab >}}
 {{< /tabpane >}}
 
+Alternatively, if you want to override the default `assets/icons/logo.svg` location, then set `params.ui.navbar_logo` to the desired path in your project's config:
+
+{{< tabpane >}}
+{{< tab header="Configuration file:" disabled=true />}}
+{{< tab header="hugo.toml" lang="toml" >}}
+navbar_logo = "/img/myLogo.svg"
+{{< /tab >}}
+{{< tab header="hugo.yaml" lang="yaml" >}}
+navbar_logo: "/img/myLogo.svg"
+{{< /tab >}}
+{{< tab header="hugo.json" lang="json" >}}
+{
+  "navbar_logo": "/img/myLogo.svg"
+}
+{{< /tab >}}
+{{< /tabpane >}}
+
 For information about styling your logo, see [Styling your project logo and
 name][].
 
@@ -36,7 +53,7 @@ name][].
 
 ## Use icons
 
-Docsy includes the free FontAwesome icons by default, including logos for sites like GitHub and Stack Overflow. You can view all available icons in the [FontAwesome documentation](https://fontawesome.com/icons/), including the FontAwesome version when the icon was added and whether it is available for free tier users. Check Docsy's [`package.json`](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/package.json) and release notes for Docsy's currently included version of FontAwesome.
+Docsy includes the free FontAwesome icons by default, including logos for sites like GitHub and Stack Overflow. You can view all available icons in the [FontAwesome documentation](https://fontawesome.com/icons/), including the FontAwesome version when the icon was added and whether it is available for free tier users. Check Docsy's [`package.json`](https://github.com/google/docsy/blob/main/package.json) and release notes for Docsy's currently included version of FontAwesome.
 
 You can add FontAwesome icons to your [top-level menu](/docs/adding-content/navigation/#adding-icons-to-the-top-level-menu), [section menu](/docs/adding-content/navigation/#add-icons-to-the-section-menu), or anywhere in your text.
 

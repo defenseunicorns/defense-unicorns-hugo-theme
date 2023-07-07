@@ -18,13 +18,36 @@ You can find out more about Hugo directory structure in [Directory Structure Exp
 
 Hugo builds your site pages using the content files you provide plus any templates provided by your site's theme. These templates (or *"layouts"* in Hugo terminology) include things like your page's headers, footers, navigation, and links to stylesheets: essentially, everything except your page's specific content. The templates in turn can be made up of *partials*: little reusable snippets of HTML for page elements like headers, search boxes, and more.
 
-Because most technical documentation sites have different sections for different types of content, the Docsy theme comes with the [following templates](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/tree/main/layouts) for top-level site sections that you might need:
+Because most technical documentation sites have different sections for different types of content, the Docsy theme comes with the [following templates](https://github.com/google/docsy/tree/main/layouts) for top-level site sections that you might need:
 
-* [`docs`](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/tree/main/layouts/docs) is for pages in your site's Documentation section.
-* [`blog`](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/tree/main/layouts/blog) is for pages in your site's Blog.
-* [`community`](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/tree/main/layouts/community) is for your site's Community page.
+* [`docs`](https://github.com/google/docsy/tree/main/layouts/docs) is for pages in your site's Documentation section.
+* [`blog`](https://github.com/google/docsy/tree/main/layouts/blog) is for pages in your site's Blog.
+* [`community`](https://github.com/google/docsy/tree/main/layouts/community) is for your site's Community page.
 
-It also provides a [default "landing page" type of template](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/tree/main/layouts/_default) with the site header and footer, but no left nav, that you can use for any other section. In this site and our example site it's used for the site [home page](/) and the [About](/about/) page.
+It also provides a [default "landing page" type of template](https://github.com/google/docsy/tree/main/layouts/_default) with the site header and footer, but no left nav, that you can use for any other section. In this site and our example site it's used for the site [home page](/) and the [About](/about/) page.
+
+If you want to bypass the default home page, you can override the default by setting `params.homePage` to one of the sections.
+for example:
+
+{{< tabpane >}}
+{{< tab header="Configuration file:" disabled=true />}}
+{{< tab header="hugo.toml" lang="toml" >}}
+[params]
+    homePage = "/docs"
+{{< /tab >}}
+{{< tab header="hugo.yaml" lang="yaml" >}}
+params:
+  homePage = "/docs"
+{{< /tab >}}
+{{< tab header="hugo.json" lang="json" >}}
+{
+  "params": {
+    "homePage": "/docs",
+  }
+}
+{{< /tab >}}
+{{< /tabpane >}}
+
 
 Each top-level **section** in your site corresponds to a **directory** in your site content root. Hugo automatically applies the appropriate **template** for that section, depending on which folder the content is in. For example, this page is in the `docs` subdirectory of the site's content root directory `content/en/`, so Hugo automatically applies the `docs` template. You can override this by explicitly specifying a template or content type for a particular page.
 
@@ -34,7 +57,7 @@ If you've copied the example site, you already have appropriately named top-leve
 
 If you've copied the example site and *don't* want to use one of the provided content sections, just delete the appropriate content subdirectory. Similarly, if you want to add a top-level section, just add a new subdirectory, though you'll need to specify the layout or content type explicitly in the [frontmatter](#page-frontmatter) of each page if you want to use any existing Docsy template other than the default one. For example, if you create a new directory `content/en/amazing` and want one or more pages in that custom section to use Docsy's `docs` template, you add `type: docs` to the frontmatter of each page:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Front matter:" disabled=true />}}
 {{< tab header="toml" lang="toml" >}}
 +++
@@ -79,7 +102,7 @@ Since Hugo 0.76, this has become practical without copying layouts to your site,
 
 For example, for the `/news/` section, you can specify the following front matter in the index page which will change the type of the section and everything below it to "blog":
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Front matter:" disabled=true />}}
 {{< tab header="toml" lang="toml" >}}
 +++
@@ -126,7 +149,7 @@ cascade:
 
 If you want to create a "docs" site, specifying something like the following in the top level `_index.md` will set all top level sections to be treated as "docs", except for "news":
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Front matter:" disabled=true />}}
 {{< tab header="toml" lang="toml" >}}
 +++
@@ -192,7 +215,7 @@ Each page file in a Hugo site has metadata frontmatter that tells Hugo about the
 
 For example, here's the frontmatter for this page:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Front matter:" disabled=true />}}
 {{< tab header="toml" lang="toml" >}}
 +++
@@ -237,7 +260,7 @@ As of version 0.100, [Goldmark](https://github.com/yuin/goldmark/) is the only M
 
 If you've been using versions of Hugo before 0.60 that use [`BlackFriday`](https://github.com/russross/blackfriday) as its Markdown parser, you may need to make some small changes to your site to work with the current `Goldmark` Markdown parser. In particular, if you cloned an earlier version of our example site, add the following to your `hugo.toml`/`hugo.yaml`/`hugo.json` to allow Goldmark to render raw HTML as well as Markdown:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
 [markup]
@@ -296,7 +319,7 @@ You can find out much more about managing resources with Hugo bundles in [Page B
 
 ## Adding docs and blog posts
 
-The template you'll probably use most often is the [`docs` template](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/layouts/docs/baseof.html) (as used in this page) or the very similar [`blog` template](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/layouts/blog/baseof.html). Both these templates include:
+The template you'll probably use most often is the [`docs` template](https://github.com/google/docsy/blob/main/layouts/docs/baseof.html) (as used in this page) or the very similar [`blog` template](https://github.com/google/docsy/blob/main/layouts/blog/baseof.html). Both these templates include:
 
 * a left nav
 * GitHub links (populated from your site config) for readers to edit the page or create issues
@@ -320,7 +343,7 @@ By default a docs section landing page (the `_index.md` or `_index.html` in the 
 
 To display a simple bulleted list of links to the section's pages instead, specify `simple_list: true` in the landing page's frontmatter:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Front matter:" disabled=true />}}
 {{< tab header="toml" lang="toml" >}}
 +++
@@ -347,7 +370,7 @@ weight: 20
 
 To display no links at all, specify `no_list: true` in the landing page's frontmatter:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Front matter:" disabled=true />}}
 {{< tab header="toml" lang="toml" >}}
 +++
@@ -376,9 +399,9 @@ weight: 20
 
 Docsy's `blog` layout also gives you a left nav menu (like the `docs` layout), and a list-type index page for your blog that's applied to `/blog/_index.md` and automatically displays snippets of all your recent posts in reverse chronological order.
 
-To create different blog categories to organize your posts, create subfolders in `blog/`. For instance, in our [example site](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example/tree/main/content/en/blog) we have `news` and `releases`. Each category needs to have its own `_index.md` or `_index.html` landing page file specifying the category title for it to appear properly in the left nav and top-level blog landing page. Here's the index page for `releases`:
+To create different blog categories to organize your posts, create subfolders in `blog/`. For instance, in our [example site](https://github.com/google/docsy-example/tree/main/content/en/blog) we have `news` and `releases`. Each category needs to have its own `_index.md` or `_index.html` landing page file specifying the category title for it to appear properly in the left nav and top-level blog landing page. Here's the index page for `releases`:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Front matter:" disabled=true />}}
 {{< tab header="toml" lang="toml" >}}
 +++
@@ -405,7 +428,7 @@ weight: 20
 
 To add author and date information to blog posts, add them to the page frontmatter:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Front matter:" disabled=true />}}
 {{< tab header="toml" lang="toml" >}}
 +++
@@ -462,7 +485,7 @@ If you've copied the example site and you don't want a blog section, or want to 
 
 ## Working with top-level landing pages.
 
-Docsy's [default page template](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/layouts/docs/baseof.html) has no left nav and is useful for creating a home page for your site or other "landing" type pages.
+Docsy's [default page template](https://github.com/google/docsy/blob/main/layouts/docs/baseof.html) has no left nav and is useful for creating a home page for your site or other "landing" type pages.
 
 ### Customizing the example site pages
 
@@ -480,7 +503,7 @@ If you've just used the theme, you can still use all Docsy's provided [page bloc
 
 The `community` landing page template has boilerplate content that's automatically filled in with the project name and community links specified in `hugo.toml`/`hugo.yaml`/`hugo.json`, providing your users with quick links to resources that help them get involved in your project. The same links are also added by default to your site footer.
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
 [params.links]
@@ -503,7 +526,7 @@ The `community` landing page template has boilerplate content that's automatical
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
-	url = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+	url = "https://github.com/google/docsy"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.developer]]
@@ -535,7 +558,7 @@ params:
         desc: Practical questions and curated answers
     developer:
       - name: GitHub
-        url: 'https://github.com/defenseunicorns/defense-unicorns-hugo-theme'
+        url: 'https://github.com/google/docsy'
         icon: fab fa-github
         desc: Development takes place here!
       - name: Slack
@@ -574,7 +597,7 @@ params:
       "developer": [
         {
           "name": "GitHub",
-          "url": "https://github.com/defenseunicorns/defense-unicorns-hugo-theme",
+          "url": "https://github.com/google/docsy",
           "icon": "fa-brands fa-github",
           "desc": "Development takes place here!"
         },
@@ -611,7 +634,7 @@ You can also use this directory for other files used by your project, including 
 
 Hugo will, by default, create an RSS feed for the home page and any section. For the main RSS feed you can control which sections to include by setting a site param in your `hugo.toml`/`hugo.yaml`/`hugo.json`. This is the default configuration:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
 rss_sections = ["blog"]
@@ -631,7 +654,7 @@ rss_sections:
 
 To disable all RSS feeds, add the following to your `hugo.toml`/`hugo.yaml`/`hugo.json`:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
 disableKinds = ["RSS"]
@@ -656,7 +679,7 @@ disableKinds:
 
 If you have enabled our [print feature](/docs/adding-content/print/) or otherwise specified section-level output formats in `hugo.toml`/`hugo.yaml`/`hugo.json`, make sure that `"RSS"` is listed as an output format, otherwise you won't get section-level RSS feeds (and your blog section won't get a nice orange RSS button). Your `hugo.toml`/`hugo.yaml`/`hugo.json` specification overrides the Hugo default [output formats](https://gohugo.io/templates/output-formats/) for sections, which are HTML and RSS.
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
 [outputs]
@@ -689,7 +712,7 @@ Hugo creates a `sitemap.xml` file for your generated site by default: for exampl
 
 You can configure the frequency with which your sitemap is updated, your sitemap filename, and the default page priority in your `hugo.toml`/`hugo.yaml`/`hugo.json`:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
 [sitemap]
@@ -716,7 +739,7 @@ sitemap:
 
 To override any of these values for a given page, specify it in page frontmatter:
 
-{{< tabpane persistLang=false >}}
+{{< tabpane >}}
 {{< tab header="Front matter:" disabled=true />}}
 {{< tab header="toml" lang="toml" >}}
 +++
