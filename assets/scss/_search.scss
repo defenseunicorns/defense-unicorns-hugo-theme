@@ -42,8 +42,9 @@
     }
 
     &:not(:focus) {
-      background: transparent;
-    }
+      border-color: tint-color($secondary, 95%);
+      box-shadow: 0 0 0 2px shade-color($primary, 40%);
+     }
 
     &.form-control:focus {
       border-color: tint-color($secondary, 95%);
