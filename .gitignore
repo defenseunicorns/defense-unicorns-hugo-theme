@@ -18,4 +18,3 @@ resources/
 # VS Code
 /.vscode/**
 !/.vscode/cspell.json
-userguide/package-lock.json
