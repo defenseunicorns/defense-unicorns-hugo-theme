@@ -42,14 +42,21 @@
     }
 
     &:not(:focus) {
-      border-color: tint-color($secondary, 95%);
-      box-shadow: 0 0 0 2px shade-color($primary, 40%);
-     }
+      border-color: shade-color($primary, 40%);
+      box-shadow: none;
+    }
 
     &.form-control:focus {
-      border-color: tint-color($secondary, 95%);
-      box-shadow: 0 0 0 2px tint-color($primary, 40%);
-      color: inherit;
+      border-color: shade-color($secondary, 10%);
+      box-shadow: none;
+    }
+
+    &.form-control:hover {
+      border-color: shade-color($secondary, 10%);
+      // color: $input-placeholder-color;
+    }
+    &.form-control:hover::placeholder {
+      color: ($input-placeholder-color, 90%);
     }
 
     // Styling adjustments for the navbar
