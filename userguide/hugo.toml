@@ -72,10 +72,10 @@ icon = "fa-brands fa-slack"
 desc = "Discussion and help from your fellow users"
 
 [[params.socialLinks]]
-name = "Community Slack"
-url = "https://communityinviter.com/apps/kubernetes/community"
+name = "Twitter"
+url = "https://twitter.com/DefenseUnicorns"
 icon = "fa-brands fa-twitter"
-desc = "Discussion and help from your fellow users"
+desc = "Defense Unicorns Twitter"
 
 [[params.socialLinks]]
 name = "GitHub"
