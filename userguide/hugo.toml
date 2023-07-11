@@ -55,7 +55,7 @@ offlineSearchMaxResults = 10
 prism_syntax_highlighting = false
 
   [params.ui]
-  navbar_logo = "img/zarf-logo.svg" # The product logo on the navbar
+  navbar_logo = "img/uds-logo.svg" # The product logo on the navbar
   sidebar_menu_compact = true
   sidebar_menu_foldable = false
   sidebar_cache_limit = 10
