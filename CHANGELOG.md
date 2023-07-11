@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.7](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.6...v0.0.7) (2023-07-11)
+
+
+### Bug Fixes
+
+* Change Navbar to match design and make responsive ([b2701ef](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/b2701ef89b8820fa124a726f74d39ec56c8b272f))
+* changing search bar location ([9b666e7](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/9b666e7b47d5b27989b88d29a47a813a749f3924))
+* default start page to docs ([5b8529c](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/5b8529ccc7ed194ecd5566678094fd0deb1b09b7))
+* Move social links to navbar ([42366a5](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/42366a59aa02e86a06cc3f4d98dbc8f6bedce1b6))
+
 ## [0.0.6](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.5...v0.0.6) (2023-07-07)
 
 
