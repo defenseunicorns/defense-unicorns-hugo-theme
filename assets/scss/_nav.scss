@@ -52,16 +52,12 @@
 
   .nav-link {
     text-transform: none;
-    // font-weight: $font-weight-bold;
-    // border-bottom: 2px solid $secondary;
-
     &:hover {
       color: $secondary;
     }
   }
 
   .active {
-    // font-weight: $font-weight-bold;
     color: $text-primary;
     border-bottom: 2px solid $secondary;
   }
@@ -229,4 +225,15 @@ nav.foldable-nav {
       transition: color 0.3s;
     }
   }
+}
+
+.socials-box {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.svg-link {
+  border: solid;
+  border-color: #0000;
 }
