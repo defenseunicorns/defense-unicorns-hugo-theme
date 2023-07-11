@@ -1,9 +1,6 @@
 baseURL = "https://example.com"
-# title = "Defense Unicorns Hugo Theme"
-description = "Theme for our documentation sites"
 enableRobotsTXT = true
 theme = "defense-unicorns-hugo-theme"
-
 enableGitInfo = true
 pygmentsCodeFences = true
 pygmentsUseClasses = false
@@ -11,9 +8,9 @@ pygmentsUseClassic = false
 pygmentsStyle = "tango"
 
 [outputs]
-home = [ "HTML" ]
-page = [ "HTML" ]
-section = [ "HTML", "RSS", "print" ]
+home = ["HTML"]
+page = ["HTML"]
+section = ["HTML", "RSS", "print"]
 
 [imaging]
 resampleFilter = "catmullRom"
@@ -23,9 +20,9 @@ anchor = "Smart"
 [languages.en]
 languageName = "English"
 
-  [languages.en.params]
-  title = "Defense Unicorns Hugo Theme"
-  description = "Theme for our documentation sites"
+[languages.en.params]
+title = "Defense Unicorns Hugo Theme"
+description = "Theme for our documentation sites"
 
 [markup.goldmark.parser.attribute]
 block = true
@@ -40,10 +37,6 @@ style = "tango"
 homePage = "/docs" # If this is removed then then the site will show a landing page.
 show_metalinks = false
 copyright = "Defense Unicorns"
-version_menu = "Releases"
-archived_version = false
-version = "1.0.3"
-url_latest_version = "https://example.com"
 github_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 github_project_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 github_subdir = "userguide"
@@ -53,17 +46,34 @@ offlineSearch = true
 offlineSearchSummaryLength = 70
 offlineSearchMaxResults = 10
 prism_syntax_highlighting = false
+version_menu = "Versions"
+archived_version = false
+version = "v0.0.6"
+url_latest_version = "https://example.com"
 
-  [params.ui]
-  navbar_logo = "img/uds-logo.svg" # The product logo on the navbar
-  sidebar_menu_compact = true
-  sidebar_menu_foldable = false
-  sidebar_cache_limit = 10
-  breadcrumb_disable = false
-  # navbar_search = true # If true, moves the searchbar to the navbar. Not recommended for mobile!
+# Add your release versions here that references the deployed release branch for that version.
+[[params.versions]]
+version = "Latest"
+url = "https://master.kubeflow.org"
 
-    [params.ui.readingtime]
-    enable = true
+[[params.versions]]
+version = "v0.2"
+url = "https://v0-2.kubeflow.org"
+
+[[params.versions]]
+version = "v0.3"
+url = "https://v0-3.kubeflow.org"
+
+[params.ui]
+navbar_logo = "img/uds-logo.svg" # The product logo on the navbar
+sidebar_menu_compact = true
+sidebar_menu_foldable = false
+sidebar_cache_limit = 10
+breadcrumb_disable = false
+
+# navbar_search = true # If true, moves the searchbar to the navbar. Not recommended for mobile!
+[params.ui.readingtime]
+enable = true
 
 [[params.socialLinks]]
 name = "Community Slack"
@@ -83,26 +93,26 @@ url = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 icon = "fa-brands fa-github"
 desc = ""
 
-  [params.plantuml]
-  enable = true
-  theme = "default"
-  svg_image_url = "https://www.plantuml.com/plantuml/svg/"
-  svg = false
+[params.plantuml]
+enable = true
+theme = "default"
+svg_image_url = "https://www.plantuml.com/plantuml/svg/"
+svg = false
 
-  [params.print]
-  disable_toc = false
+[params.print]
+disable_toc = false
 
-  [params.markmap]
-  enable = true
+[params.markmap]
+enable = true
 
-  [params.mermaid]
-  theme = "default"
+[params.mermaid]
+theme = "default"
 
-    [params.mermaid.flowchart]
-    diagramPadding = 20
+[params.mermaid.flowchart]
+diagramPadding = 20
 
-  [params.drawio]
-  enable = true
+[params.drawio]
+enable = true
 
 [taxonomies]
 tag = "tags"
