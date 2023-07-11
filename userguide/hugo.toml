@@ -60,22 +60,22 @@ prism_syntax_highlighting = false
   sidebar_menu_foldable = false
   sidebar_cache_limit = 10
   breadcrumb_disable = false
-  sidebar_search_disable = true
+  # sidebar_search_disable = true
 
     [params.ui.readingtime]
     enable = true
 
 [[params.links.user]]
-name = "GitHub Discussions"
-url = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme/discussions"
-icon = "fa-brands fa-github"
+name = "Community Slack"
+url = "https://communityinviter.com/apps/kubernetes/community"
+icon = "fa-brands fa-slack"
 desc = "Discussion and help from your fellow users"
 
 [[params.links.developer]]
 name = "GitHub"
 url = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 icon = "fa-brands fa-github"
-desc = "Development takes place here!"
+desc = ""
 
   [params.plantuml]
   enable = true
