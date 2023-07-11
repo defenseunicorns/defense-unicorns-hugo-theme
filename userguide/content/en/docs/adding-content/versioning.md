@@ -21,28 +21,30 @@ for each version you would like to add to the menu, as in the following example:
 {{< tabpane persistLang=false >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
+
 # Add your release versions here
+
 [[params.versions]]
-  version = "master"
-  url = "https://master.kubeflow.org"
+  version = "latest"
+  url = "<https://master.kubeflow.org>"
 
 [[params.versions]]
   version = "v0.2"
-  url = "https://v0-2.kubeflow.org"
+  url = "<https://v0-2.kubeflow.org>"
 
 [[params.versions]]
   version = "v0.3"
-  url = "https://v0-3.kubeflow.org"
+  url = "<https://v0-3.kubeflow.org>"
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
 params:
   versions:
     - version: master
-      url: 'https://master.kubeflow.org'
+      url: '<https://master.kubeflow.org>'
     - version: v0.2
-      url: 'https://v0-2.kubeflow.org'
+      url: '<https://v0-2.kubeflow.org>'
     - version: v0.3
-      url: 'https://v0-3.kubeflow.org'
+      url: '<https://v0-3.kubeflow.org>'
 {{< /tab >}}
 {{< tab header="hugo.json" lang="json" >}}
 {
@@ -151,12 +153,12 @@ version: '0.1'
     {{< tabpane persistLang=false >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
-url_latest_version = "https://your-latest-doc-site.com"
+url_latest_version = "<https://your-latest-doc-site.com>"
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
-url_latest_version: 'https://your-latest-doc-site.com'
+url_latest_version: '<https://your-latest-doc-site.com>'
 {{< /tab >}}
 {{< tab header="hugo.json" lang="json" >}}
-"url_latest_version": "https://your-latest-doc-site.com"
+"url_latest_version": "<https://your-latest-doc-site.com>"
 {{< /tab >}}
     {{< /tabpane >}}

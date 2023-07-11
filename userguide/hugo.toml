@@ -46,14 +46,14 @@ offlineSearch = true
 offlineSearchSummaryLength = 70
 offlineSearchMaxResults = 10
 prism_syntax_highlighting = false
-version_menu = "Versions"
 archived_version = false
-version = "v0.0.6"
+version = "v1.0.0"
+version_menu = "v1.0"
 url_latest_version = "https://example.com"
 
 # Add your release versions here that references the deployed release branch for that version.
 [[params.versions]]
-version = "Latest"
+version = "v1.0 - Latest"
 url = "https://master.kubeflow.org"
 
 [[params.versions]]
