@@ -48,7 +48,6 @@ params:
 {{< /tab >}}
 {{< /tabpane >}}
 
-
 Each top-level **section** in your site corresponds to a **directory** in your site content root. Hugo automatically applies the appropriate **template** for that section, depending on which folder the content is in. For example, this page is in the `docs` subdirectory of the site's content root directory `content/en/`, so Hugo automatically applies the `docs` template. You can override this by explicitly specifying a template or content type for a particular page.
 
 If you've copied the example site, you already have appropriately named top-level section directories for using Docsy's templates, each with an index page ( `_index.md` or `index.html`) page for users to land on. These top-level sections also appear in the example site's [top-level menu](/docs/adding-content/navigation/#top-level-menu).
@@ -71,12 +70,14 @@ A special section with a docs layout.
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: "My amazing new section"
 weight: 1
 type: docs
 description: >
   A special section with a docs layout.
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -118,6 +119,7 @@ type = "blog"
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: "Latest News"
 linkTitle: "News"
 menu:
@@ -125,7 +127,9 @@ menu:
     weight: 30
 
 cascade:
-  - type: "blog"
+
+* type: "blog"
+
 ---
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
@@ -146,7 +150,6 @@ cascade:
 {{< /tab >}}
 {{< /tabpane >}}
 
-
 If you want to create a "docs" site, specifying something like the following in the top level `_index.md` will set all top level sections to be treated as "docs", except for "news":
 
 {{< tabpane >}}
@@ -165,22 +168,25 @@ toc_root = true
 [[cascade]]
 type = "docs"
 
-  [cascade._target]
+[cascade._target]
   path = "/**"
 +++
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: "My Wonderful Site"
 
 cascade:
-  - type: "blog"
+
+* type: "blog"
     toc_root: true
     _target:
     path: "/news/**"
-  - type: "docs"
+* type: "docs"
     _target:
     path: "/**"
+
 ---
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
@@ -229,12 +235,14 @@ Add different types of content to your Docsy site.
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: "Adding Content"
 linkTitle: "Adding Content"
 weight: 1
 description: >
   Add different types of content to your Docsy site.
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -247,7 +255,6 @@ description: >
 {{< /tabpane >}}
 
 The minimum frontmatter you need to provide is a title: everything else is up to you! However, if you leave out the page weight, your [navigation](/docs/adding-content/navigation) may get a little disorganized. You may also want to include `description` since Docsy uses that to generate the meta `description` tag used by search engines. See [Search Engine Optimization (SEO) meta tags]({{< ref "feedback#search-engine-optimization-meta-tags" >}}) for details.
-
 
 ## Page contents and markup
 
@@ -354,10 +361,12 @@ weight = 20
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: "Simple List Page"
 simple_list: true
 weight: 20
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -381,10 +390,12 @@ weight = 20
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: "No List Page"
 no_list: true
 weight: 20
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -412,10 +423,12 @@ weight = 20
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: "New Releases"
 linkTitle: "Releases"
 weight: 20
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -442,22 +455,25 @@ author = "Riona MacNamara"
 src = "**.{png,jpg}"
 title = "Image #:counter"
 
-  [resources.params]
+[resources.params]
   byline = "Photo: Riona MacNamara / CC-BY-CA"
 +++
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 date: 2018-10-06
 title: "Easy documentation with Docsy"
 linkTitle: "Announcing Docsy"
 description: "The Docsy Hugo theme lets project maintainers and contributors focus on content, not on reinventing a website infrastructure from scratch"
 author: Riona MacNamara
 resources:
-  - src: "**.{png,jpg}"
+
+* src: "**.{png,jpg}"
     title: "Image #:counter"
     params:
     byline: "Photo: Riona MacNamara / CC-BY-CA"
+
 ---
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
@@ -482,8 +498,7 @@ resources:
 
 If you've copied the example site and you don't want a blog section, or want to link to an external blog instead, just delete the `blog` subdirectory.
 
-
-## Working with top-level landing pages.
+## Working with top-level landing pages
 
 Docsy's [default page template](https://github.com/google/docsy/blob/main/layouts/docs/baseof.html) has no left nav and is useful for creating a home page for your site or other "landing" type pages.
 
@@ -507,74 +522,73 @@ The `community` landing page template has boilerplate content that's automatical
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
 [params.links]
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
-	name = "User mailing list"
-	url = "https://example.org/mail"
-	icon = "fa fa-envelope"
+
+## These will show up on the right of the Navbar
+
+[[params.socialLinks]]
+ name = "User mailing list"
+ url = "<https://example.org/mail>"
+ icon = "fa fa-envelope"
         desc = "Discussion and help from your fellow users"
-[[params.links.user]]
-	name ="Twitter"
-	url = "https://example.org/twitter"
-	icon = "fab fa-twitter"
+[[params.socialLinks]]
+ name ="Twitter"
+ url = "<https://example.org/twitter>"
+ icon = "fab fa-twitter"
         desc = "Follow us on Twitter to get the latest news!"
-[[params.links.user]]
-	name = "Stack Overflow"
-	url = "https://example.org/stack"
-	icon = "fab fa-stack-overflow"
+[[params.socialLinks]]
+ name = "Stack Overflow"
+ url = "<https://example.org/stack>"
+ icon = "fab fa-stack-overflow"
         desc = "Practical questions and curated answers"
-# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/google/docsy"
-	icon = "fab fa-github"
+
+[[params.socialLinks]]
+ name = "GitHub"
+ url = "<https://github.com/google/docsy>"
+ icon = "fab fa-github"
         desc = "Development takes place here!"
-[[params.links.developer]]
-	name = "Slack"
-	url = "https://example.org/slack"
-	icon = "fab fa-slack"
+[[params.socialLinks]]
+ name = "Slack"
+ url = "<https://example.org/slack>"
+ icon = "fab fa-slack"
         desc = "Chat with other project developers"
-[[params.links.developer]]
-	name = "Developer mailing list"
-	url = "https://example.org/mail"
-	icon = "fa fa-envelope"
+[[params.socialLinks]]
+ name = "Developer mailing list"
+ url = "<https://example.org/mail>"
+ icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
 params:
-  links:
-    user:
+  socialLinks:
       - name: User mailing list
-        url: 'https://example.org/mail'
+        url: '<https://example.org/mail>'
         icon: fa fa-envelope
         desc: Discussion and help from your fellow users
       - name: Twitter
-        url: 'https://example.org/twitter'
+        url: '<https://example.org/twitter>'
         icon: fab fa-twitter
         desc: Follow us on Twitter to get the latest news!
       - name: Stack Overflow
-        url: 'https://example.org/stack'
+        url: '<https://example.org/stack>'
         icon: fab fa-stack-overflow
         desc: Practical questions and curated answers
-    developer:
       - name: GitHub
-        url: 'https://github.com/google/docsy'
+        url: '<https://github.com/google/docsy>'
         icon: fab fa-github
         desc: Development takes place here!
       - name: Slack
-        url: 'https://example.org/slack'
+        url: '<https://example.org/slack>'
         icon: fab fa-slack
         desc: Chat with other project developers
       - name: Developer mailing list
-        url: 'https://example.org/mail'
+        url: '<https://example.org/mail>'
         icon: fa fa-envelope
         desc: Discuss development issues around the project
 {{< /tab >}}
 {{< tab header="hugo.json" lang="json" >}}
 {
   "params": {
-    "links": {
-      "user": [
+    "socialLinks":  [
         {
           "name": "User mailing list",
           "url": "https://example.org/mail",
@@ -592,9 +606,7 @@ params:
           "url": "https://example.org/stack",
           "icon": "fa-brands fa-stack-overflow",
           "desc": "Practical questions and curated answers"
-        }
-      ],
-      "developer": [
+        },
         {
           "name": "GitHub",
           "url": "https://github.com/google/docsy",
@@ -641,7 +653,8 @@ rss_sections = ["blog"]
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
 rss_sections:
-  - blog
+
+* blog
 {{< /tab >}}
 {{< tab header="hugo.json" lang="json" >}}
 {
@@ -661,7 +674,8 @@ disableKinds = ["RSS"]
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
 disableKinds:
-  - RSS
+
+* RSS
 {{< /tab >}}
 {{< tab header="hugo.json" lang="json" >}}
 {
@@ -671,7 +685,6 @@ disableKinds:
 }
 {{< /tab >}}
 {{< /tabpane >}}
-
 
 <div class="alert alert-info" role="alert">
 
@@ -755,6 +768,7 @@ priority = 1
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: "Adding Content"
 linkTitle: "Adding Content"
 weight: 1
@@ -763,6 +777,7 @@ description: >
 sitemap:
   priority: 1.0
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {

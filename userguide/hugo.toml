@@ -60,18 +60,24 @@ prism_syntax_highlighting = false
   sidebar_menu_foldable = false
   sidebar_cache_limit = 10
   breadcrumb_disable = false
-  # sidebar_search_disable = true
+  # navbar_search = true # If true, moves the searchbar to the navbar. Not recommended for mobile!
 
     [params.ui.readingtime]
     enable = true
 
-[[params.links.user]]
+[[params.socialLinks]]
 name = "Community Slack"
 url = "https://communityinviter.com/apps/kubernetes/community"
 icon = "fa-brands fa-slack"
 desc = "Discussion and help from your fellow users"
 
-[[params.links.developer]]
+[[params.socialLinks]]
+name = "Community Slack"
+url = "https://communityinviter.com/apps/kubernetes/community"
+icon = "fa-brands fa-twitter"
+desc = "Discussion and help from your fellow users"
+
+[[params.socialLinks]]
 name = "GitHub"
 url = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 icon = "fa-brands fa-github"
