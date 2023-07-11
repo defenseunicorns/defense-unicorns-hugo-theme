@@ -1,5 +1,5 @@
 {
-  "name": "docsy-user-guide",
+  "name": "theme-user-guide",
   "scripts": {
     "_build": "npm run _hugo-dev",
     "_check:links": "make check-links",
@@ -14,6 +14,7 @@
     "clean": "rm -Rf public",
     "make:public": "git init -b main public",
     "precheck:links:all": "npm run build",
+    "lint:fix": "markdownlint -f ./content/**/*.md",
     "precheck:links": "npm run build",
     "postbuild:preview": "npm run _check:links",
     "postbuild:production": "npm run _check:links",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "markdownlint-cli": "^0.35.0",
     "postcss-cli": "^10.1.0"
   }
 }

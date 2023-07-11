@@ -38,6 +38,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "spelling": "cSpell:ignore docsy hugo fortawesome fontawesome userguide "
+  }
 }

@@ -9,7 +9,7 @@ weight: 8
 
 ## Adding Analytics
 
-The Docsy theme builds upon [Hugo's support for Google Analytics][hugo-ga],
+The theme builds upon [Hugo's support for Google Analytics][hugo-ga],
 which Hugo provides through [internal templates][]. Once you set up analytics as
 described below, usage information for your site (such as page views) is sent to
 your [Google Analytics][] account.
@@ -33,7 +33,7 @@ started** section of [Introducing Google Analytics 4 (GA4)][ga4-intro].
 Enable Google Analytics by adding your project's analytics ID to the site
 configuration file. For details, see [Configure Google Analytics][].
 
-By default, Docsy uses the [gtag.js][] analytics library for both GA4 (which
+By default, this uses the [gtag.js][] analytics library for both GA4 (which
 _requires_ `gtag.js`) and Universal Analytics (UA) site tags. If you prefer using
 the older `analytics.js` library for your UA site tag, then set
 `params.disableGtagForUniversalAnalytics` to `true` in your project's [configuration file].
@@ -83,7 +83,7 @@ params:
 
 ## User Feedback
 
-By default Docsy puts a "was this page helpful?" feedback widget at the bottom
+By default this puts a "was this page helpful?" feedback widget at the bottom
 of every documentation page, as shown in Figure 1.
 
 <figure>
@@ -132,9 +132,9 @@ other words!
 
 ### Setup
 
-1.  Open `hugo.toml`/`hugo.yaml`/`hugo.json`.
-2.  Ensure that Google Analytics is enabled, as described [above](#setup).
-3.  Set the response text that users see after clicking **Yes** or **No**.
+1. Open `hugo.toml`/`hugo.yaml`/`hugo.json`.
+2. Ensure that Google Analytics is enabled, as described [above](#setup).
+3. Set the response text that users see after clicking **Yes** or **No**.
 
     {{< tabpane persistLang=false >}}
     {{< tab header="Configuration file:" disabled=true />}}
@@ -164,8 +164,8 @@ params:
     "ui": {
       "feedback": {
         "enable": true,
-        "yes": "Glad to hear it! Please <a href=\"https://github.com/USERNAME/REPOSITORY/issues/new\"> tell us how we can improve</a>.",
-        "no": "Sorry to hear that. Please <a href=\"https://github.com/USERNAME/REPOSITORY/issues/new\"> tell us how we can improve</a>."
+        "yes": "Glad to hear it! Please <a href=\"<https://github.com/USERNAME/REPOSITORY/issues/new\">> tell us how we can improve</a>.",
+        "no": "Sorry to hear that. Please <a href=\"<https://github.com/USERNAME/REPOSITORY/issues/new\">> tell us how we can improve</a>."
       }
     }
   }
@@ -174,7 +174,7 @@ params:
 {{< /tab >}}
 {{< /tabpane >}}
 
-4.  Save and close `hugo.toml`/`hugo.yaml`/`hugo.json`.
+4. Save and close `hugo.toml`/`hugo.yaml`/`hugo.json`.
 
 ### Access the feedback data
 
@@ -228,8 +228,10 @@ hide_feedback = true
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 hide_feedback: true
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -295,7 +297,7 @@ To learn how to optimize your site for SEO see,
 Google
 [recommends](https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=en%2F#descriptionmeta)
 using the `description` meta tag to tell search engines what your page is about.
-For each generated page, Docsy will set the content of the meta `description` by
+For each generated page, The theme will set the content of the meta `description` by
 using the first of the following that is defined:
 
 - The page `description` [frontmatter field]({{< ref

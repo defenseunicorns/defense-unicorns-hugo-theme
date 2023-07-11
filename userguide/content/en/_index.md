@@ -1,5 +1,5 @@
 ---
-title: Docsy
+title: Defense Unicorns Docs Theme
 ---
 
 {{% blocks/cover title="DevSecOps for Airgap" image_anchor="top" height="full" %}}
@@ -17,30 +17,12 @@ A Hugo theme for creating great technical documentation sites
 {{% /blocks/cover %}}
 
 {{% blocks/lead color="primary" %}}
-Docsy is a theme for the Hugo static site generator that's specifically designed
-for technical documentation sets. Our aim is to help you get a working
+This is a theme for the Hugo static site generator that's designed
+for our documentation sets. We aim to help you get a working
 documentation site up and running as easily as possible, so you can concentrate
 on creating great content for your users.
-
-<a href="https://www.netlify.com" target="_blank" rel="noopener">
-  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
-</a>
 {{% /blocks/lead %}}
 
 {{% blocks/section color="dark" type="row" %}}
-
-{{% blocks/feature icon="fa-lightbulb" title="See Docsy in action!" url="/docs/examples/" %}}
-As well as our example site, there's a growing number of projects using Docsy for their doc sites.
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fa-brands fa-github" title="Contributions welcome!" url="https://github.com/defenseunicorns/defense-unicorns-hugo-theme" %}}
-We do a [Pull Request](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fa-brands fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-Find out about new features and how our users are using Docsy.
-{{% /blocks/feature %}}
 
 {{% /blocks/section %}}

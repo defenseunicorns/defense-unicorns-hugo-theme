@@ -43603,7 +43603,8 @@ object-assign
        * Copyright(c) 2012-2014 Roman Shtylman
        * Copyright(c) 2015 Douglas Christopher Wilson
        * MIT Licensed
-       */ ;(t.parse = function (e, t) {
+       */
+      ;(t.parse = function (e, t) {
         if ('string' != typeof e) throw new TypeError('argument str must be a string')
         for (var n = {}, o = t || {}, a = e.split(i), u = o.decode || r, c = 0; c < a.length; c++) {
           var l = a[c],
@@ -45149,16 +45150,19 @@ object-assign
       }
     },
     function (e, t, n) {
-      var r, o, i
-      /*!
-       * Autolinker.js
-       * 0.28.1
-       *
-       * Copyright(c) 2016 Gregory Jacobs <greg@greg-jacobs.com>
-       * MIT License
-       *
-       * https://github.com/gregjacobs/Autolinker.js
-       */ ;(o = []),
+      var r,
+        o,
+        i
+        /*!
+         * Autolinker.js
+         * 0.28.1
+         *
+         * Copyright(c) 2016 Gregory Jacobs <greg@greg-jacobs.com>
+         * MIT License
+         *
+         * https://github.com/gregjacobs/Autolinker.js
+         */
+      ;(o = []),
         void 0 ===
           (i =
             'function' ==
