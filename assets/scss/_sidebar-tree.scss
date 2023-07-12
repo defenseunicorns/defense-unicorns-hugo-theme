@@ -107,7 +107,7 @@
 
 .td-sidebar {
   @include media-breakpoint-up(md) {
-    padding-top: calc(#{$logo-height} + 40px);
+    padding-top: $sidebar-top-padding;
     background-color: $td-sidebar-bg-color;
     padding-right: 1rem;
     border-right: 1px solid $td-sidebar-border-color;

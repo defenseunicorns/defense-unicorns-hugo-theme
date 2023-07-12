@@ -48,12 +48,10 @@ npm install
 npm run serve
 ```
 
-## Contributing ![GitHub](https://img.shields.io/github/contributors/defenseunicorns/defense-unicorns-hugo-theme)
+## Design
 
-Please read [CONTRIBUTING.md](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/CONTRIBUTING.md)
-for details on our code of conduct, and the process for submitting pull requests to us. See also the list of
-[contributors](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/graphs/contributors) who participated in
-this project.
+- [Unicorn Color Pallette](https://www.figma.com/file/CNF9mPhuv5yqaM7YqDdx69/Hugo-Docs-Theme?type=design&node-id=0%3A1&mode=design&t=fTFIrgwTdf1bWJC6-1)
+- [Site Design](https://www.figma.com/file/aNnt9Ip7IFTs9hnfqrYGl4/Unicorn-UI?type=design&node-id=0%3A1&mode=dev)
 
 ## License ![GitHub](https://img.shields.io/github/license/defenseunicorns/defense-unicorns-hugo-theme)
 
