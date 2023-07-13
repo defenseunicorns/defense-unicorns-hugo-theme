@@ -22,6 +22,7 @@ $secondary: $uui-secondary !default;
 $text-primary: $uui-text-primary !default;
 $success: $uui-success !default;
 $danger: $uui-error !default;
+$error: $uui-error !default;
 $info: $uui-info !default;
 $warning: $uui-warning !default;
 $text-disabled: $uui-text-disabled !default;
@@ -29,9 +30,20 @@ $disabled: $uui-disabled !default;
 $surface: $uui-surface !default;
 
 $gray-600: $uui-gray;
-// $white: $uui-white;
-
 $text-muted: $gray-600 !default;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+) !default;
+// scss-docs-end theme-colors-map
 
 $divider: rgba(255, 255, 255, 0.5);
 

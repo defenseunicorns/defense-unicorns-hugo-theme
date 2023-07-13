@@ -39,16 +39,16 @@ The **blocks/cover** shortcode creates a landing page type of block that fills t
 ```html
 {{</* blocks/cover title="Welcome!" image_anchor="center" height="full" color="primary" */>}}
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary me-3 mb-4" href="{{</* relref "/docs" */>}}">
-		Learn More <i class="fa-solid fa-circle-right ms-2"></i>
-	</a>
-	<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://example.org">
-		Download <i class="fa-brands fa-github ms-2"></i>
-	</a>
-	<p class="lead mt-5">This program is now available in <a href="#">AppStore!</a></p>
-	<div class="mx-auto mt-5">
-		{{</* blocks/link-down color="info" */>}}
-	</div>
+ <a class="btn btn-lg btn-primary me-3 mb-4" href="{{</* relref "/docs" */>}}">
+  Learn More <i class="fa-solid fa-circle-right ms-2"></i>
+ </a>
+ <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://example.org">
+  Download <i class="fa-brands fa-github ms-2"></i>
+ </a>
+ <p class="lead mt-5">This program is now available in <a href="#">AppStore!</a></p>
+ <div class="mx-auto mt-5">
+  {{</* blocks/link-down color="info" */>}}
+ </div>
 </div>
 {{</* /blocks/cover */>}}
 ```
@@ -62,7 +62,6 @@ Note that the relevant shortcode parameters above will have sensible defaults, b
 | height | | See above.
 | color | | See above.
 | byline | Byline text on featured image. |
-
 
 To set the background image, place an image with the word "background" in the name in the page's [Page Bundle](/docs/adding-content/content/#page-bundles). For example, in our the example site the background image in the home page's cover block is [`featured-background.jpg`](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example/tree/main/content/en), in the same directory.
 
@@ -94,7 +93,6 @@ Runs on **bare metal** in the **cloud**!
 The **blocks/section** shortcode is meant as a general-purpose content container. It comes in two "flavors", one for general content and one with styling more suitable for wrapping a horizontal row of feature sections.
 
 The example below shows a section wrapping 3 feature sections.
-
 
 ```go-html-template
 {{</* blocks/section color="dark" type="row" */>}}
@@ -131,14 +129,13 @@ We do a [Pull Request](https://github.com/gohugoio/hugo/pulls) contributions wor
 | url | | The URL to link to.
 | icon | | The icon class to use.
 
-
 ### blocks/link-down
 
 The **blocks/link-down** shortcode creates a navigation link down to the next section. It's meant to be used in combination with the other blocks shortcodes.
 
 ```go-html-template
 <div class="mx-auto mt-5">
-	{{</* blocks/link-down color="info" */>}}
+ {{</* blocks/link-down color="info" */>}}
 </div>
 ```
 
@@ -148,25 +145,35 @@ The **blocks/link-down** shortcode creates a navigation link down to the next se
 
 ## Shortcode helpers
 
-### alert
+### alert-(type)
 
-The **alert** shortcode creates an alert block that can be used to display notices or warnings.
+These shortcodes create an alert block that can be used to display several different types of alerts.
 
 ```go-html-template
-{{%/* alert title="Warning" color="warning" */%}}
-This is a warning.
+{{%/* alert-warning */%}}
+Example of `alert-warning`.
 {{%/* /alert */%}}
 ```
 
 Renders to:
 
-{{% alert title="Warning" color="warning" %}}
-This is a warning.
+{{% alert-warning %}}
+Example of `alert-warning`.
 {{% /alert %}}
 
-| Parameter        | Default    | Description  |
-| ---------------- |------------| ------------|
-| color | primary | One of the theme colors, eg `primary`, `info`, `warning` etc.
+Others:
+
+{{% alert-info %}}
+Example of `alert-info`.
+{{% /alert-info %}}
+
+{{% alert-danger %}}
+Example of `alert-danger`.
+{{% /alert-danger %}}
+
+{{% alert-note %}}
+Example of `alert-note`.
+{{% /alert-note %}}
 
 ### pageinfo
 
@@ -187,7 +194,6 @@ This is placeholder content
 | Parameter        | Default    | Description  |
 | ---------------- |------------| ------------|
 | color | primary | One of the theme colors, eg `primary`, `info`, `warning` etc.
-
 
 ### imgproc
 
@@ -214,16 +220,19 @@ The example above has also a byline with photo attribution added. When using ill
 [[resources]]
 src = "**spruce*.jpg"
 
-  [resources.params]
+[resources.params]
   byline = "*Photo*: Bjørn Erik Pedersen / CC-BY-SA"
 +++
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 resources:
+
 - src: "**spruce*.jpg"
   params:
     byline: "*Photo*: Bjørn Erik Pedersen / CC-BY-SA"
+
 ---
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
@@ -260,17 +269,18 @@ weight = 1
 description = "Reference for the Pet Store API"
 +++
 
-{{</* swaggerui src="/openapi/petstore.yaml" */>}}
+{{</*swaggerui src="/openapi/petstore.yaml"*/>}}
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: "Pet Store API"
 type: swagger
 weight: 1
 description: Reference for the Pet Store API
 ---
 
-{{</* swaggerui src="/openapi/petstore.yaml" */>}}
+{{</*swaggerui src="/openapi/petstore.yaml"*/>}}
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -280,7 +290,7 @@ description: Reference for the Pet Store API
   "description": "Reference for the Pet Store API"
 }
 
-{{</* swaggerui src="/openapi/petstore.yaml" */>}}
+{{</*swaggerui src="/openapi/petstore.yaml"*/>}}
 {{< /tab >}}
 {{< /tabpane >}}
 
@@ -303,13 +313,13 @@ description: Reference for the Pet Store API
 
 ### iframe
 
-With this shortcode you can embed external content into a Docsy page as an inline frame (`iframe`) - see: https://www.w3schools.com/tags/tag_iframe.asp
+With this shortcode you can embed external content into a Docsy page as an inline frame (`iframe`) - see: <https://www.w3schools.com/tags/tag_iframe.asp>
 
 | Parameter        | Default    | Description  |
 | ---------------- |------------| ------------|
 | src | | URL of external content
 | width | 100% | Width of iframe
-| tryautoheight | true | If true the shortcode tries to calculate the needed height for the embedded content using JavaScript, as described here: https://stackoverflow.com/a/14618068. This is only possible if the embedded content is [on the same domain](https://stackoverflow.com/questions/22086722/resize-cross-domain-iframe-height). Note that even if the embedded content is on the same domain, it depends on the structure of the content if the height can be calculated correctly.
+| tryautoheight | true | If true the shortcode tries to calculate the needed height for the embedded content using JavaScript, as described here: <https://stackoverflow.com/a/14618068>. This is only possible if the embedded content is [on the same domain](https://stackoverflow.com/questions/22086722/resize-cross-domain-iframe-height). Note that even if the embedded content is on the same domain, it depends on the structure of the content if the height can be calculated correctly.
 | style | min-height:98vh; border:none; | CSS styles for the iframe. `min-height:98vh;` is a backup if `tryautoheight` doesn't work. `border:none;` removes the border from the iframe - this is useful if you want the embedded content to look more like internal content from your page.
 | sandbox | false | You can switch the sandbox completely on by setting `sandbox = true` or allow specific functionality with the common values for the iframe parameter `sandbox` defined in the [HTML standard](https://www.w3schools.com/tags/att_iframe_sandbox.asp).
 | name | iframe-name | Specify the [name of the iframe](https://www.w3schools.com/tags/att_iframe_name.asp).
@@ -318,10 +328,10 @@ With this shortcode you can embed external content into a Docsy page as an inlin
 | sub | Your browser cannot display embedded frames. You can access the embedded page via the following link: | The text displayed (in addition to the embedded URL) if the user's browser can't display embedded frames.
 
 {{% alert title="Warning" color="warning" %}}
-You can only embed external content from a server when its `X-Frame-Options` is not set or if it specifically allows embedding for your site. See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options for details.
+You can only embed external content from a server when its `X-Frame-Options` is not set or if it specifically allows embedding for your site. See <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options> for details.
 
-There are several tools you can use to check if a website can be embedded via iframe - e.g.: https://gf.dev/x-frame-options-test. Be aware that when this test says "Couldn’t find the X-Frame-Options header
-in the response headers." you __CAN__ embed it, but when the test says "Great! X-Frame-Options header was found in the HTTP response headers as highlighted below.", you __CANNOT__ - unless it has been explicitly enabled for your site.
+There are several tools you can use to check if a website can be embedded via iframe - e.g.: <https://gf.dev/x-frame-options-test>. Be aware that when this test says "Couldn’t find the X-Frame-Options header
+in the response headers." you **CAN** embed it, but when the test says "Great! X-Frame-Options header was found in the HTTP response headers as highlighted below.", you **CANNOT** - unless it has been explicitly enabled for your site.
 {{% /alert %}}
 
 ## Tabbed panes
@@ -330,8 +340,10 @@ Sometimes it's very useful to have tabbed panes when authoring content. One comm
 
 {{< tabpane langEqualsHeader=true >}}
 {{< tab "C" >}}
-#include <stdio.h>
-#include <stdlib.h>
+
+# include <stdio.h>
+
+# include <stdlib.h>
 
 int main(void)
 {
@@ -340,7 +352,8 @@ int main(void)
 }
 {{< /tab >}}
 {{< tab "C++" >}}
-#include <iostream>
+
+# include <iostream>
 
 int main()
 {
@@ -429,10 +442,10 @@ This code translates to the right aligned tabbed pane below, showing a `Welcome!
 
 Tabbed panes are implemented using two shortcodes:
 
-* The `tabpane` shortcode, which is the container element for the tabs. This shortcode can hold the optional named parameters `lang`, `highlight` and `right`. The value of the optional parameters `lang` and `highlight` are passed on as second `LANG` and third `OPTIONS` arguments to Hugo's built-in [`highlight`](https://gohugo.io/functions/highlight/) function which is used to render the code blocks of the individual tabs. Specify `right=true` if you want to right align your tabs. In case the header text of the tab equals the language used in the tab's code block (as in the first tabbed pane example above), you may specify `langEqualsHeader=true` in the surrounding `tabpane` shortcode. Then, the header text of the individual tab is automatically set as `lang` parameter of the respective tab.
-* The various `tab` shortcodes represent the tabs you would like to show. Specify the named parameter `header` for each tab in order to set the header text of the tab. If the `header` parameter is the only parameter inside your tab shortcode, you can specify the header as unnamed parameter, something like `{{</* tab "My header" */>}} … {{</* /tab */>}}`. If your `tab` shortcode does not have any parameters, the header of the tab will default to `Tab n`. To split the panes into a left aligned and a right aligned tab group, specify `right=true` in the dividing tab. By giving `right=true` several times, you can even render multiple tab groups. You can disable a tab by specifying the parameter `disabled=true`. For enabled tabs, there are two modes for content display, `code` representation and _textual_ representation:
-  * By default, the tab's content is rendered as `code block`. In order to get proper syntax highlighting, specify the named parameter `lang` --and optionally the parameter `highlight`-- for each tab. Parameters set in the parent `tabpane` shortcode will be overwritten.
-  * If the contents of your tabs should be rendered as text with different styles and with optional images, specify `text=true` as parameter of your `tabpane` (or your `tab`). If your content is markdown, use the percent sign `%` as outermost delimiter of your `tab` shortcode, your markup should look like `{{%/* tab */%}}`Your \*\*markdown\*\* content`{{%/* /tab */%}}`. In case of HTML content, use `<>` as innermost delimiters: `{{</* tab */>}}`Your &lt;b&gt;HTML&lt;/b&gt; content`{{</* /tab */>}}`.
+- The `tabpane` shortcode, which is the container element for the tabs. This shortcode can hold the optional named parameters `lang`, `highlight` and `right`. The value of the optional parameters `lang` and `highlight` are passed on as second `LANG` and third `OPTIONS` arguments to Hugo's built-in [`highlight`](https://gohugo.io/functions/highlight/) function which is used to render the code blocks of the individual tabs. Specify `right=true` if you want to right align your tabs. In case the header text of the tab equals the language used in the tab's code block (as in the first tabbed pane example above), you may specify `langEqualsHeader=true` in the surrounding `tabpane` shortcode. Then, the header text of the individual tab is automatically set as `lang` parameter of the respective tab.
+- The various `tab` shortcodes represent the tabs you would like to show. Specify the named parameter `header` for each tab in order to set the header text of the tab. If the `header` parameter is the only parameter inside your tab shortcode, you can specify the header as unnamed parameter, something like `{{</* tab "My header" */>}} … {{</* /tab */>}}`. If your `tab` shortcode does not have any parameters, the header of the tab will default to `Tab n`. To split the panes into a left aligned and a right aligned tab group, specify `right=true` in the dividing tab. By giving `right=true` several times, you can even render multiple tab groups. You can disable a tab by specifying the parameter `disabled=true`. For enabled tabs, there are two modes for content display, `code` representation and *textual* representation:
+  - By default, the tab's content is rendered as `code block`. In order to get proper syntax highlighting, specify the named parameter `lang` --and optionally the parameter `highlight`-- for each tab. Parameters set in the parent `tabpane` shortcode will be overwritten.
+  - If the contents of your tabs should be rendered as text with different styles and with optional images, specify `text=true` as parameter of your `tabpane` (or your `tab`). If your content is markdown, use the percent sign `%` as outermost delimiter of your `tab` shortcode, your markup should look like `{{%/* tab */%}}`Your \*\*markdown\*\* content`{{%/* /tab */%}}`. In case of HTML content, use `<>` as innermost delimiters: `{{</* tab */>}}`Your &lt;b&gt;HTML&lt;/b&gt; content`{{</* /tab */>}}`.
 
 {{% alert title="Info" %}}
 By default, the language of the selected tab is stored and preserved between different browser sessions. If the content length within your tabs differs greatly, this may lead to unwanted scrolling when switching between tabs. To disable this unwanted behaviour, specify `persistLang=false` within your `tabpane` shortcode.
@@ -459,8 +472,8 @@ When authoring content, it's sometimes very useful to put similar text blocks or
 
 Docsy supports creating such card panes via different shortcodes:
 
-* The `cardpane` shortcode which is the container element for the various cards to be presented.
-* The `card` shortcodes, with each shortcode representing an individual card. While cards are often presented inside a card group, a single card may stand on its own, too. A `card` shortcode can hold programming code, text, images or any other arbitrary kind of markdown or HTML markup as content. In case of programming code, cards provide automatic code-highlighting and other optional features like line numbers, highlighting of certain lines, ….
+- The `cardpane` shortcode which is the container element for the various cards to be presented.
+- The `card` shortcodes, with each shortcode representing an individual card. While cards are often presented inside a card group, a single card may stand on its own, too. A `card` shortcode can hold programming code, text, images or any other arbitrary kind of markdown or HTML markup as content. In case of programming code, cards provide automatic code-highlighting and other optional features like line numbers, highlighting of certain lines, ….
 
 ### Shortcode `card`: textual content
 
@@ -476,6 +489,7 @@ Imagine all the people living for today…
 …
 {{</* /card */>}}
 ```
+
 This code translates to the left card shown below, showing the lyrics of John Lennon's famous song `Imagine`. A second explanatory card element to the right indicates and explains the individual components of a card:
 
 {{% cardpane %}}
@@ -522,8 +536,10 @@ int main(void)
 This code translates to the card shown below:
 
 {{< card code=true header="**C**" lang="C" highlight="" >}}
-#include <stdio.h>
-#include <stdlib.h>
+
+# include <stdio.h>
+
+# include <stdlib.h>
 
 int main(void)
 {
@@ -650,11 +666,11 @@ into the document. The rendered text looks like this:
 
 To create a new pipeline, follow the next steps:
 
-1.  Create a configuration file `config.yaml`:
+1. Create a configuration file `config.yaml`:
 
     {{< readfile file="includes/config.yaml" code="true" lang="yaml" >}}
 
-1.  Apply the file to your cluster `kubectl apply config.yaml`
+1. Apply the file to your cluster `kubectl apply config.yaml`
 
 ---
 

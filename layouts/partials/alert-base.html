@@ -1,0 +1,8 @@
+<div class="alert alert-{{ .color }}" role="alert">
+    <h4 class="alert-heading">{{ .title | safeHTML }}</h4>
+    {{ if eq .Page.File.Ext "md" }}
+    {{ .text | markdownify }}
+    {{ else }}
+    {{ .text | htmlUnescape | safeHTML }}
+    {{ end }}
+</div>
