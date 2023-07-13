@@ -1,17 +1,18 @@
 // For settings, see https://www.streetsidesoftware.com/vscode-spell-checker/docs/configuration/
 {
-    "version": "0.2",
-    "caseSensitive": true,
-    "words": [
-        "Docsy",
-        "drawio",
-        "drawioframe",
-        "hugo",
-        "onscroll",
-        "plantuml",
-        "pygments",
-        "shortcode",
-        "shortcodes",
-        "taxo"
-    ]
+  "version": "0.2",
+  "caseSensitive": true,
+  "words": [
+    "Docsy",
+    "drawio",
+    "drawioframe",
+    "hugo",
+    "linkTitle",
+    "onscroll",
+    "plantuml",
+    "pygments",
+    "shortcode",
+    "shortcodes",
+    "taxo"
+  ]
 }
