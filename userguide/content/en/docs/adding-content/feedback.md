@@ -21,12 +21,12 @@ You will need an **analytics ID** for your website before proceeding
 "analytics ID" in this guide). If you don't have one, see the **How to get
 started** section of [Introducing Google Analytics 4 (GA4)][ga4-intro].
 
-{{% alert title="Tip" %}}
+{{% alert-tip %}}
 
   Your project's **analytics ID** is a string that starts with `G-` (a GA4
   measurement ID) or `UA-` (a universal analytics property ID).
 
-{{% /alert %}}
+{{% /alert-tip %}}
 
 ### Setup
 
@@ -57,7 +57,7 @@ params:
 {{< /tab >}}
 {{< /tabpane >}}
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert-warning %}}
   <!-- Remove this warning once the Hugo docs have been updated to include it. -->
 
   You can configure your project's analytics ID by setting either the top-level
@@ -69,9 +69,9 @@ params:
   [alias-discussion]: https://discourse.gohugo.io/t/config-is-services-googleanalytics-id-an-alias-for-googleanalytics/39469
   [unexpected behavior]: https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/921
 
-{{% /alert %}}
+{{% /alert-warning %}}
 
-{{% alert title="Production-only feature!" color="primary" %}}
+{{% alert-note %}}
 
   Analytics are enabled _only_ for **production** builds (called "environments"
   in Hugo terminology). For information about Hugo environments and how to set
@@ -79,7 +79,7 @@ params:
 
   [discussion]: https://discourse.gohugo.io/t/what-does-setting-hugo-env-to-production-do/24669/2
 
-{{% /alert %}}
+{{% /alert-note %}}
 
 ## User Feedback
 

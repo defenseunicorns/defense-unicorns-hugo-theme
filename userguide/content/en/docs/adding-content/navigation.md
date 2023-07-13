@@ -280,9 +280,9 @@ To create a placeholder page, create a page file as usual in the directory where
 
  You can also use `manualLink` to add an additional cross reference to another existing page of your site. For internal links you can choose to use the parameter `manualLinkRelref` instead of `manualLink` to use the built-in Hugo function [relref](https://gohugo.io/functions/relref/ "External link to official Hugo Docs"). If `relref` can't find a unique page in your site, Hugo throws a error message.
 
- {{% alert title="Note" %}}
+ {{% alert-note %}}
  Although all generated menu and landing page links based on your placeholder file are set according to the parameters `manualLink` or `manualLinkRelref`, Hugo still generates a regular HTML site page for the file, albeit one with no generated links to it. To avoid confusion if users accidentally land on a generated placeholder page, we recommend specifying the URL for the external link in the normal content and / or page description of the page.
- {{% /alert %}}
+ {{% /alert-note %}}
 
 ## Breadcrumb navigation
 
@@ -358,9 +358,9 @@ By default, Docsy uses a [Google Custom Search Engine](https://cse.google.com/cs
     * Select **Look and feel**. Change from the default **Overlay** layout to **Results only**, as this option means your search results are embedded in your search page rather than appearing in a separate box. Click **Save** to save your changes.
     * Edit the default result link behavior so that search results from your site don't open in a new tab. To do this, select **Search Features** - **Advanced** - **Websearch Settings**. In the **Link Target** field, type "\_parent". Click **Save** to save your changes.
 
-{{% alert title="Tip" %}}
+{{% alert-tip %}}
 Your site search results should show up within a couple of days. If it takes longer than that, you can manually request that your site is indexed by [submitting a sitemap through the Google Search Console](https://support.google.com/webmasters/answer/183668?hl=en).
-{{% /alert %}}
+{{% /alert-tip %}}
 
 ### Adding the search page
 
@@ -418,9 +418,9 @@ If you don't specify a Google Custom Search Engine ID for your project and haven
 
 As an alternative to GCSE, you can use [Algolia DocSearch](https://docsearch.algolia.com/) with this theme. Algolia DocSearch is free for public documentation sites.  Docsy supports Algolia DocSearch v3.
 
-{{% alert title="Note" %}}
+{{% alert-note %}}
 Docsy previously supported Algolia DocSearch v2, which is now deprecated. If you are an existing Algolia DocSearch v2 user and want to use the latest Docsy version, [follow the migration instructions](https://docsearch.algolia.com/docs/migrating-from-v2) in the DocSearch documentation to update your DocSearch code snippet.
-{{% /alert %}}
+{{% /alert-note %}}
 
 ### Sign up for Algolia DocSearch
 
@@ -502,9 +502,9 @@ offlineSearch: true
 
 Once you've completed these steps, local search is enabled for your site and results appear in a drop down when you use the search box.
 
-{{% alert title="Tip" %}}
+{{% alert-tip %}}
 If you're testing this locally using Hugo’s local server functionality, you need to build your `offline-search-index.xxx.json` file first by running `hugo`. If you have the Hugo server running while you build `offline-search-index.xxx.json`, you may need to stop the server and restart it in order to see your search results.
-{{% /alert %}}
+{{% /alert-tip %}}
 
 ### Changing the summary length of the local search results
 

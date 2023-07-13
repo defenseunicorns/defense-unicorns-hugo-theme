@@ -1,14 +1,13 @@
 **Installation**
 
-{{% alert title="Note" color="primary" %}}
+{{% alert-note %}}
 Check system compatibility before proceeding.
-{{% /alert %}}
+{{% /alert-note %}}
 
-1.  Download the installation files.
+1. Download the installation files.
 
-1.  Run the installation script
-    
+1. Run the installation script
+
     `sudo sh install.sh`
 
-1.  Test that your installation was successfully completed.
-
+1. Test that your installation was successfully completed.

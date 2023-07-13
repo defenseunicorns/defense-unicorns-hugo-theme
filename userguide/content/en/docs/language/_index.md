@@ -24,7 +24,9 @@ defaultContentLanguageInSubdir = false
 title = "Docsy"
 description = "Docsy does docs"
 languageName ="English"
-# Weight used for sorting.
+
+# Weight used for sorting
+
 weight = 1
 [languages.no]
 title = "Docsy"
@@ -82,13 +84,16 @@ Any setting not defined in a `[languages]` block will fall back to the global va
 
 Once you've updated your site config, you create a content root directory for each language version in your source repo, such as  `content/en` for English text, and add your [content](/docs/adding-content/content/) as usual. See the [Hugo Docs](https://gohugo.io/content-management/multilingual) on multi-language support for more information.
 
-{{% alert title="Attention (only when using docsy as hugo module)" color="warning" %}}
-If you have a multi language installation, please make sure that the section `[languages]` inside your [configuration file](https://gohugo.io/getting-started/configuration/#configuration-file) is declared **before** the section `[module]` with the module imports. Otherwise you will run into trouble!
-{{% /alert %}}
+{{% alert-warning %}}
 
-{{% alert title="Tip" %}}
+#### Attention (only when using as Hugo module)
+
+If you have a multi-language installation, please make sure that the section `[languages]` inside your [configuration file](https://gohugo.io/getting-started/configuration/#configuration-file) is declared **before** the section `[module]` with the module imports. Otherwise, you will run into trouble!
+{{% /alert-warning %}}
+
+{{% alert-tip %}}
 If there's any possibility your site might be translated into other languages, consider creating your site with your content in a language-specific subdirectory, as it means you don't need to move it if you add another language.
-{{% /alert %}}
+{{% /alert-tip %}}
 
 For adding multiple language versions of other site elements such as button text, see the [internationalization bundles](#internationalization-bundles) section below.
 
@@ -102,9 +107,9 @@ All UI strings (text for buttons, repository links, etc.) are bundled inside `/i
 
 If your chosen language isn't currently in the theme and you create your own `.toml` file for all the common UI strings (for example, if you translate the UI text into Esperanto and create a copy of `en.toml` called `eo.toml`), we recommend you do this **in the theme** rather than in your own project. You can then open a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to contribute your translation to the Docsy community.
 
-{{% alert title="Hugo Tip" %}}
+{{% alert-tip %}}
 Run `hugo server --printI18nWarnings` when doing translation work, as it will give you warnings on what strings are missing.
-{{% /alert %}}
+{{% /alert-tip %}}
 
 ### Create custom UI strings
 

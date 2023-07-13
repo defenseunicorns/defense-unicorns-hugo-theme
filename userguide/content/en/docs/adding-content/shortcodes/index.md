@@ -65,9 +65,9 @@ Note that the relevant shortcode parameters above will have sensible defaults, b
 
 To set the background image, place an image with the word "background" in the name in the page's [Page Bundle](/docs/adding-content/content/#page-bundles). For example, in our the example site the background image in the home page's cover block is [`featured-background.jpg`](https://github.com/defenseunicorns/defense-unicorns-hugo-theme-example/tree/main/content/en), in the same directory.
 
-{{% alert title="Tip" %}}
+{{% alert-tip %}}
 If you also include the word **featured** in the image name, e.g. `my-featured-background.jpg`, it will also be used as the Twitter Card image when shared.
-{{% /alert %}}
+{{% /alert-tip %}}
 
 For available icons, see [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free).
 
@@ -152,14 +152,14 @@ These shortcodes create an alert block that can be used to display several diffe
 ```go-html-template
 {{%/* alert-warning */%}}
 Example of `alert-warning`.
-{{%/* /alert */%}}
+{{%/* /alert-warning */%}}
 ```
 
 Renders to:
 
 {{% alert-warning %}}
 Example of `alert-warning`.
-{{% /alert %}}
+{{% /alert-warning %}}
 
 Others:
 
@@ -174,6 +174,10 @@ Example of `alert-danger`.
 {{% alert-note %}}
 Example of `alert-note`.
 {{% /alert-note %}}
+
+{{% alert-tip %}}
+Example of `alert-tip`.
+{{% /alert-tip %}}
 
 ### pageinfo
 
@@ -327,12 +331,12 @@ With this shortcode you can embed external content into a Docsy page as an inlin
 | class |  | Optional parameter to set the classes of the iframe.
 | sub | Your browser cannot display embedded frames. You can access the embedded page via the following link: | The text displayed (in addition to the embedded URL) if the user's browser can't display embedded frames.
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert-warning %}}
 You can only embed external content from a server when its `X-Frame-Options` is not set or if it specifically allows embedding for your site. See <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options> for details.
 
 There are several tools you can use to check if a website can be embedded via iframe - e.g.: <https://gf.dev/x-frame-options-test>. Be aware that when this test says "Couldn’t find the X-Frame-Options header
 in the response headers." you **CAN** embed it, but when the test says "Great! X-Frame-Options header was found in the HTTP response headers as highlighted below.", you **CANNOT** - unless it has been explicitly enabled for your site.
-{{% /alert %}}
+{{% /alert-warning %}}
 
 ## Tabbed panes
 
@@ -447,9 +451,9 @@ Tabbed panes are implemented using two shortcodes:
   - By default, the tab's content is rendered as `code block`. In order to get proper syntax highlighting, specify the named parameter `lang` --and optionally the parameter `highlight`-- for each tab. Parameters set in the parent `tabpane` shortcode will be overwritten.
   - If the contents of your tabs should be rendered as text with different styles and with optional images, specify `text=true` as parameter of your `tabpane` (or your `tab`). If your content is markdown, use the percent sign `%` as outermost delimiter of your `tab` shortcode, your markup should look like `{{%/* tab */%}}`Your \*\*markdown\*\* content`{{%/* /tab */%}}`. In case of HTML content, use `<>` as innermost delimiters: `{{</* tab */>}}`Your &lt;b&gt;HTML&lt;/b&gt; content`{{</* /tab */>}}`.
 
-{{% alert title="Info" %}}
+{{% alert-info %}}
 By default, the language of the selected tab is stored and preserved between different browser sessions. If the content length within your tabs differs greatly, this may lead to unwanted scrolling when switching between tabs. To disable this unwanted behaviour, specify `persistLang=false` within your `tabpane` shortcode.
-{{% /alert %}}
+{{% /alert-info %}}
 
 ## Card panes
 
@@ -604,9 +608,9 @@ contents:
 ```go-html-template
 ## Installation
 
-{{%/* alert title="Note" color="primary" */%}}
+{{%/* alert-note */%}}
 Check system compatibility before proceeding.
-{{%/* /alert */%}}
+{{%/* /alert-note */%}}
 
 1.  Download the installation files.
 
@@ -674,10 +678,10 @@ To create a new pipeline, follow the next steps:
 
 ---
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert-warning %}}
 You must use `{{</* */>}}` delimiters for the code highlighting to work
 correctly.
-{{% /alert %}}
+{{% /alert-warning %}}
 
 The `file` parameter is the relative path to the file. Only relative paths
 under the parent file's working directory are supported.

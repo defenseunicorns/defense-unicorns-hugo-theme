@@ -24,9 +24,9 @@ Docsy placeholder files (note the **`_project.scss`** suffixes):
 [v4-dev/scss/_variables.scss]: https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
 [Variable defaults]: https://getbootstrap.com/docs/4.1/getting-started/theming/#variable-defaults
 
-{{% alert title="Tip" %}}
+{{% alert-tip %}}
 PostCSS (autoprefixing of CSS browser-prefixes) is not enabled when running in server mode (it is a little slow), so Chrome is the recommended choice for development.
-{{% /alert %}}
+{{% /alert-tip %}}
 
 ## Site colors
 
@@ -64,8 +64,8 @@ Note that if you decide to go with a font with different weights (in the built-i
 
 For documentation of available CSS utility classes, see the [Bootstrap Documentation](https://getbootstrap.com/). This theme adds very little on its own in this area. However, we have added some color state CSS classes that can be useful in a dynamic context:
 
-* `.-bg-<color>`
-* `.-text-<color>`
+- `.-bg-<color>`
+- `.-text-<color>`
 
 You can use these classes, for example, to style your text in an appropriate color when you don't know if the `primary` color is dark or light, to ensure proper color contrast. They are also useful when you receive the color code as a [shortcode](/docs/adding-content/shortcodes/) parameter.
 
@@ -101,7 +101,7 @@ With Hugo version 0.60 and higher, you can choose from a range of code block hig
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-      # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
+      # See a complete list of available styles at <https://xyproto.github.io/splash/docs/all.html>
       style = "tango"
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
@@ -133,7 +133,9 @@ By default code highlighting styles are not applied to code blocks without a spe
 {{< tabpane persistLang=false >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
+
 # Uncomment if you want your chosen highlight style used for code blocks without a specified language
+
 guessSyntax = true
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
@@ -158,7 +160,9 @@ Optionally, you can enable Prism syntax highlighting in your `hugo.toml`/`hugo.y
 {{< tabpane persistLang=false >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
+
 # Enable syntax highlighting and copy buttons on code blocks with Prism
+
 prism_syntax_highlighting = true
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
@@ -175,9 +179,9 @@ Prism is a popular open source syntax highlighter which supports over 200 [langu
 
 Docsy includes JavaScript and CSS files for a basic Prism configuration, which supports:
 
-* Code blocks styled with the Prism `Default` theme
-* Copy to clipboard buttons on code blocks
-* Syntax highlighting for a number of common languages, as specified in the following Prism download link, [Customize your download][prismjs-download+].
+- Code blocks styled with the Prism `Default` theme
+- Copy to clipboard buttons on code blocks
+- Syntax highlighting for a number of common languages, as specified in the following Prism download link, [Customize your download][prismjs-download+].
 
 [prismjs-download+]: https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+bash+c+csharp+cpp+go+java+markdown+python+scss+sql+toml+yaml&plugins=toolbar+copy-to-clipboard
 
@@ -191,9 +195,8 @@ If the included Prism configuration is not sufficient for your requirements, and
 
 1. Download your own Prism JS and CSS files from <https://prismjs.com/download.html>
 2. Replace the included Prism JS and CSS with the files you downloaded:
-    * Copy the Javascript file to `static/js/prism.js`
-    * Copy the CSS file to `static/css/prism.css`
-
+    - Copy the Javascript file to `static/js/prism.js`
+    - Copy the CSS file to `static/css/prism.css`
 
 ## Navbar
 
@@ -220,7 +223,7 @@ site's [configuration file][].
 The default Docsy navbar (`.td-navbar`) displays your site identity, consisting
 of the following:
 
-1.  [Your logo][], which is included in the navbar as an inline SVG, styled by
+1. [Your logo][], which is included in the navbar as an inline SVG, styled by
     `.td-navbar .navbar-brand svg`. For the style details, see [_nav.scss][].
 
     To ensure your logo displays correctly, you may want to resize it and ensure
@@ -228,7 +231,7 @@ of the following:
     responsive. [Override the default styling][project-styles] of `.td-navbar
     .navbar-brand svg` or (equivalently) `.td-navbar .navbar-brand__logo` as
     needed.
-2.  Your project name, which is the site `title`. If you don't want your project
+2. Your project name, which is the site `title`. If you don't want your project
     name to appear (for example, because your logo is or contains a
     [wordmark][]), then add the following custom styling to your [project's
     styles][project-styles]:
@@ -258,7 +261,7 @@ This styling configuration gives you responsive tables using Markdown only,
 without the need to wrap the table in a `<div>`. It does, however, mean that all your tables have `display`
 set to `block`. If you don't want this, you can create your own custom styles for tables.
 
-{{% alert title="Note" %}}
+{{% alert-note %}}
 
 Our table styling goes against the [Bootstrap recommendation to _wrap_
 tables][wrap-tables] with `.table-responsive` &mdash; however, we think letting
@@ -267,7 +270,7 @@ convenient.
 
 [wrap-tables]: https://getbootstrap.com/docs/5.3/content/tables/#responsive-tables
 
-{{% /alert %}}
+{{% /alert-note %}}
 
 To render a table without Docsy styling, apply the `.td-initial` class to the
 table. From the resulting `<table>` style base, it is easier to apply your own
@@ -305,7 +308,6 @@ layouts/partials/hooks/head-end.html
 
 And add the code you need in that file. Your partial code is automatically included just before the end of the theme partial [`head.html`](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/layouts/partials/head.html). The theme version of [`head-end.html`](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/blob/main/layouts/partials/hooks/head-end.html) is empty.
 
-
 Similarly, if you want to add some code right before the `body` end, create your own version of the following file:
 
 ```
@@ -336,4 +338,3 @@ Both `head.html` and `scripts.html` are then used to build Docsy's [base page la
   </body>
 </html>
 ```
-

@@ -195,9 +195,9 @@ cascade:
 {{< /tab >}}
 {{< /tabpane >}}
 
-{{% alert title="Tip" %}}
+{{% alert-tip %}}
 Please note that the YAML code fragment makes use of [Yaml anchor](https://support.atlassian.com/bitbucket-cloud/docs/yaml-anchors/). Use of Yaml anchors is optional, but it helps keep the settings [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
-{{% /alert %}}
+{{% /alert-tip %}}
 
 The `path_base_for_github_subdir` setting is a regular expression, so you can
 use it even if you have a site with [multiple languages][] for example:
@@ -276,11 +276,11 @@ path_base_for_github_subdir:
 
 ### `github_url` (optional)
 
-{{% alert title="Deprecation note" color="warning" %}}
+{{% alert-warning %}}
   This setting is deprecated. Use [path_base_for_github_subdir][] instead.
 
   [path_base_for_github_subdir]: #path_base_for_github_subdir-optional
-{{% /alert %}}
+{{% /alert-warning %}}
 
 Specify a value for this **in your page metadata** to set a specific edit URL for this page, as in the following example:
 

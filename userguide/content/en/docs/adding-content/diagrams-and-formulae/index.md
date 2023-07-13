@@ -38,24 +38,27 @@ The probability of getting \\(k\\) heads when flipping \\(n\\) coins is:
 The formula itself is written inside a [GLFM math block](https://docs.gitlab.com/ee/user/markdown.html#math). The above code fragment renders to:
 
 The probability of getting \\(k\\) heads when flipping \\(n\\) coins is:
+
 ```math
 \tag*{(1)}  P(E) = {n \choose k} p^k (1-p)^{n-k}
 ```
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert-warning %}}
 `math` code blocks are only supported as of hugo version 0.93.
 
 In case of hugo version 0.92 or lower, use this code snippet to display the formula:
+
 ```tex
 $$
 \tag*{(1)} P(E) = {n \choose k} p^k (1-p)^{n-k}
 $$
 ```
-{{% /alert %}}
 
-{{% alert title="Tip" %}}
+{{% /alert-warning %}}
+
+{{% alert-tip %}}
 This [wiki page](https://en.wikibooks.org/wiki/LaTeX/Mathematics) provides in-depth information about typesetting mathematical formulae using the \\(\LaTeX\\) typesetting system.
-{{% /alert %}}
+{{% /alert-tip %}}
 
 ### Activating and configuring \\(\KaTeX\\) support
 
@@ -76,8 +79,10 @@ math = true
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 math: true
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -116,24 +121,38 @@ Additionally, you can customize various \\(\KaTeX\\) options inside `hugo.toml`/
 {{< tab header="Site configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
 [params.katex]
+
 # enable/disable KaTeX support
+
 enable = true
+
 # Element(s) scanned by auto render extension. Default: document.body
+
 html_dom_element = "document.body"
 
 [params.katex.options]
+
 # If true (the default), KaTeX will throw a ParseError when it encounters an
+
 # unsupported command or invalid LaTeX. If false, KaTeX will render unsupported
+
 # commands as text, and render invalid LaTeX as its source code with hover text
-# giving the error, in the color given by errorColor.
+
+# giving the error, in the color given by errorColor
+
 throwOnError = false
 errorColor = "#CD5C5C"
 
 # This is a list of delimiters to look for math, processed in the same order as
-# the list. Each delimiter has three properties:
-#   left:    A string which starts the math expression (i.e. the left delimiter).
-#   right:   A string which ends the math expression (i.e. the right delimiter).
-#   display: Whether math in the expression should be rendered in display mode.
+
+# the list. Each delimiter has three properties
+
+# left:    A string which starts the math expression (i.e. the left delimiter)
+
+# right:   A string which ends the math expression (i.e. the right delimiter)
+
+# display: Whether math in the expression should be rendered in display mode
+
 [[params.katex.options.delimiters]]
   left = "$$"
   right = "$$"
@@ -246,20 +265,22 @@ More complex equations need to be displayed on their own line. Use a code block 
 \tag*{(2)} \ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
 ```
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert-warning %}}
 `chem` code blocks are only supported as of hugo version 0.93.
 
 In case of hugo version 0.92 or lower, use this code snippet to display the formula:
+
 ```tex
 $$
 \tag*{(2)} \ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
 $$
 ```
-{{% /alert %}}
 
-{{% alert title="Note" %}}
+{{% /alert-warning %}}
+
+{{% alert-note %}}
 The [manual](https://mhchem.github.io/MathJax-mhchem/) for mchem’s input syntax provides in-depth information about typesetting chemical formulae and physical units using the `mhchem` tool.
-{{% /alert %}}
+{{% /alert-note %}}
 
 Use of `mhchem` is not limited to the authoring of chemical equations, using the included `\pu` command, pretty looking physical units can be written with ease, too. The following code sample produces two text lines with four numbers plus their corresponding physical units:
 
@@ -292,8 +313,10 @@ chem = true
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 chem: true
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -508,12 +531,17 @@ enable = true
 theme = "default"
 
 # Set url to plantuml server
-# default is http://www.plantuml.com/plantuml/svg/
-svg_image_url = "https://www.plantuml.com/plantuml/svg/"
 
-# By default the plantuml implementation uses <img /> tags to display UML diagrams.
-# When svg is set to true, diagrams are displayed using <svg /> tags, maintaining functionality like links e.g.
+# default is <http://www.plantuml.com/plantuml/svg/>
+
+svg_image_url = "<https://www.plantuml.com/plantuml/svg/>"
+
+# By default the plantuml implementation uses <img /> tags to display UML diagrams
+
+# When svg is set to true, diagrams are displayed using <svg /> tags, maintaining functionality like links e.g
+
 # default = false
+
 svg = true
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
@@ -522,8 +550,8 @@ params:
     enable: true
     theme: default
     # Set url to plantuml server
-    # default is http://www.plantuml.com/plantuml/svg/
-    svg_image_url: 'https://www.plantuml.com/plantuml/svg/'
+    # default is <http://www.plantuml.com/plantuml/svg/>
+    svg_image_url: '<https://www.plantuml.com/plantuml/svg/>'
     # By default the plantuml implementation uses <img /> tags to display UML diagrams.
     # When svg is set to true, diagrams are displayed using <svg /> tags, maintaining functionality like links e.g.
     # default = false
@@ -535,7 +563,7 @@ params:
     "plantuml": {
       "enable": true,
       "theme": "default",
-      "svg_image_url": "https://www.plantuml.com/plantuml/svg/",
+      "svg_image_url": "<https://www.plantuml.com/plantuml/svg/>",
       "svg": true
     }
   }
@@ -639,12 +667,11 @@ SVG and PNG files exported with the tool contain the source code of the original
 
 Hover over the image below and click edit to instantly start working with it.  Clicking the `Save` button will cause the edited diagram to be exported using the same filename and filetype, and downloaded to your browser.
 
-{{%alert title="Note"  color="primary" %}}
+{{%alert-note %}}
 If you're creating a new diagram, be sure to `File -> Export` in either `svg` or `png` format (`svg` is usually the best choice) and ensure the `Include a copy of my diagram` is selected so it can be edited again later.
-{{%/alert%}}
+{{%/alert-note%}}
 
 As the diagram data is transported via the browser, the diagrams.net server does not need to access the content on your Docsy server directly at all.
-
 
 {{< figure src="docsy-diagrams.svg" caption="Mouse over the above image and click the `Edit` button!">}}
 
@@ -678,18 +705,18 @@ You can also [deploy and use your own server](https://github.com/jgraph/docker-d
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
 [params.drawio]
-drawio_server = "https://app.mydrawioserver.example.com"
+drawio_server = "<https://app.mydrawioserver.example.com>"
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
 params:
   drawio:
-    drawio_server: 'https://app.mydrawioserver.example.com'
+    drawio_server: '<https://app.mydrawioserver.example.com>'
 {{< /tab >}}
 {{< tab header="hugo.json" lang="json" >}}
 {
   "params": {
     "drawio": {
-      "drawio_server": "https://app.mydrawioserver.example.com"
+      "drawio_server": "<https://app.mydrawioserver.example.com>"
     }
   }
 }
