@@ -6,9 +6,6 @@ title: Defense Unicorns Docs Theme
 <a class="btn btn-lg btn-primary me-3 mb-4" href="{{% relref "/about" %}}">
   Learn More <i class="fa-solid fa-circle-right ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="{{% relref "/get-started" %}}">
-  Get started &nbsp;<i class="fa-solid fa-play "></i>
-</a>
 
 A Hugo theme for creating great technical documentation sites
 {.lead .mt-5}

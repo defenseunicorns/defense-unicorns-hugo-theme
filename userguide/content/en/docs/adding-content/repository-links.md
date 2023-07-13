@@ -14,8 +14,6 @@ The Docsy [docs and blog layouts](/docs/adding-content/content/#adding-docs-and-
 
 This page shows you how to configure these links.
 
-Currently, Docsy supports only GitHub repository links "out of the box". Since GitLab can handle the same link scheme, it should work as well. If you are using another repository such as Bitbucket and would like generated repository links, feel free to [add a feature request or update our theme](/docs/contribution-guidelines/).
-
 ## Link configuration
 
 There are four variables you can configure in `hugo.toml`/`hugo.yaml`/`hugo.json` to set up links, as well as one in your page metadata.
@@ -27,14 +25,14 @@ The URL for your site's source repository. This is used to generate the **Edit t
 {{< tabpane persistLang=false >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
-github_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+github_repo = "<https://github.com/defenseunicorns/defense-unicorns-hugo-theme>"
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
-github_repo: 'https://github.com/defenseunicorns/defense-unicorns-hugo-theme'
+github_repo: '<https://github.com/defenseunicorns/defense-unicorns-hugo-theme>'
 {{< /tab >}}
 {{< tab header="hugo.json" lang="json" >}}
 {
-  "github_repo": "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+  "github_repo": "<https://github.com/defenseunicorns/defense-unicorns-hugo-theme>"
 }
 {{< /tab >}}
 {{< /tabpane >}}
@@ -65,14 +63,14 @@ Specify a value here if you have a separate project repo and you'd like your use
 {{< tabpane persistLang=false >}}
 {{< tab header="Configuration file:" disabled=true />}}
 {{< tab header="hugo.toml" lang="toml" >}}
-github_project_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+github_project_repo = "<https://github.com/defenseunicorns/defense-unicorns-hugo-theme>"
 {{< /tab >}}
 {{< tab header="hugo.yaml" lang="yaml" >}}
-github_project_repo: 'https://github.com/defenseunicorns/defense-unicorns-hugo-theme'
+github_project_repo: '<https://github.com/defenseunicorns/defense-unicorns-hugo-theme>'
 {{< /tab >}}
 {{< tab header="hugo.json" lang="json" >}}
 {
-  "github_project_repo": "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+  "github_project_repo": "<https://github.com/defenseunicorns/defense-unicorns-hugo-theme>"
 }
 {{< /tab >}}
 {{< /tabpane >}}
@@ -109,7 +107,7 @@ section refer to the originating repo:
 +++
 title = "Some super section"
 [cascade]
-github_repo = "https://github.com/some-username/another-repo/"
+github_repo = "<https://github.com/some-username/another-repo/>"
 github_subdir = "docs"
 path_base_for_github_subdir = "content/some-section"
 …
@@ -117,19 +115,21 @@ path_base_for_github_subdir = "content/some-section"
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: Some super section
 cascade:
-  github_repo: https://github.com/some-username/another-repo/
+  github_repo: <https://github.com/some-username/another-repo/>
   github_subdir: docs
   path_base_for_github_subdir: content/some-section
 …
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
   "title": "Some super section",
   "cascade": {
-    "github_repo": "https://github.com/some-username/another-repo/",
+    "github_repo": "<https://github.com/some-username/another-repo/>",
     "github_subdir": "docs",
     "path_base_for_github_subdir": "content/some-section"
   }
@@ -169,25 +169,27 @@ cascade:
 +++
 …
 [cascade]
-github_repo = "https://github.com/some-username/another-repo/"
-github_project_repo = "https://github.com/some-username/another-repo/"
+github_repo = "<https://github.com/some-username/another-repo/>"
+github_project_repo = "<https://github.com/some-username/another-repo/>"
 …
 +++
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 …
 cascade:
-  github_repo: &repo https://github.com/some-username/another-repo/
+  github_repo: &repo <https://github.com/some-username/another-repo/>
   github_project_repo: *repo
 …
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
   "cascade": {
-    "github_repo": "https://github.com/some-username/another-repo/",
-    "github_project_repo": "https://github.com/some-username/another-repo/"
+    "github_repo": "<https://github.com/some-username/another-repo/>",
+    "github_project_repo": "<https://github.com/some-username/another-repo/>"
   }
 }
 {{< /tab >}}
@@ -211,10 +213,12 @@ path_base_for_github_subdir = "content/\w+/some-section"
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 …
 path_base_for_github_subdir: content/\w+/some-section
 …
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -234,7 +238,7 @@ index file is named `README.md` in the originating repo:
 {{< tab header="toml" lang="toml" >}}
 +++
 …
-github_repo = "https://github.com/some-username/another-repo/"
+github_repo = "<https://github.com/some-username/another-repo/>"
 github_subdir = "docs"
 
 [path_base_for_github_subdir]
@@ -245,19 +249,21 @@ to = "$1/README.md"
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 …
-github_repo: https://github.com/some-username/another-repo/
+github_repo: <https://github.com/some-username/another-repo/>
 github_subdir: docs
 path_base_for_github_subdir:
   from: content/some-section/(.*?)/_index.md
   to: $1/README.md
 …
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
   …
-  "github_repo": "https://github.com/some-username/another-repo/",
+  "github_repo": "<https://github.com/some-username/another-repo/>",
   "github_subdir": "docs",
   "path_base_for_github_subdir": {
     "from": "content/some-section/(.*?)/_index.md",
@@ -283,21 +289,23 @@ Specify a value for this **in your page metadata** to set a specific edit URL fo
 {{< tab header="toml" lang="toml" >}}
 +++
 title = "Some page"
-github_url = "https://github.com/some-username/another-repo/edit/main/README.md"
+github_url = "<https://github.com/some-username/another-repo/edit/main/README.md>"
 …
 +++
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 title: Some page
-github_url: https://github.com/some-username/another-repo/edit/main/README.md
+github_url: <https://github.com/some-username/another-repo/edit/main/README.md>
 …
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
   "title": "Some page",
-  "github_url": "https://github.com/some-username/another-repo/edit/main/README.md",
+  "github_url": "<https://github.com/some-username/another-repo/edit/main/README.md>",
   …
 }
 {{< /tab >}}
