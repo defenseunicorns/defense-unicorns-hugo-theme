@@ -1,5 +1,5 @@
 ---
-title: Welcome to the Defense Unicorns Theme
+title: Defense Unicorns Theme
 linkTitle: Documentation
 menu: {main: {weight: 20}}
 ---

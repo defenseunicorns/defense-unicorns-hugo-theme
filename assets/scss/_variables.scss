@@ -1,3 +1,5 @@
+@import 'unicorn-theme.scss';
+
 // Bootstrap options
 $variable-prefix: bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
 $prefix: $variable-prefix !default;
@@ -7,64 +9,41 @@ $navbar-height: 56px;
 $sidebar-top-padding: calc(#{$navbar-height} + 20px);
 $logo-height: calc(#{$navbar-height} - 6px);
 
-$enable-gradients: true !default;
-$enable-shadows: true !default;
+// $enable-gradients: true !default;
+// $enable-shadows: true !default;
 
 // Theme colors
-$light: #ffffff !default;
-$dark: #0a0e2e !default;
+$light: $uui-background !default;
+$dark: $uui-background !default;
+$background: $uui-background !default;
+$primary: $uui-primary !default;
+$body-bg: $uui-background !default;
+$secondary: $uui-secondary !default;
+$text-primary: $uui-text-primary !default;
+$success: $uui-success !default;
+$danger: $uui-error !default;
+$info: $uui-info !default;
+$warning: $uui-warning !default;
+$text-disabled: $uui-text-disabled !default;
+$disabled: $uui-disabled !default;
+$surface: $uui-surface !default;
 
-$yiq-text-dark: $blue !default;
-$yiq-text-light: $white !default;
+$gray-600: $uui-gray;
+// $white: $uui-white;
+
 $text-muted: $gray-600 !default;
 
-// Defense Unicorns theme colors: https://www.figma.com/file/aNnt9Ip7IFTs9hnfqrYGl4/Unicorn-UI?type=design&node-id=546-30095&mode=design&t=8xNE9eG5aNvew9SR-0
-
-$primary: #e0e0e0 !default;
-$secondary: #68c4ff !default;
-$surface: #0d133d !default;
-$success: #66bb6a !default;
-$warning: #ffa726 !default;
-$info: #0288d1 !default;
-$error: #f44336 !default;
-$danger: #f44336 !default;
-$emphasis: $danger !default;
-$disabled: rgba(255, 255, 255, 0.7) !default;
-$background: $dark;
 $divider: rgba(255, 255, 255, 0.5);
 
-// $body-color:                $primary !default;
-// $body-bg:                   $background !default;
-$body-secondary-color: rgba($secondary, 0.75) !default;
-$body-secondary-bg: rgba($secondary, 0.75) !default;
+$body-bg: $background !default;
+
+$body-secondary-color: shade-color($secondary, 20%) !default;
+// $body-secondary-bg: shade-color($secondary, 75%) !default;
 $body-emphasis-color: $success !default;
 
-$component-active-color: $white !default;
+$component-active-color: $text-primary !default;
 $component-active-bg: $primary !default;
 
-$on-disabled: rgb(84, 84, 84);
-$on-primary: rgba(0, 0, 0, 0.87);
-$on-secondary: rgba(0, 0, 0, 0.87);
-$on-surface: #ffffff;
-$on-success: rgba(0, 0, 0, 0.87);
-$on-warning: rgba(0, 0, 0, 0.87);
-$on-info: #ffffff;
-$on-error: #ffffff;
-$on-background: #ffffff;
-
-$textField-inactive: rgba(255, 255, 255, 0.6);
-$textField-hover: #ffffff;
-$textField-background: rgba(255, 255, 255, 0.1);
-$textField-backgroundHover: rgba(255, 255, 255, 0.3);
-$textField-bottomLineHover: rgba(255, 255, 255, 0.8);
-
-$text-primary: #ffffff;
-$text-secondary: rgba(0, 0, 0, 0.12);
-$text-hint: rgba(0, 0, 0, 0.38);
-$text-disabled: #87ffff;
-$text-icon: rgba(255, 255, 255, 0.8);
-
-$body-bg: $background !default;
 $body-color: shade-color($text-primary, 30%) !default;
 $code-color: shade-color($text-primary, 30%) !default;
 
@@ -133,7 +112,7 @@ $td-block-space-bottom-base: 4 * $spacer !default;
 // Pagination
 
 $pagination-color: $gray-600 !default; // TODO: consider using BS default
-$pagination-disabled-color: $gray-300 !default; // TODO: consider using BS default
+$pagination-disabled-color: $uui-on-disabled !default; // TODO: consider using BS default
 
 // Navbar
 

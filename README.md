@@ -50,8 +50,8 @@ npm run serve
 
 ## Design
 
-- [Unicorn Color Pallette](https://www.figma.com/file/CNF9mPhuv5yqaM7YqDdx69/Hugo-Docs-Theme?type=design&node-id=0%3A1&mode=design&t=fTFIrgwTdf1bWJC6-1)
-- [Site Design](https://www.figma.com/file/aNnt9Ip7IFTs9hnfqrYGl4/Unicorn-UI?type=design&node-id=0%3A1&mode=dev)
+- [Page Design](https://www.figma.com/file/CNF9mPhuv5yqaM7YqDdx69/Hugo-Docs-Theme?type=design&node-id=0%3A1&mode=design&t=fTFIrgwTdf1bWJC6-1)
+- [Unicorn Color Pallette](https://www.figma.com/file/aNnt9Ip7IFTs9hnfqrYGl4/Unicorn-UI?type=design&node-id=0%3A1&mode=dev)
 
 ## License ![GitHub](https://img.shields.io/github/license/defenseunicorns/defense-unicorns-hugo-theme)
 
