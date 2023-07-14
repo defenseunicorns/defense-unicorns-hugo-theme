@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.8](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.0.7...dependencies/v0.0.8) (2023-07-13)
+
+
+### Bug Fixes
+
+* Add defined alert shortcodes ([af5741f](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/af5741f10847861fa7708d0aee8d03d0930a23b8))
+* correct sidebar padding ([b1b1f3e](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/b1b1f3e9838a071eb008b3d81eb036c27d8301c5))
+* Correct UUI color pallette ([46a3c60](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/46a3c60b3771874f74a713c44849417fb094b4c6))
+
 ## [0.0.7](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.0.6...dependencies/v0.0.7) (2023-07-11)
 
 
