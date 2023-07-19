@@ -60,10 +60,10 @@
   }
 
   a {
-    color: $text-disabled;
+    color: $text-primary;
 
     &:hover {
-      color: shade-color($text-disabled, 20%);
+      color: shade-color($text-primary, 20%);
       text-decoration: none;
     }
   }
