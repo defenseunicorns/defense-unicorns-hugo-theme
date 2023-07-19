@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.9](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.8...v0.0.9) (2023-07-19)
+
+
+### Bug Fixes
+
+* correct color definitions ([83ba80a](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/83ba80a70fb46a656bdf220bc3f94b361bd469d3))
+* correct content color definitions ([f93d89c](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/f93d89c40b37dec668bb382079459899c455b145))
+* correct the unicorn theme colors ([c7d4914](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/c7d49147f8cc6b9517e84a70b4600395a210eeaf))
+
 ## [0.0.8](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.7...v0.0.8) (2023-07-13)
 
 
