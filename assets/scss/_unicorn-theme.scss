@@ -8,14 +8,14 @@ $uui-success: #66bb6a;
 $uui-warning: #ffa726;
 $uui-info: #0288d1;
 $uui-error: #f44336;
-$uui-disabled: shade-color($uui-primary, 50%);
-// $uui-disabled: rgba(255, 255, 255, 0.5);
+$uui-disabled: rgba(255, 255, 255, 0.5);
 $uui-background: #0a0e2e;
-$uui-divider: rgba(255, 255, 255, 0.5);
-$uui-gray: rgba(128, 128, 128, 0.6);
-$uui-white: #e0e0e0;
+$uui-divider: rgba(255, 255, 255, 0.12);
 
-$uui-on-disabled: $uui-gray;
+$uui-global-font-family: Roboto, helvetica, sans-serif, arial;
+
+// Text colors to display on UI elements (buttons, etc.)
+$uui-on-disabled: #545454;
 $uui-on-primary: rgba(0, 0, 0, 0.87);
 $uui-on-secondary: rgba(0, 0, 0, 0.87);
 $uui-on-surface: #ffffff;
@@ -25,11 +25,16 @@ $uui-on-info: #ffffff;
 $uui-on-error: #ffffff;
 $uui-on-background: #ffffff;
 
-$uui-global-font-family: Roboto, helvetica, sans-serif, arial;
-$uui-text-inactive: rgba(255, 255, 255, 0.6);
-$uui-text-primary: $uui-primary;
-$uui-text-disabled: $uui-text-inactive;
-$uui-text-hover: $uui-primary;
-$uui-text-background: rgba(255, 255, 255, 0.1);
-$uui-text-backgroundHover: rgba(255, 255, 255, 0.3);
-$uui-text-bottomLineHover: rgba(255, 255, 255, 0.8);
+//Text colors
+$uui-text-primary: rgba(255, 255, 255, 0.87); //used for all <hn> and <p>
+$uui-text-secondary: rgba(255, 255, 255, 0.7);
+$uui-text-icon: rgba(255, 255, 255, 0.8);
+$uui-text-disabled: rgba(255, 255, 255, 0.5);
+$uui-text-hover: #ffffff;
+
+// TextFields
+$uui-textfield-background: rgba(255, 255, 255, 0.1);
+$uui-textfield-backgroundHover: rgba(255, 255, 255, 0.3);
+$uui-textfield-bottomLineHover: rgba(255, 255, 255, 0.8);
+$uui-textfield-inactive: rgba(255, 255, 255, 0.6);
+$uui-textfield-hint: rgba(255, 255, 255, 0.38);
