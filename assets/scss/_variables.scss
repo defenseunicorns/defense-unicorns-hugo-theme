@@ -1,5 +1,8 @@
 @import 'unicorn-theme.scss';
 
+// Full list of bootstrap variables
+// https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
+
 // Bootstrap options
 $variable-prefix: bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
 $prefix: $variable-prefix !default;
@@ -20,6 +23,7 @@ $primary: $uui-primary !default;
 $body-bg: $uui-background !default;
 $secondary: $uui-secondary !default;
 $text-primary: $uui-text-primary !default;
+$text-secondary: $uui-text-secondary !default;
 $success: $uui-success !default;
 $danger: $uui-error !default;
 $error: $uui-error !default;
@@ -29,8 +33,8 @@ $text-disabled: $uui-text-disabled !default;
 $disabled: $uui-disabled !default;
 $surface: $uui-surface !default;
 
-$gray-600: $uui-gray;
-$text-muted: $gray-600 !default;
+$gray-600: $uui-text-disabled;
+$text-muted: $uui-text-disabled !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
@@ -49,15 +53,15 @@ $divider: rgba(255, 255, 255, 0.5);
 
 $body-bg: $background !default;
 
-$body-secondary-color: shade-color($secondary, 20%) !default;
+$body-secondary-color: $secondary !default;
 // $body-secondary-bg: shade-color($secondary, 75%) !default;
 $body-emphasis-color: $success !default;
 
 $component-active-color: $text-primary !default;
 $component-active-bg: $primary !default;
 
-$body-color: shade-color($text-primary, 30%) !default;
-$code-color: shade-color($text-primary, 30%) !default;
+$body-color: $text-primary !default;
+$code-color: $text-primary !default;
 
 // UI element colors
 $navigation-base: lighten($background, 5);
