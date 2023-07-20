@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.12](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.11...v0.0.12) (2023-07-20)
+
+
+### Bug Fixes
+
+* Hugo version ([07cbb1e](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/07cbb1efef057ae5c004bf22408f490e2c7acb57))
+
 ## [0.0.11](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.10...v0.0.11) (2023-07-20)
 
 
