@@ -64,8 +64,9 @@
 
   a {
     &:hover {
-      color: $text-disabled;
-      text-decoration: none;
+      color: $link-hover-color;
+      text-decoration-thickness: 1px;
+      text-decoration-color: $secondary;
     }
 
     &.active {
