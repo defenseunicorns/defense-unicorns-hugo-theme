@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.0.12...dependencies/v0.1.0) (2023-07-20)
+
+
+### Features
+
+* Ready to use ([6e4a263](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/6e4a263ac811175b49ec616c0322669b3394d8ce))
+
 ## [0.0.12](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.0.11...dependencies/v0.0.12) (2023-07-20)
 
 
