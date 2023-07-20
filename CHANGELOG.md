@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.10](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.9...v0.0.10) (2023-07-20)
+
+
+### Bug Fixes
+
+* link colors ([c228f93](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/c228f93176a5aa41573b00d67aaf744c80dfaac0))
+* Max width of content ([7fe7b9a](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/7fe7b9a75f147b094965261267f4fa7a317cbf25))
+* Modify menu decoration ([8e5d695](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/8e5d6954f710466383430f2310ad3f43cdc66307))
+* Override main screen container widths and padding ([8cb02c3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/8cb02c33a2d0ddaea842b3f703aac87f61aca89d))
+* TOC format ([cab63f0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/cab63f01f013b5f2840d8ef3cb2fa6d65a1dbf6c))
+
 ## [0.0.9](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.8...v0.0.9) (2023-07-19)
 
 
