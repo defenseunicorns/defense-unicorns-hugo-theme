@@ -1,10 +1,10 @@
-.tab-content {
-  .tab-pane {
-    pre {
-      margin: 0rem 0 0rem 0;
-    }
-  }
-}
+// .tab-content {
+//   .tab-pane {
+//     pre {
+//       margin: 0rem 0 0rem 0;
+//     }
+//   }
+// }
 
 .tab-content {
   .tab-pane {
@@ -12,6 +12,9 @@
       margin: 0rem 0 0rem 0;
       border: none;
       max-width: 100%;
+    }
+    pre {
+      margin: 0rem 0 0rem 0;
     }
     margin-top: 0rem;
     margin-bottom: 1.5rem;
