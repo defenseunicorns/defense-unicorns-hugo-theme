@@ -22,19 +22,22 @@ $background: $uui-background !default;
 $primary: $uui-primary !default;
 $body-bg: $uui-background !default;
 $secondary: $uui-secondary !default;
-$text-primary: $uui-text-primary !default;
-$text-secondary: $uui-text-secondary !default;
+
 $success: $uui-success !default;
 $danger: $uui-error !default;
 $error: $uui-error !default;
 $info: $uui-info !default;
 $warning: $uui-warning !default;
-$text-disabled: $uui-text-disabled !default;
 $disabled: $uui-disabled !default;
 $surface: $uui-surface !default;
 
 $gray-600: $uui-text-disabled;
 $text-muted: $uui-text-disabled !default;
+$text-primary: $uui-text-primary !default;
+$text-secondary: $uui-text-secondary !default;
+$text-disabled: $uui-text-disabled !default;
+
+$breadcrumb-active-color: $text-primary;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
@@ -81,10 +84,9 @@ $td-sidebar-toc-bg-color: $background !default;
 $td-box-colors: $dark, $primary, $secondary, $info, $white, $gray-600, $success, $warning, $danger !default;
 
 $link-shade-percentage: 30% !default;
-
-$link-color: $primary !default;
+$link-color: $uui-text-link !default;
 $link-decoration: none !default;
-$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-color: $uui-text-hover !default;
 $link-hover-decoration: underline !default;
 
 // Fonts
@@ -133,7 +135,7 @@ $pagination-disabled-color: $uui-on-disabled !default; // TODO: consider using B
 // Navbar
 
 $navbar-dark-color: rgba($primary, 0.75) !default; // TODO: consider moving into UG SCSS
-$navbar-dark-hover-color: rgba($secondary, 0.5) !default; // TODO: consider moving into UG SCSS
+$navbar-dark-hover-color: $uui-text-hover !default; // TODO: consider moving into UG SCSS
 
 // Footer
 
@@ -141,18 +143,18 @@ $list-inline-padding: $spacer;
 
 // Defaults: https://github.com/twbs/bootstrap/blob/1ab75c8d14b101d7f2ab8d31f0addf549c70def7/scss/_variables.scss#L1152C13-L1152C13
 // scss-docs-start nav-variables
-$nav-link-color: var(--#{$prefix}link-color) !default;
-$nav-link-hover-color: var(--#{$prefix}link-hover-color) !default;
-$nav-link-disabled-color: var(--#{$prefix}secondary-color) !default;
+// $nav-link-color: var(--#{$prefix}link-color) !default;
+// $nav-link-hover-color: $uui-text-hover !default;
+// $nav-link-disabled-color: var(--#{$prefix}secondary-color) !default;
 
-$nav-tabs-border-color: var(--#{$prefix}border-color) !default;
-$nav-tabs-link-hover-border-color: var(--#{$prefix}secondary-bg) var(--#{$prefix}secondary-bg) $nav-tabs-border-color !default;
-$nav-tabs-link-active-color: var(--#{$prefix}nav-link-color) !default;
-$nav-tabs-link-active-bg: var(--#{$prefix}component-active-bg) !default;
-$nav-tabs-link-active-border-color: var(--#{$prefix}border-color) var(--#{$prefix}border-color) $nav-tabs-link-active-bg !default;
+// $nav-tabs-border-color: var(--#{$prefix}border-color) !default;
+// $nav-tabs-link-hover-border-color: var(--#{$prefix}secondary-bg) var(--#{$prefix}secondary-bg) $nav-tabs-border-color !default;
+// $nav-tabs-link-active-color: var(--#{$prefix}nav-link-color) !default;
+// $nav-tabs-link-active-bg: var(--#{$prefix}component-active-bg) !default;
+// $nav-tabs-link-active-border-color: var(--#{$prefix}border-color) var(--#{$prefix}border-color) $nav-tabs-link-active-bg !default;
 
-$nav-pills-link-active-color: $component-active-color !default;
-$nav-pills-link-active-bg: $component-active-bg !default;
+// $nav-pills-link-active-color: $component-active-color !default;
+// $nav-pills-link-active-bg: $component-active-bg !default;
 
-$nav-underline-link-active-color: var(--#{$prefix}emphasis-color) !default;
+// $nav-underline-link-active-color: var(--#{$prefix}emphasis-color) !default;
 // scss-docs-end nav-variables
