@@ -12,6 +12,10 @@ $navbar-height: 56px;
 $sidebar-top-padding: calc(#{$navbar-height} + 20px);
 $logo-height: calc(#{$navbar-height} - 6px);
 
+// Search input
+
+$input-placeholder-color: $uui-text-disabled;
+
 // $enable-gradients: true !default;
 // $enable-shadows: true !default;
 
