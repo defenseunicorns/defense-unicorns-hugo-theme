@@ -23,7 +23,7 @@
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -47,6 +47,6 @@
 
 .td-max-width-on-larger-screens {
   @include media-breakpoint-up(lg) {
-    max-width: 80%;
+    max-width: 95%; // Main page content
   }
 }
