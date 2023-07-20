@@ -1,17 +1,22 @@
 ---
-title: Docsy Shortcodes
+title: Shortcodes
 linkTitle: Shortcodes
 date: 2017-01-05
 weight: 5
 description: >
-  Use Docsy's Hugo shortcodes to quickly build site pages.
+  Use The theme's Hugo shortcodes to quickly build site pages.
 resources:
 - src: "**spruce*.jpg"
   params:
     byline: "*Photo*: Bjørn Erik Pedersen / CC-BY-SA"
 ---
 
-Rather than writing all your site pages from scratch, Hugo lets you define and use [shortcodes](https://gohugo.io/content-management/shortcodes/). These are reusable snippets of content that you can include in your pages, often using HTML to create effects that are difficult or impossible to do in simple Markdown. Shortcodes can also have parameters that let you, for example, add your own text to a fancy shortcode text box. As well as Hugo's [built-in shortcodes](https://gohugo.io/content-management/shortcodes/), Docsy provides some shortcodes of its own to help you build your pages.
+Rather than writing all your site pages from scratch, Hugo lets you define and use
+[shortcodes](https://gohugo.io/content-management/shortcodes/). These are reusable snippets of content that you can
+include in your pages, often using HTML to create effects that are difficult or impossible to do in simple Markdown.
+Shortcodes can also have parameters that let you, for example, add your own text to a fancy shortcode text box. As well
+as Hugo's [built-in shortcodes](https://gohugo.io/content-management/shortcodes/), the theme provides some shortcodes of its
+own to help you build your pages.
 
 ## Shortcode delimiters
 
@@ -298,7 +303,7 @@ description: Reference for the Pet Store API
 {{< /tab >}}
 {{< /tabpane >}}
 
-You can customize Swagger UI's look and feel by overriding Swagger's CSS or by editing and compiling a [Swagger UI dist](https://github.com/swagger-api/swagger-ui) yourself and replace `themes/docsy/static/css/swagger-ui.css`.
+You can customize Swagger UI's look and feel by overriding Swagger's CSS or by editing and compiling a [Swagger UI dist](https://github.com/swagger-api/swagger-ui) yourself and replacing `static/css/swagger-ui.css`.
 
 ### redoc
 
@@ -317,7 +322,7 @@ description: Reference for the Pet Store API
 
 ### iframe
 
-With this shortcode you can embed external content into a Docsy page as an inline frame (`iframe`) - see: <https://www.w3schools.com/tags/tag_iframe.asp>
+With this shortcode you can embed external content into a page as an inline frame (`iframe`) - see: <https://www.w3schools.com/tags/tag_iframe.asp>
 
 | Parameter        | Default    | Description  |
 | ---------------- |------------| ------------|
@@ -404,7 +409,7 @@ object HelloWorld extends App {
 {{< /tab >}}
 {{< /tabpane >}}
 
-The Docsy template provides two shortcodes `tabpane` and `tab` that let you easily create tabbed panes. To see how to use them, have a look at the following code block, which renders to a right aligned pane with one disabled and three active tabs:
+The template provides two shortcodes `tabpane` and `tab` that let you easily create tabbed panes. To see how to use them, have a look at the following code block, which renders to a right aligned pane with one disabled and three active tabs:
 
 ```go-html-template
 {{</* tabpane text=true right=true */>}}
@@ -446,18 +451,18 @@ This code translates to the right aligned tabbed pane below, showing a `Welcome!
 
 Tabbed panes are implemented using two shortcodes:
 
-- The `tabpane` shortcode, which is the container element for the tabs. This shortcode can hold the optional named parameters `lang`, `highlight` and `right`. The value of the optional parameters `lang` and `highlight` are passed on as second `LANG` and third `OPTIONS` arguments to Hugo's built-in [`highlight`](https://gohugo.io/functions/highlight/) function which is used to render the code blocks of the individual tabs. Specify `right=true` if you want to right align your tabs. In case the header text of the tab equals the language used in the tab's code block (as in the first tabbed pane example above), you may specify `langEqualsHeader=true` in the surrounding `tabpane` shortcode. Then, the header text of the individual tab is automatically set as `lang` parameter of the respective tab.
-- The various `tab` shortcodes represent the tabs you would like to show. Specify the named parameter `header` for each tab in order to set the header text of the tab. If the `header` parameter is the only parameter inside your tab shortcode, you can specify the header as unnamed parameter, something like `{{</* tab "My header" */>}} … {{</* /tab */>}}`. If your `tab` shortcode does not have any parameters, the header of the tab will default to `Tab n`. To split the panes into a left aligned and a right aligned tab group, specify `right=true` in the dividing tab. By giving `right=true` several times, you can even render multiple tab groups. You can disable a tab by specifying the parameter `disabled=true`. For enabled tabs, there are two modes for content display, `code` representation and *textual* representation:
+- The `tabpane` shortcode, which is the container element for the tabs. This shortcode can hold the optional named parameters `lang`, `highlight` and `right`. The value of the optional parameters `lang` and `highlight` are passed on as second `LANG` and third `OPTIONS` arguments to Hugo's built-in [`highlight`](https://gohugo.io/functions/highlight/) function which is used to render the code blocks of the individual tabs. Specify `right=true` if you want to right-align your tabs. In case the header text of the tab equals the language used in the tab's code block (as in the first tabbed pane example above), you may specify `langEqualsHeader=true` in the surrounding `tabpane` shortcode. Then, the header text of the individual tab is automatically set as `lang` parameter of the respective tab.
+- The various `tab` shortcodes represent the tabs you would like to show. Specify the named parameter `header` for each tab to set the header text of the tab. If the `header` parameter is the only parameter inside your tab shortcode, you can specify the header as an unnamed parameter, something like `{{</* tab "My header" */>}} … {{</* /tab */>}}`. If your `tab` shortcode does not have any parameters, the header of the tab will default to `Tab n`. To split the panes into a left aligned and a right-aligned tab group, specify `right=true` in the dividing tab. By giving `right=true` several times, you can even render multiple tab groups. You can disable a tab by specifying the parameter `disabled=true`. For enabled tabs, there are two modes for content display, `code` representation, and *textual* representation:
   - By default, the tab's content is rendered as `code block`. In order to get proper syntax highlighting, specify the named parameter `lang` --and optionally the parameter `highlight`-- for each tab. Parameters set in the parent `tabpane` shortcode will be overwritten.
-  - If the contents of your tabs should be rendered as text with different styles and with optional images, specify `text=true` as parameter of your `tabpane` (or your `tab`). If your content is markdown, use the percent sign `%` as outermost delimiter of your `tab` shortcode, your markup should look like `{{%/* tab */%}}`Your \*\*markdown\*\* content`{{%/* /tab */%}}`. In case of HTML content, use `<>` as innermost delimiters: `{{</* tab */>}}`Your &lt;b&gt;HTML&lt;/b&gt; content`{{</* /tab */>}}`.
+  - If the contents of your tabs should be rendered as text with different styles and with optional images, specify `text=true` as a parameter of your `tabpane` (or your `tab`). If your content is markdown, use the percent sign `%` as the outermost delimiter of your `tab` shortcode, your markup should look like `{{%/* tab */%}}`Your \*\*markdown\*\* content`{{%/* /tab */%}}`. In case of HTML content, use `<>` as innermost delimiters: `{{</* tab */>}}`Your &lt;b&gt;HTML&lt;/b&gt; content`{{</* /tab */>}}`.
 
 {{% alert-info %}}
-By default, the language of the selected tab is stored and preserved between different browser sessions. If the content length within your tabs differs greatly, this may lead to unwanted scrolling when switching between tabs. To disable this unwanted behaviour, specify `persistLang=false` within your `tabpane` shortcode.
+By default, the language of the selected tab is stored and preserved between different browser sessions. If the content length within your tabs differs greatly, this may lead to unwanted scrolling when switching between tabs. To disable this unwanted behavior, specify `persistLang=false` within your `tabpane` shortcode.
 {{% /alert-info %}}
 
 ## Card panes
 
-When authoring content, it's sometimes very useful to put similar text blocks or code fragments on card like elements, which can be optionally presented side by side. Let's showcase this feature with the following sample card group which shows the first four Presidents of the United States:
+When authoring content, it's sometimes very useful to put similar text blocks or code fragments on card-like elements, which can be optionally presented side by side. Let's showcase this feature with the following sample card group which shows the first four Presidents of the United States:
 
 {{% cardpane %}}
 {{% card header="**George Washington**" title="\*1732 &nbsp;&nbsp;&nbsp; †1799" subtitle="**President:** 1789 – 1797" footer="![SignatureGeorgeWashington](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/George_Washington_signature.svg/320px-George_Washington_signature.svg.png 'Signature George Washington')" %}}
@@ -474,10 +479,10 @@ When authoring content, it's sometimes very useful to put similar text blocks or
 {{% /card %}}
 {{% /cardpane %}}
 
-Docsy supports creating such card panes via different shortcodes:
+The theme supports creating such card panes via different shortcodes:
 
-- The `cardpane` shortcode which is the container element for the various cards to be presented.
-- The `card` shortcodes, with each shortcode representing an individual card. While cards are often presented inside a card group, a single card may stand on its own, too. A `card` shortcode can hold programming code, text, images or any other arbitrary kind of markdown or HTML markup as content. In case of programming code, cards provide automatic code-highlighting and other optional features like line numbers, highlighting of certain lines, ….
+- The `cardpane` shortcode is the container element for the various cards to be presented.
+- The `card` shortcodes, with each shortcode representing an individual card. While cards are often presented inside a card group, a single card may stand on its own, too. A `card` shortcode can hold programming code, text, images, or any other arbitrary kind of markdown or HTML markup as content. In the case of programming code, cards provide automatic code highlighting and other optional features like line numbers, highlighting of certain lines, ….
 
 ### Shortcode `card`: textual content
 
@@ -556,7 +561,7 @@ int main(void)
 
 ### Card groups
 
-Displaying two ore more cards side by side can be easily achieved by putting them between the opening and closing elements of a `cardpane` shortcode.
+Displaying two or more cards side by side can be easily achieved by putting them between the opening and closing elements of a `cardpane` shortcode.
 The general markup of a card group resembles closely the markup of a tabbed pane:
 
 ```go-html-template
@@ -573,7 +578,7 @@ The general markup of a card group resembles closely the markup of a tabbed pane
 {{</* /cardpane */>}}
 ```
 
-Contrary to tabs, cards are presented side by side, however. This is especially useful it you want to compare different programming techniques (traditional vs. modern) on two cards, like demonstrated in the example above:
+Contrary to tabs, cards are presented side by side, however. This is especially useful if you want to compare different programming techniques (traditional vs. modern) on two cards, like demonstrated in the example above:
 
 {{< cardpane >}}
 {{< card code=true header="**Java 5**" >}}
@@ -644,7 +649,7 @@ The following section explains how to install the database:
 The parameter is the relative path to the file. Only relative paths
 under the parent file's working directory are supported.
 
-For files outside the current working directory you can use an absolute path
+For files outside the current working directory, you can use an absolute path
 starting with `/`. The root directory is the `/content` folder.
 
 ### Include code files
@@ -686,7 +691,7 @@ correctly.
 The `file` parameter is the relative path to the file. Only relative paths
 under the parent file's working directory are supported.
 
-For files outside the current working directory you can use an absolute path
+For files outside the current working directory, you can use an absolute path
 starting with `/`. The root directory is the `/content` folder.
 
 | Parameter        | Default    | Description  |
@@ -705,7 +710,7 @@ In the following example, Hugo throws a compile error if it can't find `includes
 {{</* readfile file="includes/deploy.yaml" code="true" lang="yaml" */>}}
 ```
 
-Alternately, Hugo you can display a message on the rendered page instead of throwing a compile error. Add `draft="true"` as a parameter. For example:
+Alternately, Hugo can display a message on the rendered page instead of throwing a compile error. Add `draft="true"` as a parameter. For example:
 
 ```go-html-template
 {{</* readfile file="includes/deploy.yaml" code="true" lang="yaml" draft="true" */>}}

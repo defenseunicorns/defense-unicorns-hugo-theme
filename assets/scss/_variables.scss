@@ -52,7 +52,7 @@ $theme-colors: (
 ) !default;
 // scss-docs-end theme-colors-map
 
-$divider: rgba(255, 255, 255, 0.5);
+$divider: $uui-divider;
 
 $body-bg: $background !default;
 
