@@ -24,6 +24,33 @@
   flex-grow: 1;
 }
 
+@media screen and (min-width: 1200px) {
+  .wide-screen {
+    flex: 0 0 auto;
+    width: 66%;
+    padding-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  .medium-screen {
+    flex: 0 0 auto;
+    width: 75%;
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .small-screen {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+.du-main-padding {
+  padding-top: 1%;
+}
+
 .td-404 main,
 .td-main main {
   padding-top: 1.5rem;
