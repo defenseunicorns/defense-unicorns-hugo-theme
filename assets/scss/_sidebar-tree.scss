@@ -1,7 +1,7 @@
 //
 // Left side navigation
 //
-$highlight-background: lighten($td-sidebar-bg-color, 10%);
+$highlight-background: lighten($td-sidebar-bg-color, 5%);
 
 .td-sidebar-nav {
   padding-right: 0.5rem;
@@ -75,7 +75,8 @@ $highlight-background: lighten($td-sidebar-bg-color, 10%);
     }
 
     &.active {
-      font-weight: $font-weight-bold;
+      // font-weight: $font-weight-bold;
+      color: $secondary;
       background: $highlight-background;
     }
   }

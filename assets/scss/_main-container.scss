@@ -28,7 +28,6 @@
   .wide-screen {
     flex: 0 0 auto;
     max-width: 1000px;
-    padding-left: 10%;
   }
 }
 
@@ -36,7 +35,6 @@
   .medium-screen {
     flex: 0 0 auto;
     width: 75%;
-    padding-left: 5%;
   }
 }
 
@@ -49,6 +47,8 @@
 
 .du-main-padding {
   padding-top: 1%;
+  padding-right: 2% !important;
+  padding-left: 10%;
 }
 
 .td-404 main,
