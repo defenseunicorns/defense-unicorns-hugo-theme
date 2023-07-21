@@ -2,7 +2,6 @@
 
 .alert {
   font-weight: $font-weight-medium;
-  background: $surface;
   color: inherit;
   border-radius: 0;
 
@@ -14,7 +13,8 @@
 
       border-style: solid;
       border-color: $value;
-      border-width: 0 4px 0 4px;
+      border-width: 0 0px 0 6px;
+      background: rgba($value, 0.1);
     }
   }
 }
