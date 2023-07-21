@@ -57,9 +57,10 @@
         text-decoration: none;
         background: lighten($td-sidebar-bg-color, 5%);
       }
-      &.active {
-        color: $secondary;
-      }
+    }
+
+    .toc-text-active {
+      color: $secondary;
     }
   }
 
