@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.1.0...v0.1.1) (2023-07-21)
+
+
+### Bug Fixes
+
+* add toc active scrolling ([c076bd0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/c076bd015c16570de4c6b54ea62aa470cf79d454))
+* update toc colors to match style guide ([f033e6d](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/f033e6d6288ae18f2e568801dc6848c353f20c4b))
+
 ## [0.1.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.0.12...v0.1.0) (2023-07-20)
 
 
