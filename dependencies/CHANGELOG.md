@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.1...dependencies/v0.1.2) (2023-07-21)
+
+
+### Bug Fixes
+
+* Fix sidebar styling ([fd976e6](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/fd976e64f68214e3f3311b696c457efd37560b30))
+
 ## [0.1.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.0...dependencies/v0.1.1) (2023-07-21)
 
 
