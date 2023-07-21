@@ -12,25 +12,25 @@ $uui-disabled: rgba(255, 255, 255, 0.5);
 $uui-background: #0a0e2e;
 $uui-divider: rgba(255, 255, 255, 0.12);
 
-$uui-global-font-family: Roboto, helvetica, sans-serif, arial;
+$uui-global-font-family: roboto, helvetica, sans-serif, arial;
 
 // Text colors to display on UI elements (buttons, etc.)
 $uui-on-disabled: #545454;
 $uui-on-primary: rgba(0, 0, 0, 0.87);
 $uui-on-secondary: rgba(0, 0, 0, 0.87);
-$uui-on-surface: #ffffff;
+$uui-on-surface: white;
 $uui-on-success: rgba(0, 0, 0, 0.87);
 $uui-on-warning: rgba(0, 0, 0, 0.87);
-$uui-on-info: #ffffff;
-$uui-on-error: #ffffff;
-$uui-on-background: #ffffff;
+$uui-on-info: white;
+$uui-on-error: white;
+$uui-on-background: white;
 
 //Text colors
 $uui-text-primary: rgba(255, 255, 255, 0.87); //used for all <hn> and <p>
 $uui-text-secondary: rgba(255, 255, 255, 0.7);
 $uui-text-icon: rgba(255, 255, 255, 0.8);
 $uui-text-disabled: rgba(255, 255, 255, 0.5);
-$uui-text-hover: #ffffff;
+$uui-text-hover: white;
 $uui-text-link: $uui-secondary;
 
 // TextFields

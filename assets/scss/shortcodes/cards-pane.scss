@@ -1,10 +1,10 @@
 .td-card-group.card-group {
-  @extend .td-max-width-on-larger-screens;
+  @extend %td-max-width-on-larger-screens;
 }
 
 .td-card {
   &.card {
-    @extend .td-max-width-on-larger-screens;
+    @extend %td-max-width-on-larger-screens;
 
     .highlight {
       border: none;

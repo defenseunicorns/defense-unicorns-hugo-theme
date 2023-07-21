@@ -1,4 +1,4 @@
 $enable-important-utilities: null !default;
-@if $enable-important-utilities == null {
+@if not $enable-important-utilities {
   @error "This theme requires Bootstrap v5, but the v5 variable $enable-important-utilities isn't defined. Did you forget to update /dependencies?";
 }

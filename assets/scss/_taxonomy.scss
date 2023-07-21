@@ -1,3 +1,4 @@
+/* stylelint-disable no-duplicate-selectors */
 // Taxonomies - e.g. Tags, Categories, ...
 
 .taxonomy-terms-article {
@@ -24,7 +25,7 @@
     display: inline-block;
     width: 100%;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: bold;
     color: $primary;
     border-bottom: 1px $primary solid;
     margin-bottom: 1em;

@@ -1,6 +1,6 @@
-//
+
 // Style Markdown content
-//
+
 
 .td-content {
   order: 1;
@@ -81,7 +81,7 @@
   > p,
   > pre,
   > ul {
-    @extend .td-max-width-on-larger-screens;
+    @extend %td-max-width-on-larger-screens;
   }
 
   .alert:not(:first-child) {

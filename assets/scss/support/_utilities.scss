@@ -45,7 +45,7 @@
   }
 }
 
-.td-max-width-on-larger-screens {
+%td-max-width-on-larger-screens {
   @include media-breakpoint-up(lg) {
     max-width: 95%; // Main page content
   }

@@ -13,11 +13,16 @@
     "check:links": "npm run cd:docs check:links",
     "check:links:all": "npm run cd:docs check:links:all",
     "docs-install": "npm run _cd:docs -- npm install",
-    "format:fix": "prettier --write '**/*.{js,jsx,yml,json,css,md}'",
+    "format": "prettier '**/*.{js,jsx,yml,json}'",
+    "format:fix": "prettier --write '**/*.{js,jsx,yml,json,md}'",
     "get:submodule": "set -x && git submodule update --init ${DEPTH:- --depth 1}",
+    "lint": "npm run stylelint && npm run format",
     "prepare": "husky install",
     "start": "npm run cd:docs start",
-    "test": "npm run cd:docs test",
+    "stylelint": "stylelint '**/*.scss'",
+    "stylelint:fix": "stylelint --fix '**/*.scss'",
+    "test": "npm run test:ex",
+    "test:ex": "npm run cd:docs test",
     "update:pkg:dep": "npm install --save-exact @fortawesome/fontawesome-free@latest bootstrap@latest",
     "update:pkg:hugo": "npm install --save-exact -D hugo-extended@latest"
   },
@@ -33,7 +38,11 @@
     "husky": "^8.0.3",
     "postcss-cli": "^10.1.0",
     "prettier": "^3.0.0",
-    "prettier-plugin-go-template": "^0.0.15"
+    "prettier-plugin-go-template": "^0.0.15",
+    "rtlcss": "^4.1.0",
+    "stylelint": "^15.1.0",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-scss": "^5.0.0"
   },
   "engines": {
     "node": ">=18"

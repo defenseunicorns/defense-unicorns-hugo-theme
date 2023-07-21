@@ -1,6 +1,6 @@
 // A cover block is a full size cover with a fixed background for smaller screens.
 
-@include td-box-height-modifiers(".td-cover-block");
+@include td-box-height-modifiers('.td-cover-block');
 
 .td-cover-logo {
   margin-right: 0.5em;
@@ -17,7 +17,6 @@
   }
 
   & > .byline {
-    @extend .small;
     position: absolute;
     bottom: 2px;
     right: 4px;
