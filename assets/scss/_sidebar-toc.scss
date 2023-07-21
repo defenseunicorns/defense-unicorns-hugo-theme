@@ -22,7 +22,7 @@
     display: block;
     font-weight: $font-weight-medium;
     &:hover {
-      color: $secondary;
+      color: $link-hover-color;
       text-decoration: none;
     }
   }
@@ -50,12 +50,17 @@
     // }
     font-size: smaller;
     a {
-      color: $text-disabled;
+      color: $text-primary;
 
       &:hover {
         color: $link-hover-color;
         text-decoration: none;
+        background: lighten($td-sidebar-bg-color, 5%);
       }
+    }
+
+    .toc-text-active {
+      color: $secondary;
     }
   }
 
