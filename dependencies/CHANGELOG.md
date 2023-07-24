@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.3...dependencies/v0.1.4) (2023-07-24)
+
+
+### Bug Fixes
+
+* create typeahead search ([99931aa](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/99931aab6607475811e036610f5407958ab8722b))
+
 ## [0.1.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.2...dependencies/v0.1.3) (2023-07-24)
 
 
