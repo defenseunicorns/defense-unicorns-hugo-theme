@@ -15,7 +15,6 @@
     "docs-install": "npm run _cd:docs -- npm install",
     "format": "prettier --list-different '**/*.{js,yml,yaml}'",
     "format:fix": "prettier --write '**/*.{js,yml,yaml}'",
-    "get:submodule": "set -x && git submodule update --init ${DEPTH:- --depth 1}",
     "lint": "npm run stylelint && npm run format",
     "prepare": "husky install",
     "start": "npm run cd:docs start",
