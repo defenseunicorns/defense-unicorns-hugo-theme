@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.2...dependencies/v0.1.3) (2023-07-24)
+
+
+### Bug Fixes
+
+* correct border radius for code blocks and alerts ([908365f](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/908365f522e40c50ff552ff9db363d3455b6475b))
+
 ## [0.1.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.1...dependencies/v0.1.2) (2023-07-21)
 
 
