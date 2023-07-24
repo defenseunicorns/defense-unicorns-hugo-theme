@@ -1,6 +1,8 @@
 // Code formatting.
 
 .td-content {
+  border-radius: 6px;
+
   // Highlighted code.
   .highlight {
     @extend .card;
@@ -17,6 +19,8 @@
     pre {
       margin: 0;
       padding: 1rem;
+      border-radius: 6px;
+
 
       // Default click-to-copy button
 
@@ -65,6 +69,8 @@
     word-wrap: normal;
     background-color: $gray-100;
     padding: $spacer;
+    border-radius: 6px;
+
 
     > code {
       background-color: inherit !important;
