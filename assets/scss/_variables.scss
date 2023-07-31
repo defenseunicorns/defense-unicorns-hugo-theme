@@ -1,4 +1,4 @@
-@import 'unicorn-theme';
+@import "unicorn-theme";
 
 // Full list of bootstrap variables
 // https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
@@ -6,11 +6,6 @@
 // Bootstrap options
 $variable-prefix: bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
 $prefix: $variable-prefix !default;
-
-// Dimensions
-$navbar-height: 56px;
-$sidebar-top-padding: calc(#{$navbar-height} + 20px);
-$logo-height: calc(#{$navbar-height} - 6px);
 
 // Search input
 
@@ -22,11 +17,7 @@ $input-placeholder-color: $uui-text-disabled;
 // Theme colors
 $light: $uui-background !default;
 $dark: $uui-background !default;
-$background: $uui-background !default;
 $primary: $uui-primary !default;
-$body-bg: $uui-background !default;
-$secondary: $uui-secondary !default;
-
 $success: $uui-success !default;
 $danger: $uui-error !default;
 $error: $uui-error !default;
@@ -34,6 +25,10 @@ $info: $uui-info !default;
 $warning: $uui-warning !default;
 $disabled: $uui-disabled !default;
 $surface: $uui-surface !default;
+
+$secondary: $uui-secondary !default;
+$background: $uui-background !default;
+$body-bg: $uui-background !default;
 
 $gray-600: $uui-text-disabled;
 $text-muted: $uui-text-disabled !default;
@@ -45,36 +40,31 @@ $breadcrumb-active-color: $text-primary;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  'primary': $primary,
-  'secondary': $secondary,
-  'success': $success,
-  'info': $info,
-  'warning': $warning,
-  'danger': $danger,
-  'light': $light,
-  'dark': $dark,
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
 ) !default;
 // scss-docs-end theme-colors-map
 
 $divider: $uui-divider;
 
-$body-bg: $background !default;
-
 $body-secondary-color: $secondary !default;
-// $body-secondary-bg: shade-color($secondary, 75%) !default;
 $body-emphasis-color: $success !default;
 
 $component-active-color: $text-primary !default;
 $component-active-bg: $primary !default;
 
 $body-color: $text-primary !default;
-$code-color: $text-primary !default;
 
 // UI element colors
 $navigation-base: lighten($background, 5);
 
 $border-color: $background !default;
-$td-navbar-color: $navigation-base !default;
 $td-sidebar-tree-root-color: $primary !default;
 $td-sidebar-bg-color: $navigation-base !default;
 $td-sidebar-border-color: $border-color !default;
@@ -97,21 +87,21 @@ $link-hover-decoration: underline !default;
 
 $td-enable-google-fonts: true !default;
 
-$google_font_name: 'Roboto' !default;
-$google_font_family: 'Roboto:300,300i,400,400i,700,700i' !default;
-$web-font-path: 'https://fonts.googleapis.com/css?family=#{$google_font_family}&display=swap';
-$font-awesome-font-name: 'Font Awesome 6 Free' !default;
+$google_font_name: "Roboto" !default;
+$google_font_family: "Roboto:300,300i,400,400i,700,700i" !default;
+$web-font-path: "https://fonts.googleapis.com/css?family=#{$google_font_family}&display=swap";
+$font-awesome-font-name: "Font Awesome 6 Free" !default;
 
-$td-fonts-serif: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', arial, sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$td-fonts-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 @if $td-enable-google-fonts {
-  $td-fonts-serif: prepend($td-fonts-serif, '#{$google_font_name}');
+  $td-fonts-serif: prepend($td-fonts-serif, "#{$google_font_name}");
 }
 
 $font-family-sans-serif: $td-fonts-serif !default;
 
-$font-family-monospace: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono', 'Courier New', monospace !default;
+$font-family-monospace: sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 
 // Font weights
@@ -140,25 +130,13 @@ $pagination-disabled-color: $uui-on-disabled !default;
 
 $navbar-dark-color: rgba($primary, 0.75) !default;
 $navbar-dark-hover-color: $uui-text-hover !default;
+$td-navbar-color: $navigation-base !default;
+$navbar-height: 56px;
+
+// Dimensions
+$sidebar-top-padding: calc(#{$navbar-height} + 20px);
+$logo-height: calc(#{$navbar-height} - 6px);
 
 // Footer
 
 $list-inline-padding: $spacer;
-
-// Defaults: https://github.com/twbs/bootstrap/blob/1ab75c8d14b101d7f2ab8d31f0addf549c70def7/scss/_variables.scss#L1152C13-L1152C13
-// scss-docs-start nav-variables
-// $nav-link-color: var(--#{$prefix}link-color) !default;
-// $nav-link-hover-color: $uui-text-hover !default;
-// $nav-link-disabled-color: var(--#{$prefix}secondary-color) !default;
-
-// $nav-tabs-border-color: var(--#{$prefix}border-color) !default;
-// $nav-tabs-link-hover-border-color: var(--#{$prefix}secondary-bg) var(--#{$prefix}secondary-bg) $nav-tabs-border-color !default;
-// $nav-tabs-link-active-color: var(--#{$prefix}nav-link-color) !default;
-// $nav-tabs-link-active-bg: var(--#{$prefix}component-active-bg) !default;
-// $nav-tabs-link-active-border-color: var(--#{$prefix}border-color) var(--#{$prefix}border-color) $nav-tabs-link-active-bg !default;
-
-// $nav-pills-link-active-color: $component-active-color !default;
-// $nav-pills-link-active-bg: $component-active-bg !default;
-
-// $nav-underline-link-active-color: var(--#{$prefix}emphasis-color) !default;
-// scss-docs-end nav-variables
