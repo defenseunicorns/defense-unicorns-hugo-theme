@@ -13,7 +13,7 @@ page = ["HTML"]
 section = ["HTML", "RSS", "print"]
 
 [imaging]
-resampleFilter = "catmullRom"
+resampleFilter = "CatmullRom"
 quality = 75
 anchor = "Smart"
 
@@ -45,7 +45,6 @@ time_format_default = "January 2, 2006"
 offlineSearch = true
 offlineSearchSummaryLength = 70
 offlineSearchMaxResults = 10
-prism_syntax_highlighting = false
 archived_version = false
 version = "v1.0.0"
 version_menu = "v1.0"
