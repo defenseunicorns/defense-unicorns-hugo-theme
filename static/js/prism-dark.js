@@ -1,5 +1,5 @@
 /* PrismJS 1.29.0
-https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+clike+javascript+bash+batch+css-extras+diff+gherkin+git+go+go-module+http+java+javadoc+javadoclike+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+makefile+markdown+markup-templating+mermaid+nginx+plant-uml+powershell+jsx+tsx+regex+sass+scss+shell-session+toml+typescript+typoscript+yaml&plugins=line-highlight+line-numbers+autolinker+custom-class+file-highlight+show-language+previewers+command-line+unescaped-markup+data-uri-highlight+toolbar+copy-to-clipboard+match-braces+diff-highlight+filter-highlight-all+treeview */
+https://prismjs.com/download.html#themes=prism-dark&languages=markup+css+clike+javascript+bash+batch+css-extras+diff+gherkin+git+go+go-module+http+java+javadoc+javadoclike+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+makefile+markdown+markup-templating+mermaid+nginx+plant-uml+powershell+jsx+tsx+regex+sass+scss+shell-session+toml+typescript+typoscript+yaml&plugins=line-highlight+line-numbers+autolinker+custom-class+file-highlight+show-language+previewers+command-line+unescaped-markup+data-uri-highlight+toolbar+copy-to-clipboard+match-braces+diff-highlight+filter-highlight-all+treeview */
 /// <reference lib="WebWorker"/>
 
 var _self = (typeof window !== 'undefined')
