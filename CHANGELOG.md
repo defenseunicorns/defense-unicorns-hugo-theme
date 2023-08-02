@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.7](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.1.6...v0.1.7) (2023-08-02)
+
+
+### Bug Fixes
+
+* resolve config inheritance issue ([6b3e508](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/6b3e5089fc422f3abe2cb23a0e192e7a46fc360e))
+
 ## [0.1.6](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.1.5...v0.1.6) (2023-08-02)
 
 
