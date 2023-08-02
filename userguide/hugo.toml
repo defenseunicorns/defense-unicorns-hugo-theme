@@ -82,10 +82,6 @@ diagramPadding = 20
 [params.drawio]
 enable = true
 
-[taxonomies]
-tag = "tags"
-category = "categories"
-
 [[module.mounts]]
 source = "content/en"
 target = "content"
@@ -104,3 +100,6 @@ _merge = 'shallow' # Use theme defaults
 
 [imaging]
 _merge = 'shallow' # Use theme defaults
+
+[taxonomies]
+_merge = 'shallow'
