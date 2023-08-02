@@ -2,12 +2,12 @@
 # (https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
 
 [build]
-publish = "userguide/public"
 command = "npm run docs-install && npm run build:preview"
+publish = "userguide/public"
 
-[build.environment]
-GO_VERSION = "1.20.5"
-HUGO_THEME = "repo"
+  [build.environment]
+  GO_VERSION = "1.20.5"
+  HUGO_THEME = "repo"
 
 [context.production]
 command = "npm run docs-install && npm run build:production"

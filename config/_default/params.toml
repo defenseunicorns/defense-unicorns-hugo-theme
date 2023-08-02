@@ -1,10 +1,10 @@
-homePage = "/docs" # If this is removed then then the site will show a landing page.
-show_metalinks = false
-time_format_blog = "Monday, January 02, 2006"
-time_format_default = "January 2, 2006"
-offlineSearch = true
+homePage                   = "/docs"                    # If this is removed then then the site will show a landing page.
+offlineSearch              = true
+offlineSearchMaxResults    = 10
 offlineSearchSummaryLength = 70
-offlineSearchMaxResults = 10
+show_metalinks             = false
+time_format_blog           = "Monday, January 02, 2006"
+time_format_default        = "January 2, 2006"
 
 [drawio]
 enable = false
@@ -20,16 +20,16 @@ enable = true
 
 [mermaid]
 enable = true
-theme = "dark"
+theme  = "dark"
 
-[mermaid.flowchart]
-diagramPadding = 20
+  [mermaid.flowchart]
+  diagramPadding = 20
 
 [ui]
-sidebar_menu_compact = true
+breadcrumb_disable    = false
+sidebar_cache_limit   = 10
+sidebar_menu_compact  = true
 sidebar_menu_foldable = false
-sidebar_cache_limit = 10
-breadcrumb_disable = false
 
-[ui.readingtime]
-enable = true
+  [ui.readingtime]
+  enable = true

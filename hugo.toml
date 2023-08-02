@@ -2,20 +2,20 @@
 #
 
 [params]
-time_format_blog = "Monday, January 02, 2006"
+rss_sections        = ["blog"]
+time_format_blog    = "Monday, January 02, 2006"
 time_format_default = "January 2, 2006"
-rss_sections = [ "blog" ]
 
 [outputFormats.PRINT]
-baseName = "index"
-isHTML = true
-mediaType = "text/html"
-path = "_print"
+baseName      = "index"
+isHTML        = true
+mediaType     = "text/html"
+path          = "_print"
 permalinkable = false
 
 [module.hugoVersion]
 extended = true
-min = "v0.110.0"
+min      = "v0.110.0"
 
 [[module.mounts]]
 source = "assets"

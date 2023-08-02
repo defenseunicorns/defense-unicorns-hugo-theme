@@ -21,6 +21,16 @@ module.exports = {
         'refactor!',
       ],
     ],
-    'subject-case': [2, 'always', ['sentence-case', 'start-case', 'pascal-case', 'upper-case', 'lower-case']],
+    'subject-case': [
+      2,
+      'always',
+      [
+        'sentence-case',
+        'start-case',
+        'pascal-case',
+        'upper-case',
+        'lower-case',
+      ],
+    ],
   },
 }

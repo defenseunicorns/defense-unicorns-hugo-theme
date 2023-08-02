@@ -1,3 +1,3 @@
+anchor         = "Smart"
+quality        = 75
 resampleFilter = "CatmullRom"
-quality = 75
-anchor = "Smart"

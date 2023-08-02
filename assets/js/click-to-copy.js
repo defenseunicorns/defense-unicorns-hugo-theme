@@ -11,11 +11,18 @@ for (let index = 0; index < codeListings.length; index++) {
     'data-bs-container': 'body',
   }
 
-  Object.keys(buttonAttributes).forEach(key => {
+  Object.keys(buttonAttributes).forEach((key) => {
     copyButton.setAttribute(key, buttonAttributes[key])
   })
 
-  copyButton.classList.add('fas', 'fa-copy', 'btn', 'btn-dark', 'btn-sm', 'td-click-to-copy')
+  copyButton.classList.add(
+    'fas',
+    'fa-copy',
+    'btn',
+    'btn-dark',
+    'btn-sm',
+    'td-click-to-copy'
+  )
   const tooltip = new bootstrap.Tooltip(copyButton)
 
   copyButton.onclick = () => {
@@ -35,6 +42,6 @@ for (let index = 0; index < codeListings.length; index++) {
   codeListings[index].insertBefore(buttonDiv, codeSample)
 }
 
-const copyCode = codeSample => {
+const copyCode = (codeSample) => {
   navigator.clipboard.writeText(codeSample.textContent.trim() + '\n')
 }

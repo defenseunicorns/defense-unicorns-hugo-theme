@@ -7,12 +7,12 @@ block = true
 unsafe = true
 
 [highlight]
-style = "dracula"
-codeFences = true
-guessSyntax = true
-hl_Lines = ""
-lineNoStart = 1
-lineNos = false
+codeFences         = true
+guessSyntax        = true
+hl_Lines           = ""
+lineNoStart        = 1
+lineNos            = false
 lineNumbersInTable = true
-noClasses = true
-tabWidth = 2
+noClasses          = true
+style              = "dracula"
+tabWidth           = 2
