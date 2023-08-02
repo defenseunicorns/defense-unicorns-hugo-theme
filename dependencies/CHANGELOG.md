@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.5](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.4...dependencies/v0.1.5) (2023-08-02)
+
+
+### Bug Fixes
+
+* add cleanup to start script ([fa6bcf8](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/fa6bcf84b06fa20f0fdce1117a3519d862d0841d))
+* Add Prism dark themes ([42d1f19](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/42d1f190c229dd963b167f3f2d29df512e79322e))
+* Set default theme settings ([ee65097](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/ee650970f2e30af8e17c7d41c82e2b54a874f440))
+* update bootstrap ([b8fe903](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/b8fe903a238eb522be0878273e0bf26935196ace))
+* Update Prism to add more languages and default to using Prism ([2348808](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/23488080fa3d5b5d31f60a05890b79b2bbfd448a))
+
 ## [0.1.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.3...dependencies/v0.1.4) (2023-07-24)
 
 
