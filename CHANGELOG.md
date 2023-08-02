@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.1.5...v0.1.6) (2023-08-02)
+
+
+### Bug Fixes
+
+* Disable PlanUML and DrawIO by default ([337ad90](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/337ad907c74d20cf73f7006330e8eee5eb3cb4e0))
+
 ## [0.1.5](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.1.4...v0.1.5) (2023-08-02)
 
 
