@@ -1,5 +1,8 @@
 # Defense Unicorns Hugo Theme
 
+[![Netlify
+Status](https://api.netlify.com/api/v1/badges/cdad1664-97b0-4494-990b-f2b60d6d6154/deploy-status)](https://app.netlify.com/sites/starlit-valkyrie-7f1dd9/deploys)
+
 Forked from [Docsy](https://github.com/defenseunicorns/defense-unicorns-hugo-theme), a [Hugo](https://gohugo.io) theme
 for technical documentation.
 
