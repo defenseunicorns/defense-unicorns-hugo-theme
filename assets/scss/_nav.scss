@@ -1,6 +1,4 @@
-
 // Main navbar
-
 
 .td-navbar-cover {
   @include media-breakpoint-up(md) {
@@ -28,7 +26,10 @@
   background: $td-navbar-color;
   margin: 0;
   z-index: 32;
-  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+  box-shadow:
+    0 3px 5px -1px #0003,
+    0 6px 10px #00000024,
+    0 1px 18px #0000001f;
 
   .navbar-brand {
     text-transform: none;
@@ -136,7 +137,7 @@
       -webkit-font-smoothing: antialiased;
       font-family: $font-awesome-font-name;
       font-weight: 900;
-      content: '\f0d9';
+      content: "\f0d9";
       padding-left: 0.5em;
       padding-right: 0.5em;
     }
@@ -173,7 +174,7 @@ nav.foldable-nav {
     display: block;
   }
 
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     display: none;
   }
 
@@ -191,7 +192,7 @@ nav.foldable-nav {
     -webkit-font-smoothing: antialiased;
     font-family: $font-awesome-font-name;
     font-weight: 900;
-    content: '\f0da';
+    content: "\f0da";
     position: absolute;
     left: 0.1em;
     padding-left: 0.4em;
@@ -233,6 +234,16 @@ nav.foldable-nav {
   display: flex;
   width: 100%;
   justify-content: end;
+}
+
+.socials-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.socials-footer-item {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .svg-link {
