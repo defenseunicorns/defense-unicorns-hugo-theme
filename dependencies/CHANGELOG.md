@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.8](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.7...dependencies/v0.1.8) (2023-08-02)
+
+
+### Bug Fixes
+
+* add socials to footer ([58176bd](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/58176bdd01ab25f106037d9790db303aa898694f))
+* Update sidebar to match style guide ([4ec1c43](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/4ec1c4385aa70a11cb30f4f683473811049065ab))
+
 ## [0.1.7](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.6...dependencies/v0.1.7) (2023-08-02)
 
 
