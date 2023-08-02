@@ -1,6 +1,4 @@
-
 // Left side navigation
-
 
 .td-sidebar-nav {
   padding-right: 0.5rem;
@@ -69,14 +67,12 @@
     &:hover {
       color: $link-hover-color;
       text-decoration: none;
-
-      background: lighten($td-sidebar-bg-color, 8%);
+      background: rgba($primary, 0.08);
     }
 
     &.active {
-      font-weight: bolder;
       color: $primary;
-      background: lighten($td-sidebar-bg-color, 16%);
+      background: rgba($primary, 0.16);
     }
   }
 
