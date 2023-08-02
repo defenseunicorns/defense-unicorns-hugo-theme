@@ -1,0 +1,7 @@
+homePage = "/docs" # If this is removed then then the site will show a landing page.
+show_metalinks = false
+time_format_blog = "Monday, January 02, 2006"
+time_format_default = "January 2, 2006"
+offlineSearch = true
+offlineSearchSummaryLength = 70
+offlineSearchMaxResults = 10

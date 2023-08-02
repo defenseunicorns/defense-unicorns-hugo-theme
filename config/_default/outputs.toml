@@ -1,0 +1,3 @@
+home = ["HTML"]
+page = ["HTML"]
+section = ["HTML", "RSS", "print"]

@@ -1,0 +1,18 @@
+defaultMarkdownHandler = "goldmark"
+
+[goldmark.parser.attribute]
+block = true
+
+[goldmark.renderer]
+unsafe = true
+
+[highlight]
+style = "dracula"
+codeFences = true
+guessSyntax = true
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+tabWidth = 2
