@@ -6,8 +6,30 @@ offlineSearch = true
 offlineSearchSummaryLength = 70
 offlineSearchMaxResults = 10
 
-[params.drawio]
+[drawio]
 enable = false
 
-[params.plantuml]
+[plantuml]
 enable = false
+
+[print]
+disable_toc = false
+
+[markmap]
+enable = true
+
+[mermaid]
+enable = true
+theme = "dark"
+
+[mermaid.flowchart]
+diagramPadding = 20
+
+[ui]
+sidebar_menu_compact = true
+sidebar_menu_foldable = false
+sidebar_cache_limit = 10
+breadcrumb_disable = false
+
+[ui.readingtime]
+enable = true

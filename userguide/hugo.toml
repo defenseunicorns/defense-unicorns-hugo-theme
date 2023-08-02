@@ -1,4 +1,5 @@
-_merge = 'shallow'
+enableGitInfo = true
+enableRobotsTXT = true
 baseURL = "https://example.com" #Change this to your URL
 theme = "defense-unicorns-hugo-theme"
 
@@ -10,7 +11,7 @@ title = "Defense Unicorns Hugo Theme"
 description = "Theme for our documentation sites"
 
 [params]
-_merge = 'shallow' # Use theme defaults
+_merge = 'deep' # Use theme defaults
 copyright = "Defense Unicorns"
 github_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 github_project_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
@@ -20,7 +21,7 @@ version = "v1.0.0"
 version_menu = "v1.0"
 url_latest_version = "https://example.com"
 
-# Add your release versions here that references the deployed release branch for that version.
+# Examples of versioning.
 [[params.versions]]
 version = "v1.0 - Latest"
 url = "https://master.kubeflow.org"
@@ -34,14 +35,7 @@ version = "v0.3"
 url = "https://v0-3.kubeflow.org"
 
 [params.ui]
-sidebar_menu_compact = true
-sidebar_menu_foldable = false
-sidebar_cache_limit = 10
-breadcrumb_disable = false
 navbar_logo = "img/uds-logo.svg" # The product logo on the navbar
-
-[params.ui.readingtime]
-enable = true
 
 [[params.socialLinks]]
 name = "Community Slack"
@@ -60,27 +54,6 @@ name = "GitHub"
 url = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 icon = "fa-brands fa-github"
 desc = ""
-
-[params.plantuml]
-enable = true
-theme = "default"
-svg_image_url = "https://www.plantuml.com/plantuml/svg/"
-svg = false
-
-[params.print]
-disable_toc = false
-
-[params.markmap]
-enable = true
-
-[params.mermaid]
-theme = "default"
-
-[params.mermaid.flowchart]
-diagramPadding = 20
-
-[params.drawio]
-enable = true
 
 [[module.mounts]]
 source = "content/en"
