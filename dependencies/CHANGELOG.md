@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.10](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.9...dependencies/v0.1.10) (2023-08-04)
+
+
+### Bug Fixes
+
+* rename warning alert to caution ([5ccfc3a](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/5ccfc3a1d3db6fa1922382a5b335b8feca0889fe))
+
 ## [0.1.9](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.8...dependencies/v0.1.9) (2023-08-04)
 
 
