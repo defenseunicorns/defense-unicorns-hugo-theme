@@ -30,7 +30,7 @@
     "update:pkg:modules": "hugo mod get -u ./... "
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "6.4.0",
+    "@fortawesome/fontawesome-free": "6.4.2",
     "bootstrap": "5.3.1"
   },
   "devDependencies": {
