@@ -57,7 +57,7 @@ params:
 {{< /tab >}}
 {{< /tabpane >}}
 
-{{% alert-warning %}}
+{{% alert-caution %}}
   <!-- Remove this warning once the Hugo docs have been updated to include it. -->
 
   You can configure your project's analytics ID by setting either the top-level
@@ -69,7 +69,7 @@ params:
   [alias-discussion]: https://discourse.gohugo.io/t/config-is-services-googleanalytics-id-an-alias-for-googleanalytics/39469
   [unexpected behavior]: https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/921
 
-{{% /alert-warning %}}
+{{% /alert-caution %}}
 
 {{% alert-note %}}
 

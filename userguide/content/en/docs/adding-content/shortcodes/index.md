@@ -155,16 +155,16 @@ The **blocks/link-down** shortcode creates a navigation link down to the next se
 These shortcodes create an alert block that can be used to display several different types of alerts.
 
 ```go-html-template
-{{%/* alert-warning */%}}
-Example of `alert-warning`.
-{{%/* /alert-warning */%}}
+{{%/* alert-caution */%}}
+Example of `alert-caution`.
+{{%/* /alert-caution */%}}
 ```
 
 Renders to:
 
-{{% alert-warning %}}
-Example of `alert-warning`.
-{{% /alert-warning %}}
+{{% alert-caution %}}
+Example of `alert-caution`.
+{{% /alert-caution %}}
 
 Others:
 
@@ -336,12 +336,12 @@ With this shortcode you can embed external content into a page as an inline fram
 | class |  | Optional parameter to set the classes of the iframe.
 | sub | Your browser cannot display embedded frames. You can access the embedded page via the following link: | The text displayed (in addition to the embedded URL) if the user's browser can't display embedded frames.
 
-{{% alert-warning %}}
+{{% alert-caution %}}
 You can only embed external content from a server when its `X-Frame-Options` is not set or if it specifically allows embedding for your site. See <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options> for details.
 
 There are several tools you can use to check if a website can be embedded via iframe - e.g.: <https://gf.dev/x-frame-options-test>. Be aware that when this test says "Couldn’t find the X-Frame-Options header
 in the response headers." you **CAN** embed it, but when the test says "Great! X-Frame-Options header was found in the HTTP response headers as highlighted below.", you **CANNOT** - unless it has been explicitly enabled for your site.
-{{% /alert-warning %}}
+{{% /alert-caution %}}
 
 ## Tabbed panes
 
@@ -683,10 +683,10 @@ To create a new pipeline, follow the next steps:
 
 ---
 
-{{% alert-warning %}}
+{{% alert-caution %}}
 You must use `{{</* */>}}` delimiters for the code highlighting to work
 correctly.
-{{% /alert-warning %}}
+{{% /alert-caution %}}
 
 The `file` parameter is the relative path to the file. Only relative paths
 under the parent file's working directory are supported.

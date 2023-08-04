@@ -1,0 +1,4 @@
+{{ $color := "warning" }}
+{{ $title := "Caution" }}
+
+{{- partial "alert-base" (dict "text" .Inner "color" $color "title" $title) -}}

@@ -3,5 +3,5 @@
 This folder was added to work around a known bug in Go's module management. For details, please refer to:
 [Go issue 37397](https://github.com/golang/go/issues/37397)
 
-7c3f1ad
+9577e30
 

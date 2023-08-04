@@ -276,11 +276,11 @@ path_base_for_github_subdir:
 
 ### `github_url` (optional)
 
-{{% alert-warning %}}
+{{% alert-caution %}}
   This setting is deprecated. Use [path_base_for_github_subdir][] instead.
 
   [path_base_for_github_subdir]: #path_base_for_github_subdir-optional
-{{% /alert-warning %}}
+{{% /alert-caution %}}
 
 Specify a value for this **in your page metadata** to set a specific edit URL for this page, as in the following example:
 

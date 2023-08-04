@@ -43,7 +43,7 @@ The probability of getting \\(k\\) heads when flipping \\(n\\) coins is:
 \tag*{(1)}  P(E) = {n \choose k} p^k (1-p)^{n-k}
 ```
 
-{{% alert-warning %}}
+{{% alert-caution %}}
 `math` code blocks are only supported as of hugo version 0.93.
 
 In case of hugo version 0.92 or lower, use this code snippet to display the formula:
@@ -54,7 +54,7 @@ $$
 $$
 ```
 
-{{% /alert-warning %}}
+{{% /alert-caution %}}
 
 {{% alert-tip %}}
 This [wiki page](https://en.wikibooks.org/wiki/LaTeX/Mathematics) provides in-depth information about typesetting mathematical formulae using the \\(\LaTeX\\) typesetting system.
@@ -265,7 +265,7 @@ More complex equations need to be displayed on their own line. Use a code block 
 \tag*{(2)} \ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
 ```
 
-{{% alert-warning %}}
+{{% alert-caution %}}
 `chem` code blocks are only supported as of hugo version 0.93.
 
 In case of hugo version 0.92 or lower, use this code snippet to display the formula:
@@ -276,7 +276,7 @@ $$
 $$
 ```
 
-{{% /alert-warning %}}
+{{% /alert-caution %}}
 
 {{% alert-note %}}
 The [manual](https://mhchem.github.io/MathJax-mhchem/) for mchem’s input syntax provides in-depth information about typesetting chemical formulae and physical units using the `mhchem` tool.
