@@ -1,3 +1,7 @@
-home    = ["HTML"]
-page    = ["HTML"]
-section = ["HTML", "RSS", "print"]
+home = ["HTML"]
+page = ["HTML"]
+section = [
+    "HTML",
+    "RSS",
+    "print"
+]

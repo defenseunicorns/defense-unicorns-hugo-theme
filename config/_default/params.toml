@@ -7,29 +7,29 @@ time_format_blog           = "Monday, January 02, 2006"
 time_format_default        = "January 2, 2006"
 
 [drawio]
-enable = false
+  enable = false
 
 [plantuml]
-enable = false
+  enable = false
 
 [print]
-disable_toc = false
+  disable_toc = false
 
 [markmap]
-enable = true
+  enable = true
 
 [mermaid]
-enable = true
-theme  = "dark"
+  enable = true
+  theme  = "dark"
 
   [mermaid.flowchart]
-  diagramPadding = 20
+    diagramPadding = 20
 
 [ui]
-breadcrumb_disable    = false
-sidebar_cache_limit   = 10
-sidebar_menu_compact  = true
-sidebar_menu_foldable = false
+  breadcrumb_disable    = false
+  sidebar_cache_limit   = 10
+  sidebar_menu_compact  = true
+  sidebar_menu_foldable = true
 
   [ui.readingtime]
-  enable = true
+    enable = true

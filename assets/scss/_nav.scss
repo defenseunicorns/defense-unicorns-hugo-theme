@@ -185,6 +185,7 @@ nav.foldable-nav {
   }
 
   .ul-1 .with-child > label:before {
+    color: $secondary;
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -198,7 +199,6 @@ nav.foldable-nav {
     padding-left: 0.4em;
     padding-right: 0.4em;
     font-size: 1em;
-    color: $gray-900;
     transition: all 0.5s;
     &:hover {
       transform: rotate(90deg);
