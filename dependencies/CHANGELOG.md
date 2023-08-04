@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.9](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.8...dependencies/v0.1.9) (2023-08-04)
+
+
+### Bug Fixes
+
+* collapse menus ([dd186ff](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/dd186ff18c9393a366060c1b7470eb5dd43244c0))
+
 ## [0.1.8](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.7...dependencies/v0.1.8) (2023-08-02)
 
 
