@@ -15,7 +15,7 @@
     "check:links": "npm run _check:links",
     "precheck:links:all": "npm run build",
     "check:links:all": "HTMLTEST_ARGS= npm run _check:links",
-    "clean": "rm -Rf public resources && hugo mod clean",
+    "clean": "rm -Rf public resources",
     "lint:fix": "markdownlint -f ./content/**/*.md",
     "make:public": "git init -b main public",
     "prepare": "cd .. && npm install",
