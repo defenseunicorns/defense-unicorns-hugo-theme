@@ -258,6 +258,22 @@ resources:
 {{< /tab >}}
 {{< /tabpane >}}
 
+{{< tabpane text=true >}}
+{{< tab  header="C" >}}
+{{% alert-info %}}
+C code
+{{% /alert-info %}}
+{{< readfile file="includes/hello.c" code="true" lang="c" >}}
+{{< /tab >}}
+{{< tab  header="Go" >}}
+Go
+{{< readfile file="includes/hello.go" code="true" lang="go" >}}
+{{< /tab >}}
+{{< tab  header="Node" >}}
+{{< readfile file="includes/hello.js" code="true" lang="js" >}}
+{{< /tab >}}
+{{< /tabpane >}}
+
 | Parameter        | Description  |
 | ----------------: |------------|
 | 1 | The image filename or enough of it to identify it (we do Glob matching)
