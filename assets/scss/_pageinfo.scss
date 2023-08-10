@@ -1,8 +1,8 @@
 .pageinfo {
   font-weight: $font-weight-medium;
-  background: $gray-100;
+  background: $background;
   color: inherit;
-  border-radius: 0;
+  border-radius: $border-radius;
   margin: 2rem;
   padding: 1.5rem;
   padding-bottom: 0.5rem;

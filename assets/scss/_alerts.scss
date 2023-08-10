@@ -3,7 +3,7 @@
 .alert {
   font-weight: $font-weight-medium;
   color: inherit;
-  border-radius: 6;
+  border-radius: $border-radius;
 
   @each $color, $value in $theme-colors {
     &-#{$color} {

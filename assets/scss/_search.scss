@@ -38,7 +38,7 @@
     text-indent: 1.25em;
 
     @if $enable-rounded {
-      border-radius: 4px;
+      border-radius: $border-radius;
     }
 
     &:not(:focus) {

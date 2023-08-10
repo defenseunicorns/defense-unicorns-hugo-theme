@@ -33,7 +33,7 @@
   }
   .index-card {
     background-color: $td-navbar-color !important;
-    border-radius: 6px;
+    border-radius: $border-radius;
     outline: 2px solid $border-color;
     height: 100%;
 

@@ -29,7 +29,7 @@ $surface: $uui-surface !default;
 $secondary: $uui-secondary !default;
 $background: $uui-background !default;
 $body-bg: $uui-background !default;
-$code-background: rgb(45,45,45) !default;
+$code-background: rgb(45, 45, 45) !default;
 $code-inline-background: $uui-divider !default;
 
 $gray-600: $uui-text-disabled;
@@ -37,6 +37,7 @@ $text-muted: $uui-text-disabled !default;
 $text-primary: $uui-text-primary !default;
 $text-secondary: $uui-text-secondary !default;
 $text-disabled: $uui-text-disabled !default;
+$border-radius: 6px;
 
 $breadcrumb-active-color: $text-primary;
 
