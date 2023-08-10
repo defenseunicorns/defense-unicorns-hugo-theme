@@ -106,10 +106,10 @@
 }
 
 .taxonomy-term {
-  background: $primary;
+  background: $primary !important;
   border-width: 0;
   border-radius: 0 3px 3px 0;
-  color: $dark;
+  color: $dark !important;
   display: inline-block;
   font-size: 1em;
   line-height: 1.5em;
@@ -118,15 +118,15 @@
   padding: 0 0.5em 0 1em;
   position: relative;
   margin: 0 0.5em 0.2em 0;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: color 0.2s;
   -webkit-transition: color 0.2s;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0.8em 100%, 0 50%, 0.8em 0);
   clip-path: polygon(100% 0, 100% 100%, 0.8em 100%, 0 50%, 0.8em 0);
 
   &:hover {
-    background-color: $secondary;
-    text-decoration: none;
+    background-color: $secondary !important;
+    text-decoration: none !important;
 
     .taxonomy-count {
       color: $dark !important;
@@ -134,7 +134,7 @@
   }
 
   &:hover::before {
-    background: $primary;
+    background: $primary !important;
   }
 }
 
@@ -145,7 +145,7 @@
     background: none;
     border-width: 0;
     border-radius: 0;
-    color: $gray-600;
+    color: $dark;
     font-size: 1em;
     line-height: 1.5em;
     min-height: 1.5em;
@@ -194,8 +194,7 @@
   }
 }
 
-// Example for icon tags
-.taxo-fruits {
+Example for icon tags .taxo-fruits {
   .taxonomy-term[data-taxonomy-term]::before {
     font-style: normal;
     font-variant: normal;
