@@ -14,4 +14,26 @@
   p {
     margin-top: 0;
   }
+
+  .index-card-wrapper {
+    @extend .card;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 40% !important;
+    margin-bottom: 1rem !important;
+    margin-right: 1rem !important;
+
+
+
+  }
+  .index-card {
+    background-color: $td-navbar-color !important;
+    border-radius: 6px;
+    outline: 2px solid $border-color;
+    height: 100%;
+
+    &:hover {
+      outline-color: $divider
+    }
+  }
 }

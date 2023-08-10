@@ -4,60 +4,63 @@ enableRobotsTXT = true
 theme           = "defense-unicorns-hugo-theme"
 
 [languages.en]
-languageName = "English"
+  languageName = "English"
 
   [languages.en.params]
-  description = "Theme for our documentation sites"
-  title       = "Defense Unicorns Hugo Theme"
+    description = "Theme for our documentation sites"
+    title       = "Defense Unicorns Hugo Theme"
 
 [params]
-_merge              = 'deep'                                                           # Use theme defaults
-archived_version    = false
-copyright           = "Defense Unicorns"
-github_project_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
-github_repo         = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
-github_subdir       = "userguide"
-url_latest_version  = "https://example.com"
-version             = "v1.0.0"
-version_menu        = "v1.0"
+  # Merge theme defaults and allow overriding ../config/_default/params.toml
+  _merge                 = 'deep'
+  archived_version       = false
+  childPageSummaryLength = 100
+  copyright              = "Defense Unicorns"
+  github_project_repo    = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+  github_repo            = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+  github_subdir          = "userguide"
+  no_list                = true
+  url_latest_version     = "https://example.com"
+  version                = "v1.0.0"
+  version_menu           = "v1.0"
 
   # Examples of versioning.
   [[params.versions]]
-  url     = "https://master.kubeflow.org"
-  version = "v1.0 - Latest"
+    url     = "https://master.kubeflow.org"
+    version = "v1.0 - Latest"
 
   [[params.versions]]
-  url     = "https://v0-2.kubeflow.org"
-  version = "v0.2"
+    url     = "https://v0-2.kubeflow.org"
+    version = "v0.2"
 
   [[params.versions]]
-  url     = "https://v0-3.kubeflow.org"
-  version = "v0.3"
+    url     = "https://v0-3.kubeflow.org"
+    version = "v0.3"
 
   [params.ui]
-  navbar_logo = "img/uds-logo.svg" # The product logo on the navbar
+    navbar_logo = "img/uds-logo.svg" # The product logo on the navbar
 
   [[params.socialLinks]]
-  desc = "Discussion and help from your fellow users"
-  icon = "fa-brands fa-slack"
-  name = "Community Slack"
-  url  = "https://communityinviter.com/apps/kubernetes/community"
+    desc = "Discussion and help from your fellow users"
+    icon = "fa-brands fa-slack"
+    name = "Community Slack"
+    url  = "https://communityinviter.com/apps/kubernetes/community"
 
   [[params.socialLinks]]
-  desc = "Defense Unicorns Twitter"
-  icon = "fa-brands fa-twitter"
-  name = "Twitter"
-  url  = "https://twitter.com/DefenseUnicorns"
+    desc = "Defense Unicorns Twitter"
+    icon = "fa-brands fa-twitter"
+    name = "Twitter"
+    url  = "https://twitter.com/DefenseUnicorns"
 
   [[params.socialLinks]]
-  desc = ""
-  icon = "fa-brands fa-github"
-  name = "GitHub"
-  url  = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+    desc = ""
+    icon = "fa-brands fa-github"
+    name = "GitHub"
+    url  = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 
 [[module.mounts]]
-source = "content/en"
-target = "content"
+  source = "content/en"
+  target = "content"
 
 ###
 # You can mount documents from other sources by mounting them here
@@ -66,13 +69,13 @@ target = "content"
 # target = "content/docs"
 ###
 [markup]
-_merge = 'shallow' # Use theme defaults
+  _merge = 'shallow' # Use theme defaults
 
 [outputs]
-_merge = 'shallow' # Use theme defaults
+  _merge = 'shallow' # Use theme defaults
 
 [imaging]
-_merge = 'shallow' # Use theme defaults
+  _merge = 'shallow' # Use theme defaults
 
 [taxonomies]
-_merge = 'shallow'
+  _merge = 'shallow'
