@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.2.1...v0.2.2) (2023-08-10)
+
+
+### Bug Fixes
+
+* correct link behaviors for issue [#71](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/71) ([75f5b54](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/75f5b543bdaca58b549824743d7b792db66883f4))
+* restore missing toc-scroller ([4b62e3d](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/4b62e3d90c71135b4f50dbfafd95e0162f167d4f))
+
 ## [0.2.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.2.0...v0.2.1) (2023-08-10)
 
 
