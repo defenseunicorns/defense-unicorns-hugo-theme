@@ -121,5 +121,9 @@
       @extend .fas;
       content: fa-content($fa-var-times);
     }
+
+    &:hover {
+      transform: scale(1.5);
+    }
   }
 }
