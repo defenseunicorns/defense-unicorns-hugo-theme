@@ -143,3 +143,9 @@ $logo-height: calc(#{$navbar-height} - 6px);
 // Footer
 
 $list-inline-padding: $spacer;
+
+//Tabs
+
+$nav-tabs-link-hover-border-color: $secondary !default;
+$nav-tabs-link-active-bg: $navigation-base !default;
+$nav-tabs-link-active-border-color: $primary !default;

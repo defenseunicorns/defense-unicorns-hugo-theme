@@ -1,6 +1,4 @@
-
 // Style Markdown content
-
 
 .td-content {
   order: 1;
@@ -60,11 +58,11 @@
   }
 
   a {
-    color: $text-primary;
+    color: $link-color;
 
     &:hover {
-      color: shade-color($text-primary, 20%);
-      text-decoration: none;
+      color: shade-color($link-hover-color, $link-shade-percentage);
+      text-decoration: $link-hover-decoration;
     }
   }
 
