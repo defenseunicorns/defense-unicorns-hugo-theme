@@ -3,7 +3,7 @@
 [![Netlify
 Status](https://api.netlify.com/api/v1/badges/cdad1664-97b0-4494-990b-f2b60d6d6154/deploy-status)](https://app.netlify.com/sites/starlit-valkyrie-7f1dd9/deploys)
 
-[Theme Demo](https://main--starlit-valkyrie-7f1dd9.netlify.app/docs/adding-content/shortcodes/)
+[Theme Demo](https://main--starlit-valkyrie-7f1dd9.netlify.app)
 
 Forked from [Docsy](https://www.docsy.dev/docs/), a [Hugo](https://gohugo.io) theme
 for technical documentation.
