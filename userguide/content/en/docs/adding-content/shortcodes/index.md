@@ -258,22 +258,6 @@ resources:
 {{< /tab >}}
 {{< /tabpane >}}
 
-{{< tabpane text=true >}}
-{{< tab  header="C" >}}
-{{% alert-info %}}
-C code
-{{% /alert-info %}}
-{{< readfile file="includes/hello.c" code="true" lang="c" >}}
-{{< /tab >}}
-{{< tab  header="Go" >}}
-Go
-{{< readfile file="includes/hello.go" code="true" lang="go" >}}
-{{< /tab >}}
-{{< tab  header="Node" >}}
-{{< readfile file="includes/hello.js" code="true" lang="js" >}}
-{{< /tab >}}
-{{< /tabpane >}}
-
 | Parameter        | Description  |
 | ----------------: |------------|
 | 1 | The image filename or enough of it to identify it (we do Glob matching)
@@ -363,65 +347,19 @@ in the response headers." you **CAN** embed it, but when the test says "Great! X
 
 Sometimes it's very useful to have tabbed panes when authoring content. One common use-case is to show multiple syntax highlighted code blocks that showcase the same problem, and how to solve it in different programming languages. As an example, the tabbed pane below shows the language-specific variants of the famous `Hello world!` program one usually writes first when learning a new programming language:
 
-{{< tabpane langEqualsHeader=true >}}
-{{< tab "C" >}}
-
-# include <stdio.h>
-
-# include <stdlib.h>
-
-int main(void)
-{
-  puts("Hello World!");
-  return EXIT_SUCCESS;
-}
+{{< tabpane text=true >}}
+{{< tab  header="C"  >}}
+{{% alert-info %}}
+C code
+{{% /alert-info %}}
+{{< readfile file="includes/hello.c" code="true" lang="c" >}}
 {{< /tab >}}
-{{< tab "C++" >}}
-
-# include <iostream>
-
-int main()
-{
-  std::cout << "Hello World!" << std::endl;
-}
+{{< tab  header="Go" >}}
+Go
+{{< readfile file="includes/hello.go" code="true" lang="go" >}}
 {{< /tab >}}
-{{< tab "Go" >}}
-package main
-import "fmt"
-func main() {
-  fmt.Printf("Hello World!\n")
-}
-{{< /tab >}}
-{{< tab "Java" >}}
-class HelloWorld {
-  static public void main( String args[] ) {
-    System.out.println( "Hello World!" );
-  }
-}
-{{< /tab >}}
-{{< tab "Kotlin" >}}
-fun main(args : Array<String>) {
-    println("Hello, world!")
-}
-{{< /tab >}}
-{{< tab "Lua" >}}
-print "Hello world"
-{{< /tab >}}
-{{< tab PHP >}}
-<?php
-echo 'Hello World!';
-?>
-{{< /tab >}}
-{{< tab "Python" >}}
-print("Hello World!")
-{{< /tab >}}
-{{< tab "Ruby" >}}
-puts "Hello World!"
-{{< /tab >}}
-{{< tab header="Scala" >}}
-object HelloWorld extends App {
-  println("Hello world!")
-}
+{{< tab  header="Node" >}}
+{{< readfile file="includes/hello.js" code="true" lang="js" >}}
 {{< /tab >}}
 {{< /tabpane >}}
 
