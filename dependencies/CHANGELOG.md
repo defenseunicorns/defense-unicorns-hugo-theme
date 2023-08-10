@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.2.0...dependencies/v0.2.1) (2023-08-10)
+
+
+### Bug Fixes
+
+* update pack-lock.json ([ad07704](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/ad07704e8c2d5287e71bfd4ade330a1a3af6c2bc))
+
 ## [0.2.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.1.10...dependencies/v0.2.0) (2023-08-10)
 
 
