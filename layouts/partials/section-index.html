@@ -14,6 +14,7 @@
     {{/* If no_list is true or we don't have subpages we don't show a list of subpages */}}
   {{ else if $parent.Params.simple_list }}
     {{/* If simple_list is true we show a bulleted list of subpages */}}
+    {{ template "header" }}
     <ul>
       {{ range $pages }}
         {{ $manualLink := cond (isset .Params "manuallink") .Params.manualLink ( cond (isset .Params "manuallinkrelref") (relref . .Params.manualLinkRelref) .RelPermalink) }}
@@ -33,8 +34,7 @@
     </ul>
   {{ else }}
     {{/* Otherwise we show a nice formatted list of subpages with page descriptions */}}
-    <hr class="panel-line" />
-
+    {{ template "header" }}
     <div class="td-card-group card-group p-0 mb-4">
       {{ range $pages }}
         {{ $manualLink := cond (isset .Params "manuallink") .Params.manualLink ( cond (isset .Params "manuallinkrelref") (relref . .Params.manualLinkRelref) .RelPermalink) }}
@@ -63,3 +63,8 @@
     </div>
   {{ end }}
 </div>
+
+{{ define "header" }}
+  <hr class="panel-line" />
+  <div class="section-title">Section Index</div>
+{{ end }}

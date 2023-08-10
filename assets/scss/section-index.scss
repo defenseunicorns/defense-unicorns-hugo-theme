@@ -15,6 +15,14 @@
     margin-top: 0;
   }
 
+  .section-title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: inherit;
+    margin-bottom: 1.5rem;
+  }
+
   .index-card-wrapper {
     @extend .card;
     flex-grow: 1;
@@ -22,9 +30,6 @@
     flex-basis: 40% !important;
     margin-bottom: 1rem !important;
     margin-right: 1rem !important;
-
-
-
   }
   .index-card {
     background-color: $td-navbar-color !important;
@@ -33,7 +38,7 @@
     height: 100%;
 
     &:hover {
-      outline-color: $divider
+      outline-color: $divider;
     }
   }
 }
