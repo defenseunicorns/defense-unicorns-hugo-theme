@@ -9,7 +9,7 @@ The Docsy [docs and blog layouts](/docs/adding-content/content/#adding-docs-and-
 * **View page source**: Brings the user to the page source in your docs repo.
 * **Edit this page**: Brings the user to an editable version of the page content in their fork (if available) of your docs repo. If the user doesn't have a current fork of your docs repo, they are invited to create one before making their edit. The user can then create a pull request for your docs.
 * **Create child page**: Brings the user to a create new file form in their fork of your docs repo.  The new file will be located as a child of the page they clicked the link on.  The form will be pre-populated with a template the user can edit to create their page.  You can change this by adding `assets/stubs/new-page-template.md` to your own project.
-* **Create documentation issue**: Brings the user to a new issue form in your docs repo with the name of the current page as the issue's title.
+* **Create issue**: Brings the user to a new issue form in your docs repo with the name of the current page as the issue's title.
 * **Create project issue** (optional): Brings the user to a new issue form in your project repo. This can be useful if you have separate project and docs repos and your users want to file issues against the project feature being discussed rather than your docs.
 
 This page shows you how to configure these links.
@@ -20,7 +20,7 @@ There are four variables you can configure in `hugo.toml`/`hugo.yaml`/`hugo.json
 
 ### `github_repo`
 
-The URL for your site's source repository. This is used to generate the **Edit this page**, **Create child page**, and **Create documentation issue** links.
+The URL for your site's source repository. This is used to generate the **Edit this page**, **Create child page**, and **Create issue** links.
 
 {{< tabpane persistLang=false >}}
 {{< tab header="Configuration file:" disabled=true />}}
@@ -333,7 +333,7 @@ Link kind | Class name
 View page source | `.td-page-meta--view`
 Edit this page | `.td-page-meta--edit`
 Create child page | `.td-page-meta--child`
-Create documentation issue | `.td-page-meta--issue`
+Create issue | `.td-page-meta--issue`
 Create project issue | `.td-page-meta--project-issue`
 
 Of course, you can also use these classes to give repository links unique styles

@@ -3,12 +3,12 @@ title: "Print Support"
 linkTitle: "Print Support"
 weight:  7
 description: >
-     Making it easier to print entire sections of documentation.
+     Making it easier to Print sections of documentation.
 ---
 
 Individual documentation pages print well from most browsers as the layouts have been styled to omit navigational chrome from the printed output.
 
-On some sites, it can be useful to enable a "print entire section" feature (as seen in this user guide).  Selecting this option renders the entire current top-level section (such as Content and Customization for this page) with all of its child pages and sections in a format suited to printing, complete with a table of contents for the section.
+On some sites, it can be useful to enable a "Print section" feature (as seen in this user guide).  Selecting this option renders the entire current top-level section (such as Content and Customization for this page) with all of its child pages and sections in a format suited to printing, complete with a table of contents for the section.
 
 To enable this feature, add the "print" output format in your site's `hugo.toml`/`hugo.yaml`/`hugo.json` file for the "section" type:
 
@@ -38,7 +38,7 @@ outputs:
 {{< /tab >}}
 {{< /tabpane >}}
 
-The site should then show a "Print entire section" link in the right hand navigation.
+The site should then show a "Print section" link in the right hand navigation.
 
 ## Further Customization
 
@@ -57,10 +57,12 @@ disable_toc = true
 {{< /tab >}}
 {{< tab header="yaml" lang="yaml" >}}
 ---
+
 …
 disable_toc: true
 …
 ---
+
 {{< /tab >}}
 {{< tab header="json" lang="json" >}}
 {
@@ -97,7 +99,3 @@ A number of layout partials and hooks are defined that can be used to customize 
 Hooks can be defined on a per-type basis.  For example, you may want to customize the layouts of heading for "blog" pages vs "docs". This can be achieved by creating `layouts/partials/print/page-heading-<type>.html` - eg. `page-heading-blog.html`.  It defaults to using the page title and description as a heading.
 
 Similarly, the formatting for each page can be customized by creating `layouts/partials/print/content-<type>.html`.
-
-
-
-

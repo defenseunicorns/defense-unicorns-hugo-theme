@@ -1,11 +1,12 @@
-homePage                   = "/docs"                    # If this is removed then then the site will show a landing page.
+childPageSummaryLength     = 100                        # Number of characters to show in child summary
+homePage                   = "/docs"                    # If removed, the site will have a landing page
+noPageIndex                = false                      #Turns off child page index
 offlineSearch              = true
 offlineSearchMaxResults    = 10
 offlineSearchSummaryLength = 70
-show_metalinks             = false
+show_metalinks             = true
 time_format_blog           = "Monday, January 02, 2006"
 time_format_default        = "January 2, 2006"
-
 [drawio]
   enable = false
 
