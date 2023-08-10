@@ -1,25 +1,25 @@
 {{/* Check parameter types */ -}}
 {{ with .Get "langEqualsHeader" -}}
   {{ if ne ( printf "%T" . )  "bool" -}}
-    {{ errorf "Shortcode %q: boolean value expected for parameter %q, but got %s. Error position: %s" $.Name "langEqualsHeader" (printf "%T" .) $.Position  -}}
+    {{ errorf "Shortcode %q: boolean value expected for parameter %q, but got %s. Error position: %s" $.Name "langEqualsHeader" (printf "%T" .) $.Position -}}
   {{ end -}}
 {{ end -}}
 
 {{ with .Get "text" -}}
   {{ if ne ( printf "%T" . ) "bool" -}}
-    {{ errorf "Shortcode %q: boolean value expected for parameter %q, but got %s. Error position: %s" $.Name "text" (printf "%T" .) $.Position  -}}
+    {{ errorf "Shortcode %q: boolean value expected for parameter %q, but got %s. Error position: %s" $.Name "text" (printf "%T" .) $.Position -}}
   {{ end -}}
 {{ end -}}
 
 {{ with .Get "persistLang" -}}
   {{ if ne ( printf "%T" . ) "bool" -}}
-    {{ errorf "Shortcode %q: boolean value expected for parameter %q, but got %s. Error position: %s" $.Name "persistLang" (printf "%T" .) $.Position  -}}
+    {{ errorf "Shortcode %q: boolean value expected for parameter %q, but got %s. Error position: %s" $.Name "persistLang" (printf "%T" .) $.Position -}}
   {{ end -}}
 {{ end -}}
 
 {{ with .Get "right" -}}
   {{ if ne ( printf "%T" . ) "bool" -}}
-    {{ errorf "Shortcode %q: boolean value expected for parameter %q, but got %s. Error position: %s" $.Name "right" (printf "%T" .) $.Position  -}}
+    {{ errorf "Shortcode %q: boolean value expected for parameter %q, but got %s. Error position: %s" $.Name "right" (printf "%T" .) $.Position -}}
   {{ end -}}
 {{ end -}}
 
@@ -42,13 +42,16 @@
 {{ if ge hugo.Version "0.93.0" -}}
   {{ if .Page.Store.Get "Ordinal" -}}
     {{ $Ordinal = .Page.Store.Get "Ordinal" -}}
-  {{end -}}
+  {{ end -}}
 {{ end -}}
 
 {{/* Nav tabs */ -}}
-<ul class="nav nav-tabs{{ if $rightPane }} justify-content-end{{ end }}" id="tabs-{{- $Ordinal -}}" role="tablist">
+<ul
+  class="nav nav-tabs{{ if $rightPane }}justify-content-end{{ end }}"
+  id="tabs-{{- $Ordinal -}}"
+  role="tablist"
+>
   {{ range $index, $element := $.Scratch.Get "tabs" -}}
-
     {{ $disabled := false -}}
     {{ with $element.disabled -}}
       {{ $disabled = . -}}
@@ -80,15 +83,32 @@
 
     {{/* Replace space and +, not valid for css selectors */ -}}
     {{ $lang := replaceRE "[\\s+]" "-" $lang -}}
-    <li class="nav-item{{ if $rightpush }} ms-auto{{ end -}}">
+    <li class="nav-item{{ if $rightpush }}ms-auto{{ end -}}">
       {{/* Generate the IDs for the <a> and the <div> elements */ -}}
       {{ $tabid := printf "tabs-%02v-%v-tab" $Ordinal $index | anchorize -}}
       {{ $entryid := printf "tabs-%02v-%v" $Ordinal $index | anchorize -}}
 
-      <button class="nav-link{{ if and ( not $activeSet ) ( not $disabled ) }} active{{ end }}{{ if $disabled }} disabled{{ end }}{{ if ne $lang "" }}{{ if and $persistLang (not $duplicate) }} persistLang-{{- $lang -}}{{ end }}{{ end }}"
-          id="{{ $tabid }}" data-bs-toggle="tab" data-bs-target="#{{ $entryid }}" role="tab"
-          {{ if ne $lang "" }}{{ if and $persistLang (not $duplicate) }}onclick="persistLang({{ $lang }});"{{ end }}{{ end -}}
-          aria-controls="{{- $entryid -}}" aria-selected="{{- cond ( and ( not $activeSet ) ( not $disabled ) ) "true" "false" -}}">
+
+      <button
+        class="nav-link{{ if and ( not $activeSet ) ( not $disabled ) }}
+          active
+        {{ end }}{{ if $disabled }}disabled{{ end }}{{ if ne $lang "" }}
+          {{ if and $persistLang (not $duplicate) }}
+            persistLang-{{- $lang -}}
+          {{ end }}
+        {{ end }}"
+        id="{{ $tabid }}"
+        data-bs-toggle="tab"
+        data-bs-target="#{{ $entryid }}"
+        role="tab"
+        {{ if ne $lang "" }}
+          {{ if and $persistLang (not $duplicate) }}
+            onclick="persistLang({{ $lang }});"
+          {{ end }}
+        {{ end -}}
+        aria-controls="{{- $entryid -}}"
+        aria-selected="{{- cond ( and ( not $activeSet ) ( not $disabled ) ) "true" "false" -}}"
+      >
         {{ index . "header" | markdownify }}
       </button>
     </li>
@@ -110,7 +130,6 @@
 {{/* Tab panes */ -}}
 <div class="tab-content" id="tabs-{{ $Ordinal }}-content">
   {{- range $index, $element := $.Scratch.Get "tabs" -}}
-
     {{ $lang := $langPane -}}
     {{ if $langEqualsHeader -}}
       {{ $lang = $element.header -}}
@@ -136,13 +155,22 @@
 
     {{ $tabid := printf "tabs-%02v-%v-tab" $Ordinal $index | anchorize -}}
     {{ $entryid := printf "tabs-%02v-%v" $Ordinal $index | anchorize }}
-    <div class="{{ if $text }}tab-body {{end}}tab-pane fade{{ if and ( not $activeSet ) ( not $disabled ) }} show active{{ end }}"
-        id="{{ $entryid }}" role="tabpanel" aria-labelled-by="{{ $tabid }}" tabindex="{{ $Ordinal }}">
-        {{ if $text -}}
-          {{ index . "content" -}}
-        {{ else -}}
-          {{ highlight (trim (index . "content") "\r\n") $lang $hloptions -}}
-        {{ end }}
+    <div
+      class="{{ if $text }}
+        tab-body
+      {{ end }}tab-pane fade{{ if and ( not $activeSet ) ( not $disabled ) }}
+        show active
+      {{ end }}"
+      id="{{ $entryid }}"
+      role="tabpanel"
+      aria-labelled-by="{{ $tabid }}"
+      tabindex="{{ $Ordinal }}"
+    >
+      {{ if $text -}}
+        {{ index . "content" -}}
+      {{ else -}}
+        {{ highlight (trim (index . "content") "\r\n") $lang $hloptions -}}
+      {{ end }}
     </div>
 
     {{- if not $disabled -}}
