@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.1.10...v0.2.0) (2023-08-10)
+
+
+### Features
+
+* Create section index cards ([4b66709](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/4b66709f04b1c4aa9270608f1c280fafffb2ab90))
+
+
+### Bug Fixes
+
+* change taxonomy section style to match ([b79f22f](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/b79f22f8e4059bae70092cab4aab701dc470dce2))
+* default metadata links on ([01a77a3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/01a77a367c117c1eb70f6b95b368e21b3242338c))
+
 ## [0.1.10](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.1.9...v0.1.10) (2023-08-04)
 
 
