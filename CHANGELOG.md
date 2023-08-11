@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.2.2...v0.2.3) (2023-08-11)
+
+
+### Bug Fixes
+
+* Replace favicon with Doug ([3a9bdbf](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/3a9bdbf5ba4c9a1427a60c06b7d50b1ea53c2baf))
+
 ## [0.2.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.2.1...v0.2.2) (2023-08-10)
 
 
