@@ -31,7 +31,7 @@
       },
     }
   </script>
-  <script src="{{ "js/markmap-autoloader.min.js" | relURL }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
 {{ end -}}
 
 {{ if .Site.Params.plantuml.enable -}}
@@ -55,7 +55,11 @@
 
 {{ if $needmermaid -}}
   {{ $jsArray = $jsArray | append $jsMermaid -}}
-  <script src="{{ "js/mermaid.min.js" | relURL }}"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"
+    integrity="sha512-ku2nmBrzAXY5YwohzTqLYH1/lvyMrpTVxgQKrvTabd/b/uesqltLORdmpVapYv6QhZVCLUX6wkvFaKOAY4xpUA=="
+    crossorigin="anonymous"
+  ></script>
 {{ end -}}
 
 {{ $js := $jsArray | resources.Concat "js/main.js" -}}
