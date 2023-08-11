@@ -15,5 +15,4 @@ assets/js/markmap.js
 assets/js/mermaid.js
 assets/js/plantuml.js
 assets/js/base.js
-static/js/deflate.js
-static/js/swagger*.js
+static/js/
