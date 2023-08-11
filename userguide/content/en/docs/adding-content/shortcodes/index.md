@@ -268,21 +268,8 @@ resources:
 
 The `swaggerui` shortcode can be placed anywhere inside a page with the [`swagger` layout](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/tree/main/layouts/swagger); it renders [Swagger UI](https://swagger.io/tools/swagger-ui/) using any OpenAPI YAML or JSON file as source. This file can be hosted anywhere you like, for example in your site's root [`/static` folder](/docs/adding-content/content/#adding-static-content).
 
-{{< tabpane persistLang=false >}}
-{{< tab header="Front matter:" disabled=true />}}
-{{< tab header="toml" lang="toml" >}}
-+++
-title = "Pet Store API"
-type = "swagger"
-weight = 1
-description = "Reference for the Pet Store API"
-+++
-
-{{</*swaggerui src="/openapi/petstore.yaml"*/>}}
-{{< /tab >}}
-{{< tab header="yaml" lang="yaml" >}}
+```yaml
 ---
-
 title: "Pet Store API"
 type: swagger
 weight: 1
@@ -290,18 +277,7 @@ description: Reference for the Pet Store API
 ---
 
 {{</*swaggerui src="/openapi/petstore.yaml"*/>}}
-{{< /tab >}}
-{{< tab header="json" lang="json" >}}
-{
-  "title": "Pet Store API",
-  "type": "swagger",
-  "weight": 1,
-  "description": "Reference for the Pet Store API"
-}
-
-{{</*swaggerui src="/openapi/petstore.yaml"*/>}}
-{{< /tab >}}
-{{< /tabpane >}}
+```
 
 You can customize Swagger UI's look and feel by overriding Swagger's CSS or by editing and compiling a [Swagger UI dist](https://github.com/swagger-api/swagger-ui) yourself and replacing `static/css/swagger-ui.css`.
 
