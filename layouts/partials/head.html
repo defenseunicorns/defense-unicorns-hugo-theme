@@ -42,7 +42,12 @@
   crossorigin="anonymous"
 ></script>
 
-<script src="{{ "js/lunr.min.js" | relURL }}"></script>
+<script
+  defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"
+></script>
 
 {{ partial "hooks/head-end.html" . -}}
 
