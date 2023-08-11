@@ -1,4 +1,3 @@
-/* stylelint-disable no-duplicate-selectors */
 // Taxonomies - e.g. Tags, Categories, ...
 
 .taxonomy-terms-article {
@@ -127,14 +126,6 @@
   &:hover {
     background-color: $secondary !important;
     text-decoration: none !important;
-
-    .taxonomy-count {
-      color: $dark !important;
-    }
-  }
-
-  &:hover::before {
-    background: $primary !important;
   }
 }
 
@@ -189,12 +180,12 @@
     font-size: 0.75em;
   }
 
-  .taxonomy-term:hover .taxonomy-count {
-    color: $link-color !important;
-  }
+  // .taxonomy-term:hover .taxonomy-count {
+  //   color: $link-color !important;
+  // }
 }
 
-Example for icon tags .taxo-fruits {
+.taxo-fruits {
   .taxonomy-term[data-taxonomy-term]::before {
     font-style: normal;
     font-variant: normal;
