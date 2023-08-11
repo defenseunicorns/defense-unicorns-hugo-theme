@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.2.3...dependencies/v0.2.4) (2023-08-11)
+
+
+### Bug Fixes
+
+* update .prettierignore ([f3c6cb3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/f3c6cb37e11aba17156b0a1ea155e89f045a65c8))
+
 ## [0.2.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.2.2...dependencies/v0.2.3) (2023-08-11)
 
 
