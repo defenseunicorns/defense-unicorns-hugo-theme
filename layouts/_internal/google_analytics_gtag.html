@@ -17,9 +17,10 @@
 
 */}}
 
+
 {{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
-{{- if not $pc.Disable }}{{ with .Site.GoogleAnalytics -}}
-<!-- TODO: Deactivate if airgapped -->
+{{- if not $pc.Disable }}
+{{ with .Site.GoogleAnalytics -}}
 
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>
@@ -31,7 +32,8 @@ if (!doNotTrack) {
 	gtag('config', '{{ . }}');
 }
 </script>
-{{- end }}{{ end -}}
+{{- end }}
+{{ end -}}
 
 {{- define "__ga_js_set_doNotTrack" -}}{{/* This is also used in the async version. */}}
 {{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
