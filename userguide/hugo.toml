@@ -76,6 +76,22 @@ theme           = "defense-unicorns-hugo-theme"
   source = "node_modules/redoc/bundles"
   target = "assets/js/redoc"
 
+[[module.mounts]]
+  source = "node_modules/mermaid/dist"
+  target = "assets/js/mermaid"
+
+[[module.mounts]]
+  source = "node_modules/markmap-autoloader/dist"
+  target = "assets/js/markmap-autoloader"
+
+[[module.mounts]]
+  source = "node_modules/jquery/dist"
+  target = "assets/js/jquery"
+
+[[module.mounts]]
+  source = "node_modules/lunr"
+  target = "assets/js/lunr"
+
   ### End air-gapped
 
 [markup]

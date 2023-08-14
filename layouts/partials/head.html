@@ -37,30 +37,35 @@
 {{ template "_internal/twitter_cards.html" . -}}
 {{ partialCached "head-css.html" . "asdf" -}}
 
+{{ if .Site.Params.airgapped }}
+  {{ $jquery := resources.Get "js/jquery/jquery.min.js" -}}
+  <script src="{{ $jquery.RelPermalink }}"></script>
+{{ else }}
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous"
+  ></script>
+{{ end }}
 
-<!-- TODO: Deactivate if airgapped -->
-
-<script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-  crossorigin="anonymous"
-></script>
-
-<!-- TODO: Deactivate if airgapped -->
-
-<script
-  defer
-  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
-  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
-  crossorigin="anonymous"
-></script>
+{{ if .Site.Params.airgapped }}
+  {{ $lunr := resources.Get "js/lunr/lunr.min.js" -}}
+  <script src="{{ $lunr.RelPermalink }}"></script>
+{{ else }}
+  <script
+    defer
+    src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+    integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+    crossorigin="anonymous"
+  ></script>
+{{ end }}
 
 {{ partial "hooks/head-end.html" . -}}
 
 {{/* To comply with GDPR, cookie consent scripts places in head-end must execute before Google Analytics is enabled */ -}}
 {{ if hugo.IsProduction -}}
   {{ $enableGtagForUniversalAnalytics := not .Site.Params.disableGtagForUniversalAnalytics -}}
-  {{ if (or $enableGtagForUniversalAnalytics (hasPrefix .Site.GoogleAnalytics "G-")) -}}
+  {{ if and not .Site.Params.airgapped (or $enableGtagForUniversalAnalytics (hasPrefix .Site.GoogleAnalytics "G-")) -}}
     {{ template "_internal/google_analytics_gtag.html" . -}}
   {{ else -}}
     {{ template "_internal/google_analytics_async.html" . -}}
