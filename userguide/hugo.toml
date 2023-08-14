@@ -71,7 +71,7 @@ theme           = "defense-unicorns-hugo-theme"
   ###
 
 ###
-# For air-gapped, mount the dependencies from node_modules
+# For air-gapped, mount these dependencies from node_modules
 [[module.mounts]]
   source = "node_modules/redoc/bundles"
   target = "assets/js/redoc"
@@ -91,6 +91,10 @@ theme           = "defense-unicorns-hugo-theme"
 [[module.mounts]]
   source = "node_modules/lunr"
   target = "assets/js/lunr"
+
+[[module.mounts]]
+  source = "node_modules/@fontsource/roboto"
+  target = "assets/fonts/roboto"
 
   ### End air-gapped
 

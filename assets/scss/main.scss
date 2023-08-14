@@ -1,43 +1,39 @@
-@import '../vendor/bootstrap/scss/functions';
+@import "../vendor/bootstrap/scss/functions";
 
-@import 'support/functions';
-@import '_variables_forward';
-@import 'variables_project';
-@import 'variables';
-@import 'support/mixins';
+@import "support/functions";
+@import "_variables_forward";
+@import "variables_project";
+@import "variables";
+@import "support/mixins";
 
-@import '../vendor/bootstrap/scss/bootstrap';
-@import 'support/bootstrap_vers_test';
+@import "../vendor/bootstrap/scss/bootstrap";
+@import "support/bootstrap_vers_test";
 
-@import '../vendor/Font-Awesome/scss/fontawesome';
-@import '../vendor/Font-Awesome/scss/solid';
-@import '../vendor/Font-Awesome/scss/brands';
+@import "../vendor/Font-Awesome/scss/fontawesome";
+@import "../vendor/Font-Awesome/scss/solid";
+@import "../vendor/Font-Awesome/scss/brands";
 
-@import 'support/utilities';
-@import 'colors';
-@import 'table';
-@import 'boxes';
-@import 'blog';
-@import 'code';
-@import 'nav';
-@import 'sidebar-tree';
-@import 'sidebar-toc';
-@import 'buttons';
-@import 'breadcrumb';
-@import 'alerts';
-@import 'content';
-@import 'search';
-@import 'main-container';
-@import 'blocks/blocks';
-@import 'section-index';
-@import 'pageinfo';
-@import 'taxonomy';
-@import 'drawio';
-@import 'shortcodes';
-
-@if $td-enable-google-fonts {
-  @import url($web-font-path);
-}
+@import "support/utilities";
+@import "colors";
+@import "table";
+@import "boxes";
+@import "blog";
+@import "code";
+@import "nav";
+@import "sidebar-tree";
+@import "sidebar-toc";
+@import "buttons";
+@import "breadcrumb";
+@import "alerts";
+@import "content";
+@import "search";
+@import "main-container";
+@import "blocks/blocks";
+@import "section-index";
+@import "pageinfo";
+@import "taxonomy";
+@import "drawio";
+@import "shortcodes";
 
 .td-footer {
   @extend .td-box--dark;
@@ -71,7 +67,6 @@
       }
     }
   }
-
 }
 
 // Adjust anchors vs the fixed menu.
@@ -88,11 +83,11 @@
   h4[id]:before,
   h5[id]:before {
     display: block;
-    content: ' ';
+    content: " ";
     margin-top: -5rem;
     height: 5rem;
     visibility: hidden;
   }
 }
 
-@import 'styles_project';
+@import "styles_project";

@@ -2,57 +2,71 @@
 #
 
 [params]
-rss_sections        = ["blog"]
-time_format_blog    = "Monday, January 02, 2006"
-time_format_default = "January 2, 2006"
+    rss_sections = [
+        "blog"
+    ]
+    time_format_blog = "Monday, January 02, 2006"
+    time_format_default = "January 2, 2006"
 
 [outputFormats.PRINT]
-baseName      = "index"
-isHTML        = true
-mediaType     = "text/html"
-path          = "_print"
-permalinkable = false
+    baseName      = "index"
+    isHTML        = true
+    mediaType     = "text/html"
+    path          = "_print"
+    permalinkable = false
 
 [module.hugoVersion]
-extended = true
-min      = "v0.110.0"
+    extended = true
+    min      = "v0.110.0"
 
 [[module.mounts]]
-source = "assets"
-target = "assets"
+    source = "assets"
+    target = "assets"
 
 [[module.mounts]]
-source = "node_modules/bootstrap"
-target = "assets/vendor/bootstrap"
+    source = "node_modules/bootstrap"
+    target = "assets/vendor/bootstrap"
 
 [[module.mounts]]
-source = "node_modules/@fortawesome/fontawesome-free"
-target = "assets/vendor/Font-Awesome"
+    source = "node_modules/@fortawesome/fontawesome-free"
+    target = "assets/vendor/Font-Awesome"
 
 [[module.mounts]]
-source = "i18n"
-target = "i18n"
+    source = "node_modules/@fontsource/roboto"
+    target = "assets/vendor/Roboto"
 
 [[module.mounts]]
-source = "layouts"
-target = "layouts"
+    source = "i18n"
+    target = "i18n"
 
 [[module.mounts]]
-source = "static"
-target = "static"
+    source = "layouts"
+    target = "layouts"
 
 [[module.mounts]]
-source = "node_modules/@fortawesome/fontawesome-free/webfonts"
-target = "static/webfonts"
+    source = "static"
+    target = "static"
 
 [[module.mounts]]
-source = "../../node_modules/bootstrap"
-target = "assets/vendor/bootstrap"
+    source = "node_modules/@fortawesome/fontawesome-free/webfonts"
+    target = "static/webfonts"
 
 [[module.mounts]]
-source = "../../node_modules/@fortawesome/fontawesome-free"
-target = "assets/vendor/Font-Awesome"
+    source = "../../node_modules/bootstrap"
+    target = "assets/vendor/bootstrap"
 
 [[module.mounts]]
-source = "../../node_modules/@fortawesome/fontawesome-free/webfonts"
-target = "static/webfonts"
+    source = "../../node_modules/@fortawesome/fontawesome-free"
+    target = "assets/vendor/Font-Awesome"
+
+    # [[module.mounts]]
+    #     source = "../../node_modules/@fontsource/roboto"
+    #     target = "assets/vendor/Roboto"
+
+[[module.mounts]]
+    source = "../../node_modules/@fortawesome/fontawesome-free/webfonts"
+    target = "static/webfonts"
+
+[[module.mounts]]
+    source = "node_modules/@fontsource/roboto/files"
+    target = "static/webfonts"
