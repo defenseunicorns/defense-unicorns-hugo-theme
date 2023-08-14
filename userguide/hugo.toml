@@ -13,6 +13,7 @@ theme           = "defense-unicorns-hugo-theme"
 [params]
   # Merge theme defaults and allow overriding ../config/_default/params.toml
   _merge                 = 'deep'
+  airgapped              = true
   archived_version       = false
   childPageSummaryLength = 100
   copyright              = "Defense Unicorns"
