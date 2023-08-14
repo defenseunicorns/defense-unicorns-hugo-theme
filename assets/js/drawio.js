@@ -20,6 +20,7 @@
     }
   }
 
+  // TODO: Deactivate if airgapped
   var imghandler = function (img, imgdata) {
     var url = {{ .drawio_server | default "https://embed.diagrams.net/" | jsonify }};
     url += '?embed=1&ui=atlas&spin=1&modified=unsavedChanges&proto=json&saveAndEdit=1&noSaveBtn=1';

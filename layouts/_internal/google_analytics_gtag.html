@@ -19,6 +19,8 @@
 
 {{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
 {{- if not $pc.Disable }}{{ with .Site.GoogleAnalytics -}}
+<!-- TODO: Deactivate if airgapped -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>
 {{ template "__ga_js_set_doNotTrack" $ }}
