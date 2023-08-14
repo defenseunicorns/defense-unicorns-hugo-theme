@@ -63,12 +63,21 @@ theme           = "defense-unicorns-hugo-theme"
   source = "content/en"
   target = "content"
 
+  ###
+  # You can mount documents from other sources by mounting them here
+  # [[module.mounts]]
+  # source = "../docs"
+  # target = "content/docs"
+  ###
+
 ###
-# You can mount documents from other sources by mounting them here
-# [[module.mounts]]
-# source = "../docs"
-# target = "content/docs"
-###
+# For air-gapped, mount the dependencies from node_modules
+[[module.mounts]]
+  source = "node_modules/redoc/bundles"
+  target = "assets/js/redoc"
+
+  ### End air-gapped
+
 [markup]
   _merge = 'shallow' # Use theme defaults
 

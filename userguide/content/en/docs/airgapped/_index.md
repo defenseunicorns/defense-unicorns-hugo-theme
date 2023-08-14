@@ -1,6 +1,7 @@
 ---
 title: "Airgapped Deploy Configuration"
 linkTitle: "Airgapped Deploy"
+weight: -1
 description: >
   How to configure for disconnected environments
 ---

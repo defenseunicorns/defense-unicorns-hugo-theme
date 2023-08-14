@@ -114,6 +114,10 @@
 <!--
     Link to Redoc JavaScript on CDN for rendering standalone element
     -->
-<!-- TODO: Deactivate if airgapped -->
 
-<script src="https://cdn.jsdelivr.net/npm/redoc@latest/bundles/redoc.standalone.js"></script>
+{{ if .Site.Params.airgapped }}
+  {{ $redoc := resources.Get "js/redoc/redoc.standalone.js" -}}
+  <script src="{{ $redoc.RelPermalink }}"></script>
+{{ else }}
+  <script src="https://cdn.jsdelivr.net/npm/redoc@latest/bundles/redoc.standalone.js"></script>
+{{ end }}
