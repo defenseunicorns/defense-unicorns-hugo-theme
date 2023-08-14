@@ -1,3 +1,4 @@
+airgapped                  = false                      # Use local JS resources instead of CDNs
 childPageSummaryLength     = 100                        # Number of characters to show in child summary
 homePage                   = "/docs"                    # If removed, the site will have a landing page
 noPageIndex                = false                      #Turns off child page index

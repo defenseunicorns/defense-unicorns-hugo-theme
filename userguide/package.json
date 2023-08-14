@@ -25,7 +25,12 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "jquery": "^3.7.0",
+    "lunr": "^2.3.9",
     "markdownlint-cli": "^0.35.0",
-    "postcss-cli": "^10.1.0"
+    "markmap-autoloader": "^0.15.4",
+    "mermaid": "^10.3.1",
+    "postcss-cli": "^10.1.0",
+    "redoc": "^2.0.0"
   }
 }

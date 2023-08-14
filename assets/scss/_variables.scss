@@ -88,23 +88,14 @@ $link-hover-decoration: underline !default;
 
 // Fonts
 
-$td-enable-google-fonts: true !default;
-
-$google_font_name: "Roboto" !default;
-$google_font_family: "Roboto:300,300i,400,400i,700,700i" !default;
-$web-font-path: "https://fonts.googleapis.com/css?family=#{$google_font_family}&display=swap";
 $font-awesome-font-name: "Font Awesome 6 Free" !default;
 
-$td-fonts-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-@if $td-enable-google-fonts {
-  $td-fonts-serif: prepend($td-fonts-serif, "#{$google_font_name}");
-}
+$td-fonts-serif: $uui-global-font-family !default;
 
 $font-family-sans-serif: $td-fonts-serif !default;
 
 $font-family-monospace: sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace !default;
+
 $font-family-base: $font-family-sans-serif !default;
 
 // Font weights

@@ -13,6 +13,7 @@ theme           = "defense-unicorns-hugo-theme"
 [params]
   # Merge theme defaults and allow overriding ../config/_default/params.toml
   _merge                 = 'deep'
+  airgapped              = false                                                            # Set to true to remove CDN dependencies
   archived_version       = false
   childPageSummaryLength = 100
   copyright              = "Defense Unicorns"
@@ -62,12 +63,41 @@ theme           = "defense-unicorns-hugo-theme"
   source = "content/en"
   target = "content"
 
+  ###
+  # You can mount documents from other sources by mounting them here
+  # [[module.mounts]]
+  # source = "../docs"
+  # target = "content/docs"
+  ###
+
 ###
-# You can mount documents from other sources by mounting them here
-# [[module.mounts]]
-# source = "../docs"
-# target = "content/docs"
-###
+# For air-gapped, mount these dependencies from node_modules
+[[module.mounts]]
+  source = "node_modules/redoc/bundles"
+  target = "assets/js/redoc"
+
+[[module.mounts]]
+  source = "node_modules/mermaid/dist"
+  target = "assets/js/mermaid"
+
+[[module.mounts]]
+  source = "node_modules/markmap-autoloader/dist"
+  target = "assets/js/markmap-autoloader"
+
+[[module.mounts]]
+  source = "node_modules/jquery/dist"
+  target = "assets/js/jquery"
+
+[[module.mounts]]
+  source = "node_modules/lunr"
+  target = "assets/js/lunr"
+
+[[module.mounts]]
+  source = "node_modules/@fontsource/roboto"
+  target = "assets/fonts/roboto"
+
+  ### End air-gapped
+
 [markup]
   _merge = 'shallow' # Use theme defaults
 
