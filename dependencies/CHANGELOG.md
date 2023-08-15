@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.0...dependencies/v0.3.1) (2023-08-15)
+
+
+### Bug Fixes
+
+* Changed selected tab and tool tips to primary by changing $body-emphasis-color ([6f25188](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/6f25188f254cb4e2ce609f2b86edfb355511e513))
+* correct "last modified" style ([ab903c5](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/ab903c52eb6a1d5c75e7467997e13f34efc7b8b5))
+* correct favicons ([f047816](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/f04781638f5423a0d7d972a7603f83e929980052))
+* correct userguide go.mod versioning ([07ed088](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/07ed0884ff2979cd511a03250e01324eab4e4fec))
+
 ## [0.3.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.2.4...dependencies/v0.3.0) (2023-08-15)
 
 
