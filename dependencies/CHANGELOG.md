@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.2.4...dependencies/v0.3.0) (2023-08-15)
+
+
+### Features
+
+* Airgapped delivery ([8a14114](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/8a141142ecad3d15c49b8ca84bcbf60997e624cf))
+
+
+### Bug Fixes
+
+* correct conditional for airgapped ([7c41602](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/7c4160288e2562802774c040cdcf4683420837e0))
+* Correct how roboto is imported ([2d7f6c4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/2d7f6c4ef22f9e7cd8c3aa05a50f4a3bfce67fb8))
+
 ## [0.2.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.2.3...dependencies/v0.2.4) (2023-08-11)
 
 
