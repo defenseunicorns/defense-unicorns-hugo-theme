@@ -42,7 +42,7 @@
     "hugo-extended": "0.117.0",
     "husky": "^8.0.3",
     "postcss-cli": "^10.1.0",
-    "prettier": "^3.0.1",
+    "prettier": "^3.0.2",
     "prettier-plugin-go-template": "^0.0.15",
     "stylelint": "^15.10.2",
     "stylelint-config-standard-scss": "^10.0.0",
