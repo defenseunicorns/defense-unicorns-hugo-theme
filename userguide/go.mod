@@ -1,9 +1,9 @@
 module userguide
 
-go 1.21.0
+go 1.20
 
 require (
-	github.com/defenseunicorns/defense-unicorns-hugo-theme v0.2.3 // indirect
+	github.com/defenseunicorns/defense-unicorns-hugo-theme v0.2.4 // indirect
 	github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies v0.2.4 // indirect
 )
 
