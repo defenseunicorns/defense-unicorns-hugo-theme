@@ -18,14 +18,14 @@ Install the following dependencies that provide the scripts
 npm i -D jquery lunr markmap-autoloader mermaid redoc
 ```
 
-In the `hugo.toml` configuration file, add the following setting
+In your site's `hugo.toml` configuration file, add the following setting to the `[params]` section:
 
 ```toml
 [params]
   airgapped = true
 ```
 
-Then mount them to the sites
+Then mount them from node_modules to the site's assets
 
 ```toml
 [[module.mounts]]
@@ -49,4 +49,4 @@ Then mount them to the sites
   target = "assets/js/lunr"
   ```
 
-This will switch to using local dependencies.
+This will switch to using local dependencies
