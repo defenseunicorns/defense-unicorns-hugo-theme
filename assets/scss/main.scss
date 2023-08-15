@@ -62,6 +62,11 @@
   }
 }
 
+.td-text-muted {
+  --bs-text-opacity: 1;
+  font-size: smaller;
+}
+
 .td-footer {
   @extend .td-box--dark;
 
