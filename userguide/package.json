@@ -24,7 +24,7 @@
     "update:pkg:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.15",
     "jquery": "^3.7.0",
     "lunr": "^2.3.9",
     "markdownlint-cli": "^0.35.0",
