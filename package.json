@@ -30,7 +30,6 @@
     "update:pkg:modules": "hugo mod get -u ./... && npx npm-check-updates -u"
   },
   "dependencies": {
-    "@fontsource/roboto": "^5.0.8",
     "@fortawesome/fontawesome-free": "^6.4.2",
     "bootstrap": "5.3.1"
   },

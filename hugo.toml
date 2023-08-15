@@ -32,10 +32,6 @@
     target = "assets/vendor/Font-Awesome"
 
 [[module.mounts]]
-    source = "node_modules/@fontsource/roboto"
-    target = "assets/vendor/Roboto"
-
-[[module.mounts]]
     source = "i18n"
     target = "i18n"
 
@@ -61,8 +57,4 @@
 
 [[module.mounts]]
     source = "../../node_modules/@fortawesome/fontawesome-free/webfonts"
-    target = "static/webfonts"
-
-[[module.mounts]]
-    source = "node_modules/@fontsource/roboto/files"
     target = "static/webfonts"
