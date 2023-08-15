@@ -8,6 +8,8 @@ Status](https://api.netlify.com/api/v1/badges/cdad1664-97b0-4494-990b-f2b60d6d61
 Forked from [Docsy](https://www.docsy.dev/docs/), a [Hugo](https://gohugo.io) theme
 for technical documentation.
 
+Use the [Documentation Template](https://github.com/defenseunicorns/doc-site-template) to build a new product docs site.
+
 ## Prerequisites
 
 The following are basic prerequisites for using this theme:
