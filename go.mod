@@ -7,3 +7,5 @@ require (
 	github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies v0.2.4 // x-release-please-version
 	github.com/twbs/bootstrap v5.2.3+incompatible // indirect
 )
+
+replace github.com/defenseunicorns/defense-unicorns-hugo-theme => ../defense-unicorns-hugo-theme/go.sum
