@@ -54,10 +54,12 @@ $theme-colors: (
 ) !default;
 // scss-docs-end theme-colors-map
 
+$tooltip-bg: rgba(255, 255, 255, 60%);
+
 $divider: $uui-divider;
 
 $body-secondary-color: $secondary !default;
-$body-emphasis-color: $primary !default;
+$body-emphasis-color: $tooltip-bg !default;
 
 $component-active-color: $text-primary !default;
 $component-active-bg: $primary !default;

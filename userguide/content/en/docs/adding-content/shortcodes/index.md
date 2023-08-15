@@ -296,8 +296,6 @@ description: Reference for the Pet Store API
 {{</* redoc "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v2.0/yaml/petstore.yaml" */>}}
 ```
 
-{{< redoc "openapi/petstore.yaml" >}}
-
 ### iframe
 
 With this shortcode you can embed external content into a page as an inline frame (`iframe`) - see: <https://www.w3schools.com/tags/tag_iframe.asp>
