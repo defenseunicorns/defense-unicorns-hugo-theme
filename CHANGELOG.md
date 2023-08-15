@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.3.1...v0.3.2) (2023-08-15)
+
+
+### Bug Fixes
+
+* modify tooltip color ([ab1e444](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/ab1e444dcdc604ca033e122ab494efda4ee1e957))
+
 ## [0.3.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.3.0...v0.3.1) (2023-08-15)
 
 
