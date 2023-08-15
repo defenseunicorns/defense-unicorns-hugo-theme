@@ -1,13 +1,19 @@
-airgapped                  = false                      # Use local JS resources instead of CDNs
-childPageSummaryLength     = 100                        # Number of characters to show in child summary
-homePage                   = "/docs"                    # If removed, the site will have a landing page
-noPageIndex                = false                      #Turns off child page index
+archived_version       = false
+childPageSummaryLength = 100     # Number of characters to show in child summary
+homePage               = "/docs" # If removed, the site will have a landing page
+noPageIndex            = false   # Turns off child page index
+no_list                = true    # Don't show index if there are no children
+show_metalinks         = true
+
+time_format_blog    = "Monday, January 02, 2006"
+time_format_default = "January 2, 2006"
+
 offlineSearch              = true
 offlineSearchMaxResults    = 10
 offlineSearchSummaryLength = 70
-show_metalinks             = true
-time_format_blog           = "Monday, January 02, 2006"
-time_format_default        = "January 2, 2006"
+
+airgapped = false # Set to true to remove CDN dependencies
+
 [drawio]
   enable = false
 

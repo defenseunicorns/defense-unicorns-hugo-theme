@@ -1,3 +1,4 @@
+
 baseURL         = "https://example.com"         #Change this to your URL
 enableGitInfo   = true
 enableRobotsTXT = true
@@ -12,34 +13,17 @@ theme           = "defense-unicorns-hugo-theme"
 
 [params]
   # Merge theme defaults and allow overriding ../config/_default/params.toml
-  _merge                 = 'deep'
-  airgapped              = false                                                            # Set to true to remove CDN dependencies
-  archived_version       = false
-  childPageSummaryLength = 100
-  copyright              = "Defense Unicorns"
-  github_project_repo    = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
-  github_repo            = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
-  github_subdir          = "userguide"
-  no_list                = true
-  url_latest_version     = "https://example.com"
-  version                = "v1.0.0"
-  version_menu           = "v1.0"
+  _merge    = 'deep'
+  airgapped = false              # Set to true to remove CDN dependencies
+  copyright = "Defense Unicorns"
 
-  # Examples of versioning.
-  [[params.versions]]
-    url     = "https://master.kubeflow.org"
-    version = "v1.0 - Latest"
+  github_project_repo = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+  github_repo         = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
+  github_subdir       = "userguide"
 
-  [[params.versions]]
-    url     = "https://v0-2.kubeflow.org"
-    version = "v0.2"
-
-  [[params.versions]]
-    url     = "https://v0-3.kubeflow.org"
-    version = "v0.3"
-
-  [params.ui]
-    navbar_logo = "img/uds-logo.svg" # The product logo on the navbar
+  url_latest_version = "https://example.com"
+  version            = "v1.0.0"
+  version_menu       = "v1.0"
 
   [[params.socialLinks]]
     desc = "Discussion and help from your fellow users"
@@ -59,6 +43,22 @@ theme           = "defense-unicorns-hugo-theme"
     name = "GitHub"
     url  = "https://github.com/defenseunicorns/defense-unicorns-hugo-theme"
 
+  [params.ui]
+    navbar_logo = "img/uds-logo.svg" # The product logo on the navbar
+
+  ### Examples of versioning.
+  [[params.versions]]
+    url     = "https://master.kubeflow.org"
+    version = "v1.0 - Latest"
+
+  [[params.versions]]
+    url     = "https://v0-2.kubeflow.org"
+    version = "v0.2"
+
+  [[params.versions]]
+    url     = "https://v0-3.kubeflow.org"
+    version = "v0.3"
+
 [[module.mounts]]
   source = "content/en"
   target = "content"
@@ -71,7 +71,7 @@ theme           = "defense-unicorns-hugo-theme"
   ###
 
 ###
-# For air-gapped, mount these dependencies from node_modules
+# For air-gapped, mount these dependencies
 [[module.mounts]]
   source = "node_modules/redoc/bundles"
   target = "assets/js/redoc"
@@ -91,10 +91,6 @@ theme           = "defense-unicorns-hugo-theme"
 [[module.mounts]]
   source = "node_modules/lunr"
   target = "assets/js/lunr"
-
-[[module.mounts]]
-  source = "node_modules/@fontsource/roboto"
-  target = "assets/fonts/roboto"
 
   ### End air-gapped
 
