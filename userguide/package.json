@@ -15,7 +15,7 @@
     "check:links": "npm run _check:links",
     "precheck:links:all": "npm run build",
     "check:links:all": "HTMLTEST_ARGS= npm run _check:links",
-    "clean": "rm -Rf public resources",
+    "clean": "rimraf public resources",
     "lint:fix": "markdownlint -f ./content/**/*.md",
     "make:public": "git init -b main public",
     "prepare": "cd .. && npm install",
@@ -31,6 +31,7 @@
     "markmap-autoloader": "^0.15.4",
     "mermaid": "^10.3.1",
     "postcss-cli": "^10.1.0",
-    "redoc": "^2.0.0"
+    "redoc": "^2.0.0",
+    "rimraf": "^5.0.1"
   }
 }
