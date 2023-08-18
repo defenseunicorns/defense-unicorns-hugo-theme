@@ -25,9 +25,8 @@
     "stylelint:fix": "stylelint --fix '**/*.scss'",
     "test": "npm run test:ex",
     "test:ex": "npm run cd:docs test",
-    "update:pkg:dep": "npm install --save-exact @fortawesome/fontawesome-free@latest bootstrap@latest && npm run update:pkg:modules",
-    "update:pkg:hugo": "npm install --save-exact -D hugo-extended@latest",
-    "update:pkg:modules": "hugo mod get -u ./... && npx npm-check-updates -u"
+    "update": "hugo mod get -u ./... && npm run update:deps && npm run cd:docs update",
+    "update:deps": "npx npm-check-updates -u && npm install"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
