@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.3...dependencies/v0.3.4) (2023-08-18)
+
+
+### Bug Fixes
+
+* Correct warhing about .UniqueID ([fbaf0b8](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/fbaf0b81f29c41c356e03fd5688b8848d6df496f))
+
 ## [0.3.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.2...dependencies/v0.3.3) (2023-08-18)
 
 
