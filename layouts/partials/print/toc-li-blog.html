@@ -1,3 +1,7 @@
 <li>
-  {{ with .Page.File }}<a href="#pg-{{ .UniqueID }}">{{ end }}{{ .Page.Title }}</a>
+  {{ $uniqueId:=0 }}
+  {{ with .Page.File }}
+    {{ $uniqueId = .UniqueID }}
+  {{ end }}
+  <a href="#pg-{{ $uniqueId }}">{{ .Page.Title }}</a>
 </li>

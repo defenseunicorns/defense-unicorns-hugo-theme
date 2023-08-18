@@ -3,11 +3,20 @@
 {{ if templates.Exists (printf "partials/%s" $tpl) }}
   {{ partial $tpl . }}
 {{ else -}}
-{{ $break := cond .DoPageBreak "page-break-before: always" "" -}}
-<div class="td-content" style="{{ $break }}">
+  {{ $break := cond .DoPageBreak "page-break-before: always" "" -}}
+  <div class="td-content" style="{{ $break }}">
     {{ $break := cond .DoPageBreak "page-break-before: always" "" }}
-	<h1 id="pg-{{ .Page.File.UniqueID }}">{{ .PageNum }} - {{ .Page.Title }}</h1>
-    {{ with .Page.Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
-	{{ .Page.Content }}
-</div>
+    {{ $uniqueId:=0 }}
+    {{ with .Page.File }}
+      {{ $uniqueId = .UniqueID }}
+    {{ end }}
+    <h1 id="pg-{{ $uniqueId }}">
+      {{ .PageNum }} -
+      {{ .Page.Title }}
+    </h1>
+    {{ with .Page.Params.description }}
+      <div class="lead">{{ . | markdownify }}</div>
+    {{ end }}
+    {{ .Page.Content }}
+  </div>
 {{ end }}

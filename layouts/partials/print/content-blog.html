@@ -1,7 +1,11 @@
 {{ $break := cond .DoPageBreak "page-break-before: always" "" }}
 {{ with .Page }}
   <div class="td-content" style="{{ $break }}">
-    {{ with .File }}<h1 id="pg-{{ .UniqueID }}"> {{ end }}{{ .Title }}</h1>
+    {{ $uniqueId:=0 }}
+    {{ with .Page.File }}
+      {{ $uniqueId = .UniqueID }}
+    {{ end }}
+    <h1 id="pg-{{ $uniqueId }}">{{ .Title }}</h1>
 
     {{ with .Params.description }}
       <div class="lead">{{ . | markdownify }}</div>
