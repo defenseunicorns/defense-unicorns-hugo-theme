@@ -25,11 +25,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
-    "jquery": "^3.7.0",
+    "jquery": "^3.7.1",
     "lunr": "^2.3.9",
-    "markdownlint-cli": "^0.35.0",
+    "markdownlint-cli": "^0.36.0",
     "markmap-autoloader": "^0.15.4",
-    "mermaid": "^10.3.1",
+    "mermaid": "^10.4.0",
     "postcss-cli": "^10.1.0",
     "redoc": "^2.1.1",
     "rimraf": "^5.0.1"
