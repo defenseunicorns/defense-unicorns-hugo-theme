@@ -244,9 +244,20 @@ nav.foldable-nav {
 .socials-footer-item {
   padding-left: 20px;
   padding-right: 20px;
+  // &:hover {
+  //   color: $secondary;
+  // }
 }
 
 .svg-link {
   border: solid;
   border-color: #0000;
+  border-radius: 80px !important;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 8px;
+  &:hover {
+    background: rgba($primary, 0.08);
+    color: $secondary;
+  }
 }
