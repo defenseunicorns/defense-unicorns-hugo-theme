@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.5](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.3.4...v0.3.5) (2023-09-06)
+
+
+### Bug Fixes
+
+* brought navigation behavior for social links in line with the style guide ([94e4f50](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/94e4f50b1af47c6e0a9e658de45153ede3ccbfe3))
+* move menu expand icon to align with text ([a8f7492](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/a8f74921d240d02a4c78dd0b3d4a624f5d3d164a))
+
 ## [0.3.4](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.3.3...v0.3.4) (2023-08-18)
 
 
