@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.6](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.5...dependencies/v0.3.6) (2023-09-06)
+
+
+### Bug Fixes
+
+* correct page-meta colors ([b34c1fc](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/b34c1fcad66de9a28faa292aa36a21c2598b261f))
+* move meta-links to bottom of toc ([a7059dc](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/a7059dc339e2ef6bbf65c741ccf2a4f2b76a9b97))
+
 ## [0.3.5](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.4...dependencies/v0.3.5) (2023-09-06)
 
 
