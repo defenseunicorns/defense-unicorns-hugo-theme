@@ -4,7 +4,6 @@
 {{ if isset $context.Site.Taxonomies (lower $taxo) }}
   {{ $taxonomy := index $context.Site.Taxonomies (lower $taxo) }}
   {{ if (gt (len $taxonomy) 0) }}
-    <hr class="panel-line" />
 
     <div class="taxonomy taxonomy-terms-cloud taxo-{{ urlize $taxo }}">
       {{ with $title }}
