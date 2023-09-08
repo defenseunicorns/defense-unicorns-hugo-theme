@@ -123,7 +123,8 @@
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0.8em 100%, 0 50%, 0.8em 0);
   clip-path: polygon(100% 0, 100% 100%, 0.8em 100%, 0 50%, 0.8em 0);
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background-color: $secondary !important;
     text-decoration: none !important;
   }
