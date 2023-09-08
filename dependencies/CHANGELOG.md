@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.7](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.6...dependencies/v0.3.7) (2023-09-08)
+
+
+### Bug Fixes
+
+* make tags responsive to tab navigation ([2df511e](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/2df511e12f8c11efddde8b3bf75c9d0df27b31b8))
+* move footer to fit between sidebars to prevent unneeded scrolling ([e9a5404](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/e9a5404262cfe9a2abf48b99a19d55fa66c96d85))
+
 ## [0.3.6](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.5...dependencies/v0.3.6) (2023-09-06)
 
 
