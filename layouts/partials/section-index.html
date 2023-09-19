@@ -49,12 +49,7 @@
               {{ end }}
             >
               <div class="card-header">
-                {{ $context := dict
-                  "vendor" "mdi"
-                  "name" "note-text-outline"
-                  "color" "white"
-                }}
-                {{ partial "icons/icon" $context }}&nbsp;
+                <i class="fa-solid fa-file-lines fa-fw"></i>
                 {{ .Title }}
               </div>
               <div class="card-body">
