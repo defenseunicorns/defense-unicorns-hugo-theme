@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.8](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.7...dependencies/v0.3.8) (2023-09-19)
+
+
+### Bug Fixes
+
+* change index card hover behavior to match meta links ([067e0dc](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/067e0dc49c0c5bf7914277f5333fcac0f3a99daf))
+* Change section index icon to use material design ([4e3623b](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/4e3623b5fd69b5cca87ce94f2922da592c9fdec4))
+* correct navbar active indicator ([c71167a](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/c71167a071c6510def50af882d30be19d3ba491e))
+* remove mdi and use font awesome icon for indext cards ([80e3683](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/80e368389af09d4aee167c81caf354bd2407fa81))
+
 ## [0.3.7](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.6...dependencies/v0.3.7) (2023-09-08)
 
 
