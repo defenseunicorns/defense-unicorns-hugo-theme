@@ -41,6 +41,7 @@
         <div class="index-card-wrapper">
           <div class="index-card" key="{{ .Title }}">
             <a
+              class="index-card-link"
               href="{{ $manualLink }}"
               {{ with .Params.manualLinkTitle }}
                 title="{{ . }}"
@@ -48,11 +49,11 @@
                 target="{{ . }}"{{ if eq . "_blank" }}rel="noopener"{{ end }}
               {{ end }}
             >
-              <div class="card-header">
+              <div class="index-card-header">
                 <i class="fa-solid fa-file-lines fa-fw"></i>
                 {{ .Title }}
               </div>
-              <div class="card-body">
+              <div class="index-card-body">
                 <p class="card-text" title="{{ .Summary }}">
                   {{ .Summary | truncate $summaryLength -}}
                 </p>

@@ -31,6 +31,7 @@
     margin-bottom: 1rem !important;
     margin-right: 1rem !important;
   }
+
   .index-card {
     background-color: $td-navbar-color !important;
     border-radius: $border-radius;
@@ -40,5 +41,26 @@
     &:hover {
       outline-color: $divider;
     }
+  }
+
+  .index-card-link {
+    color: $primary;
+
+    &:hover {
+      color: $secondary !important;
+      text-decoration: none !important;
+    }
+  }
+
+  .index-card-header {
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    margin-bottom: 0;
+    background-color: var(--bs-card-cap-bg);
+    border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  }
+
+  .index-card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   }
 }
