@@ -33,7 +33,7 @@
     "bootstrap": "5.3.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
+    "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
     "@netlify/plugin-lighthouse": "^5.0.0",
     "@taplo/cli": "^0.5.2",
