@@ -29,7 +29,7 @@
     "lunr": "^2.3.9",
     "markdownlint-cli": "^0.37.0",
     "markmap-autoloader": "^0.15.4",
-    "mermaid": "^10.4.0",
+    "mermaid": "^10.5.0",
     "postcss-cli": "^10.1.0",
     "redoc": "^2.1.2",
     "rimraf": "^5.0.5"
