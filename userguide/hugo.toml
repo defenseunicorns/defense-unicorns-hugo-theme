@@ -54,6 +54,7 @@ enableRobotsTXT = true
 
   [params.ui]
     navbar_logo = "img/uds-logo.svg" # The product logo on the navbar
+    # show_nav_title = true
 
   ### Examples of versioning.
   [[params.versions]]

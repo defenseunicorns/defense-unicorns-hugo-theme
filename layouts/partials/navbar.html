@@ -4,6 +4,13 @@
 -}}
 {{ $baseURL := urls.Parse $.Site.Params.Baseurl -}}
 
+{{ $title := "" }}
+{{ with .Site.Params.ui.show_nav_title }}
+  {{- if eq . true -}}
+    {{- $title = $.Site.Params.title -}}
+  {{ end }}
+{{ end }}
+
 
 <nav
   class="td-navbar navbar-dark js-navbar-scroll
@@ -20,6 +27,7 @@
           {{ end }}
           {{ with resources.Get $logo -}}
             {{ ( . | minify).Content | safeHTML -}}
+            {{ $title }}
           {{ end -}}
         {{ end -}}
       </span>
