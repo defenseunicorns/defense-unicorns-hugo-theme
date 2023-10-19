@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.9](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.8...dependencies/v0.3.9) (2023-10-19)
+
+
+### Bug Fixes
+
+* Enable conditional titles on the navbar ([7343017](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/73430179cbfb027d02a53ed1ee2bffa0fc3146b7))
+
 ## [0.3.8](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.7...dependencies/v0.3.8) (2023-09-19)
 
 
