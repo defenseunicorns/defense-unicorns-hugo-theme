@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.10](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.9...dependencies/v0.3.10) (2023-12-01)
+
+
+### Bug Fixes
+
+* Replace Roboto font with Montserrat ([e579475](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/e579475ec96852a278a61d7437be86782de1d597))
+
 ## [0.3.9](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.8...dependencies/v0.3.9) (2023-10-19)
 
 
