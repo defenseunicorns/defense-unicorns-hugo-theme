@@ -3,8 +3,8 @@ module userguide
 go 1.20
 
 require (
-	github.com/defenseunicorns/defense-unicorns-hugo-theme v0.3.9 // x-release-please-version
-	github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies v0.3.9 // x-release-please-version
+	github.com/defenseunicorns/defense-unicorns-hugo-theme v0.3.10 // x-release-please-version
+	github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies v0.3.10 // x-release-please-version
 )
 
 require (
