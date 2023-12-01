@@ -54,6 +54,8 @@ $theme-colors: (
 ) !default;
 // scss-docs-end theme-colors-map
 
+$td-enable-google-fonts: false;
+
 $tooltip-bg: rgba(255, 255, 255, 60%);
 
 $divider: $uui-divider;
@@ -93,12 +95,10 @@ $link-hover-decoration: underline !default;
 $font-awesome-font-name: "Font Awesome 6 Free" !default;
 
 $td-fonts-serif: $uui-global-font-family !default;
-
-$font-family-sans-serif: $td-fonts-serif !default;
+$font-family-sans-serif: $uui-global-font-family !default;
+$font-family-base: $uui-global-font-family !default;
 
 $font-family-monospace: sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace !default;
-
-$font-family-base: $font-family-sans-serif !default;
 
 // Font weights
 

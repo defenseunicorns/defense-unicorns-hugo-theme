@@ -12,9 +12,24 @@ $uui-disabled: rgba(255, 255, 255, 0.5);
 $uui-background: #0a0e2e;
 $uui-divider: rgba(255, 255, 255, 0.12);
 
-@font-face ("Roboto", "../fonts/roboto", "Roboto", "san-serif");
+// @font-face ("Montserrat", "fonts/montserrat", "Montserrat", "serif");
 
-$uui-global-font-family: "Roboto", helvetica, sans-serif, arial;
+@font-face {
+    font-family: Montserrat;
+    src:
+        url("/fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype"),
+        url("/fonts/montserrat/Montserrat-VariableFont_wght.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src:
+        url("/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype"),
+        url("/fonts/montserrat/Montserrat-Italic-VariableFont_wght.woff2") format("woff2");
+    font-style: italic;
+}
+
+$uui-global-font-family: montserrat, serif;
 
 // Text colors to display on UI elements (buttons, etc.)
 $uui-on-disabled: #545454;
