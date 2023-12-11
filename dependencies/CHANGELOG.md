@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.11](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.10...dependencies/v0.3.11) (2023-12-11)
+
+
+### Bug Fixes
+
+* Add button shortcode ([0b7b8bb](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/0b7b8bbe233548d608ae45f356bca7e459c4192c))
+
 ## [0.3.10](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.9...dependencies/v0.3.10) (2023-12-01)
 
 
