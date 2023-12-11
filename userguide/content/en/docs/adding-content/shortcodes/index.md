@@ -319,6 +319,26 @@ There are several tools you can use to check if a website can be embedded via if
 in the response headers." you **CAN** embed it, but when the test says "Great! X-Frame-Options header was found in the HTTP response headers as highlighted below.", you **CANNOT** - unless it has been explicitly enabled for your site.
 {{% /alert-caution %}}
 
+## Buttons
+
+Sometimes a bare link won't do and we just want some buttons...
+
+```go-html-template
+{{%/* button href="https://www.defenseunicorns.com/" */%}}
+Download
+{{%/* /button */%}}
+{{%/* button href="https://www.defenseunicorns.com/" icon="fas fa-download" */%}}
+Download
+{{%/* /button */%}}
+```
+
+{{%button href="https://www.defenseunicorns.com" %}}
+Download
+{{% /button %}}
+{{%button href="https://www.defenseunicorns.com" icon="fas fa-download" %}}
+Download
+{{% /button %}}
+
 ## Tabbed panes
 
 Sometimes it's very useful to have tabbed panes when authoring content. One common use-case is to show multiple syntax highlighted code blocks that showcase the same problem, and how to solve it in different programming languages. As an example, the tabbed pane below shows the language-specific variants of the famous `Hello world!` program one usually writes first when learning a new programming language:
