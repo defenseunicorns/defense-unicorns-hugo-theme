@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.11](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.3.10...v0.3.11) (2023-12-11)
+
+
+### Bug Fixes
+
+* Add button shortcode ([0b7b8bb](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/0b7b8bbe233548d608ae45f356bca7e459c4192c))
+* Darken background to [#101923](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/101923) ([5419dbf](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/5419dbfd452b6854187d73c2c4d64f4f3ddfdbaa))
+
 ## [0.3.10](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.3.9...v0.3.10) (2023-12-01)
 
 
