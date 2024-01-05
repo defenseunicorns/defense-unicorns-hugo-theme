@@ -28,7 +28,7 @@
     "jquery": "^3.7.1",
     "lunr": "^2.3.9",
     "markdownlint-cli": "^0.38.0",
-    "markmap-autoloader": "^0.15.7",
+    "markmap-autoloader": "^0.15.8",
     "mermaid": "^10.6.1",
     "postcss-cli": "^11.0.0",
     "redoc": "^2.1.3",
