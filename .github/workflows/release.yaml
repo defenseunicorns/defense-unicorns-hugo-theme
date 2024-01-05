@@ -19,5 +19,3 @@ jobs:
       - name: Create release tag
         id: tag
         uses: google-github-actions/release-please-action@v4
-        with:
-          command: manifest # use configs in release-please-config.json
