@@ -35,7 +35,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
-    "@netlify/plugin-lighthouse": "^5.0.0",
+    "@netlify/plugin-lighthouse": "^6.0.0",
     "@taplo/cli": "^0.5.2",
     "autoprefixer": "^10.4.16",
     "hugo-extended": "0.122.0",
