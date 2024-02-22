@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.13](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.12...dependencies/v0.3.13) (2024-02-22)
+
+
+### Bug Fixes
+
+* Correct failure to build when there is no child doc pages ([23d6e0f](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/23d6e0fb4d23c580add2a47be3f59777d073c3d1))
+
 ## [0.3.12](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.11...dependencies/v0.3.12) (2024-02-22)
 
 
