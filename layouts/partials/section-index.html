@@ -4,9 +4,8 @@
   {{ $pages = (where $pages "Type" "!=" "search") }}
   {{ $pages = (where $pages ".Params.hide_summary" "!=" true) }}
   {{ $pages = (where $pages ".Parent" "!=" nil) }}
-  {{ with $parent.File }}
-    {{ $pages = (where $pages "Parent.File.UniqueID" "==" $parent.File.UniqueID) }}
-  {{ end }}
+  {{ $pages = (where $pages ".Parent.File" "!=" nil) }}
+  {{ $pages = (where $pages "Parent.File.UniqueID" "==" $parent.File.UniqueID) }}
 
   {{ $summaryLength := cond (isset .Page.Site.Params "childPageSummaryLength") .Page.Site.Params.childPageSummaryLength 80 }}
 
