@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.12](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.11...dependencies/v0.3.12) (2024-02-22)
+
+
+### Bug Fixes
+
+* Correct error when there are no sub-pages to display in section index ([944dd4d](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/944dd4d31728dcfbe7eefc8dde5ceb9a72e16f0d))
+
 ## [0.3.11](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.3.10...dependencies/v0.3.11) (2023-12-11)
 
 
