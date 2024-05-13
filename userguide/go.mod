@@ -1,6 +1,6 @@
 module userguide
 
-go 1.22
+go 1.20
 
 require (
 	github.com/defenseunicorns/defense-unicorns-hugo-theme v0.3.13 // x-release-please-version
