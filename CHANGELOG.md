@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.3.14...v0.4.0) (2024-05-17)
+
+
+### Features
+
+* upgrade to new google analytics implementation ([93675f7](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/93675f7bad176efa6622698500ca31d2273d6af9))
+
 ## [0.3.14](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.3.13...v0.3.14) (2024-05-13)
 
 
