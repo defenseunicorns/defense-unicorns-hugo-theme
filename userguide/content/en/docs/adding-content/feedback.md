@@ -31,45 +31,19 @@ started** section of [Introducing Google Analytics 4 (GA4)][ga4-intro].
 ### Setup
 
 Enable Google Analytics by adding your project's analytics ID to the site
-configuration file. For details, see [Configure Google Analytics][].
+configuration file. For details, see [Configure Google Analytics][https://gohugo.io/templates/embedded/#google-analytics].
 
 By default, this uses the [gtag.js][] analytics library for both GA4 (which
 _requires_ `gtag.js`) and Universal Analytics (UA) site tags. If you prefer using
 the older `analytics.js` library for your UA site tag, then set
 `params.disableGtagForUniversalAnalytics` to `true` in your project's [configuration file].
 
-{{< tabpane persistLang=false >}}
-{{< tab header="Configuration file:" disabled=true />}}
-{{< tab header="hugo.toml" lang="toml" >}}
-[params]
-disableGtagForUniversalAnalytics = true
-{{< /tab >}}
-{{< tab header="hugo.yaml" lang="yaml" >}}
-params:
-  disableGtagForUniversalAnalytics: true
-{{< /tab >}}
-{{< tab header="hugo.json" lang="json" >}}
-{
-  "params": {
-    "disableGtagForUniversalAnalytics": true
-  }
-}
-{{< /tab >}}
-{{< /tabpane >}}
+You can configure your project's analytics ID by setting `services.googleAnalytics.id` in the Hugo configuration.
 
-{{% alert-caution %}}
-  <!-- Remove this warning once the Hugo docs have been updated to include it. -->
-
-  You can configure your project's analytics ID by setting either the top-level
-  `googleAnalytics` config parameter or `services.googleAnalytics.id`. **Do not
-  define both,** otherwise this can result in [unexpected behavior][]. For
-  details, see [Is services.googleAnalytics.id an alias for
-  googleAnalytics][alias-discussion].
-
-  [alias-discussion]: https://discourse.gohugo.io/t/config-is-services-googleanalytics-id-an-alias-for-googleanalytics/39469
-  [unexpected behavior]: https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/921
-
-{{% /alert-caution %}}
+```toml
+[services.googleAnalytics]
+    id = 'G-12345'
+```
 
 {{% alert-note %}}
 
@@ -155,7 +129,6 @@ Add more meta tags as needed to your project's copy of the `head-end.html`
 partial. For details, see [Customizing templates]({{< ref "lookandfeel#customizing-templates"
 >}}).
 
-[Configure Google Analytics]: https://gohugo.io/templates/internal/#configure-google-analytics
 [ga4-intro]: https://support.google.com/analytics/answer/1042508
 [Google Analytics]: https://analytics.google.com/analytics/web/
 [gtag.js]: https://support.google.com/analytics/answer/10220869
