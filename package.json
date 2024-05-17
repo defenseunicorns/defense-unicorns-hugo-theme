@@ -37,7 +37,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@taplo/cli": "^0.7.0",
     "autoprefixer": "^10.4.19",
-    "hugo-extended": "0.125.7",
+    "hugo-extended": "0.126.1",
     "husky": "^9.0.11",
     "postcss-cli": "^11.0.0",
     "prettier": "^3.2.5",
