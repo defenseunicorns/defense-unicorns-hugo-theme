@@ -37,14 +37,14 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@taplo/cli": "^0.7.0",
     "autoprefixer": "^10.4.19",
-    "hugo-extended": "0.126.1",
+    "hugo-extended": "0.126.3",
     "husky": "^9.0.11",
     "postcss-cli": "^11.0.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.1",
     "prettier-plugin-go-template": "^0.0.15",
-    "stylelint": "^16.5.0",
+    "stylelint": "^16.6.1",
     "stylelint-config-standard-scss": "^13.1.0",
-    "stylelint-scss": "^6.3.0"
+    "stylelint-scss": "^6.3.1"
   },
   "engines": {
     "node": ">=18"
