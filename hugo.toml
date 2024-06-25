@@ -1,8 +1,11 @@
 # Theme config
 #
 
-[services.googleAnalytics]
-    id = 'G-12345'
+# [services.googleAnalytics]
+#     id = 'G-12345'
+
+[permalinks]
+    slides = "/slides/:title/"
 
 [params]
     rss_sections = [

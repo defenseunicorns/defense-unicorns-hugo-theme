@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{{ .Title }}</title>
+
+		<link rel="stylesheet" href="{{ "css/reveal.js/reset.css" | relURL }}" />
+		<link rel="stylesheet" href="{{ "css/reveal.js/reveal.css" | relURL }}" />
+		<link rel="stylesheet" href="{{ "css/reveal.js/theme/white.css" | relURL }}" id="theme" />
+		<script src="{{ "js/reveal.js/reveal.js" | relURL }}"></script>
+		<script src="{{ "js/reveal.js/plugin/markdown/markdown.js" | relURL }}"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section
+					data-markdown
+					data-separator="^---"
+					data-separator-vertical="^----"
+					data-separator-notes="^Note:"
+				>
+					{{ .RawContent }}
+
+				</section>
+			</div>
+		</div>
+
+		<script src="{{ "js/reveal.js/reveal.js" | relURL }}"></script>
+		<script src="{{ "js/reveal.js/plugin/markdown/markdown.js" | relURL }}"></script>
+
+		<script>
+			Reveal.initialize({
+				plugins: [RevealMarkdown],
+			})
+		</script>
+	</body>
+</html>

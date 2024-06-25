@@ -1,7 +1,14 @@
-home = ["HTML"]
+home = [
+    "HTML",
+    "RSS"
+]
 page = ["HTML"]
 section = [
     "HTML",
     "RSS",
     "print"
+]
+taxonomy = [
+    "HTML",
+    "RSS"
 ]
