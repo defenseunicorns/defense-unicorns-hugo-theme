@@ -2,7 +2,7 @@ DirectoryPath: public
 CheckDoctype: true
 IgnoreAltMissing: true # FIXME
 IgnoreDirectoryMissingTrailingSlash: true # FIXME
-IgnoreDirs: [_print] # FIXME
+IgnoreDirs: [_print, slides] # FIXME
 IgnoreEmptyHref: true # FIXME
 IgnoreInternalEmptyHash: true # FIXME
 IgnoreInternalURLs:

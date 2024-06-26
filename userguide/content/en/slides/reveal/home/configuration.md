@@ -43,7 +43,7 @@ custom_theme_compile = true
 
 <small>
 
-💡 See the [custom theme example presentation](/custom-theme-example/) for more details.
+💡 See the [custom theme example presentation](../custom-theme-example/) for more details.
 
 </small>
 
@@ -152,6 +152,7 @@ Reveal.on('slidechanged', function(event) {
 ---
 
 ### Extending the layout
+
 #### (alternative)
 
 You can declare a custom CSS or javascript in your configuration.
@@ -166,6 +167,6 @@ custom_js = "js/custom.js"
 
 These files can be located in `static/css`, `static/js` folder
 
-💡 See the [extending layout example](/extending-layout-example/#) for more details.
+💡 See the [extending layout example](../extending-layout-example/#) for more details.
 
 </small>
