@@ -7,7 +7,7 @@ defaultMarkdownHandler = "goldmark"
     unsafe = true
 
 [highlight]
-    codeFences         = true
+    codeFences         = false
     guessSyntax        = true
     hl_Lines           = ""
     lineNoStart        = 1

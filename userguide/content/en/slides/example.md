@@ -9,10 +9,22 @@ This is the content of slide 1.
 
 ---
 
-## Slide 2
+```js [1-2|3|4]
+let a = 1;
+let b = 2;
+let c = x => 1 + 2 + x;
+c(3);
+```
 
-This is the content of slide 2.
-
-----
+---
 
 ## Detail
+
+{{< highlight toml "style=github" >}}
+[params.reveal_hugo]
+highlight_theme = "github"
+{{< /highlight >}}
+
+---
+
+## Another section

@@ -6,31 +6,39 @@
 
 		<link rel="stylesheet" href="{{ "css/reveal.js/reset.css" | relURL }}" />
 		<link rel="stylesheet" href="{{ "css/reveal.js/reveal.css" | relURL }}" />
-		<link rel="stylesheet" href="{{ "css/reveal.js/theme/white.css" | relURL }}" id="theme" />
-		<script src="{{ "js/reveal.js/reveal.js" | relURL }}"></script>
-		<script src="{{ "js/reveal.js/plugin/markdown/markdown.js" | relURL }}"></script>
+		<link rel="stylesheet" href="{{ "css/reveal.js/theme/moon.css" | relURL }}" id="theme" />
+		<link
+			rel="stylesheet"
+			href="{{ "js/reveal.js/plugin/highlight/monokai.css" | relURL }}"
+			id="highlightPlugin"
+		/>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section
 					data-markdown
-					data-separator="^---"
-					data-separator-vertical="^----"
+					data-separator-vertical="^\r?\n----\r?\n"
 					data-separator-notes="^Note:"
+					data-charset="iso-8859-15"
 				>
 					{{ .RawContent }}
-
 				</section>
 			</div>
 		</div>
 
 		<script src="{{ "js/reveal.js/reveal.js" | relURL }}"></script>
 		<script src="{{ "js/reveal.js/plugin/markdown/markdown.js" | relURL }}"></script>
+		<script src="{{ "js/reveal.js/plugin/highlight/highlight.js" | relURL }}"></script>
 
 		<script>
 			Reveal.initialize({
 				plugins: [RevealMarkdown],
+				slideNumber: true,
+				hashOneBasedIndex: true,
+				hash: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 			})
 		</script>
 	</body>
