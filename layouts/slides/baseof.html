@@ -1,53 +1,51 @@
-<!doctype html>
-<html
-  itemscope
-  itemtype="http://schema.org/WebPage"
-  lang="{{ .Site.Language.Lang }}"
-  class="no-js"
->
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    {{ partial "head.html" . }}
-  </head>
+    {{ partial "layout/head" . -}} {{ partial "layout/theme" . -}} {{ $plugins
+    := partial "internal/plugins" . -}} {{- range $plugins }} {{- with .css }}
 
-  <body
-    class="td-{{ .Kind }}{{ with .Page.Params.body_class }}{{ . }}{{ end }}"
-  >
-    <header>
-      {{ partial "navbar.html" . }}
-    </header>
-    <div class="container-fluid td-outer">
-      <div class="td-main">
-        <div class="row flex-xl-nowrap">
-          <aside
-            class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none"
-            aria-label="sidebar left"
-          >
-            {{ partial "sidebar.html" . }}
-          </aside>
-          <aside
-            class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none"
-            aria-label="sidebar right"
-          >
-            {{ partial "toc.html" . }}
-            <hr class="panel-line" />
-            {{ partial "taxonomy_terms_clouds.html" . }}
-            <hr class="panel-line" />
-            {{ partial "page-meta-links.html" . }}
-          </aside>
-          <main
-            class="small-screen medium-screen wide-screen du-main-padding"
-            role="main"
-          >
-            {{ partial "version-banner.html" . }}
-            {{ if not .Site.Params.ui.breadcrumb_disable }}
-              {{ partial "breadcrumb.html" . }}
-            {{ end }}
-            {{ block "main" . }}{{ end }}
-            {{ partial "footer.html" . }}
-          </main>
-        </div>
-      </div>
+    <link rel="stylesheet" href="{{ . | relURL }}" />
+    {{- end -}} {{ end -}}
+    <!-- To insert markup before the closing head tag for all presentations,
+         create layouts/partials/reveal-hugo/head.html -->
+    {{- partial "reveal-hugo/head" . -}}
+    <!-- To insert markup at the end of the head tag for a specific presentation,
+         create layouts/partials/{section}/reveal-hugo/head.html -->
+    {{- $sectionHeadPartial := printf "%s/reveal-hugo/head" (.Page.Section |
+    default "home") -}} {{- if fileExists (printf "layouts/partials/%s.html"
+    $sectionHeadPartial) -}}{{ partial $sectionHeadPartial . }}{{- end }}
+  </head>
+  <body>
+    {{ if .Param "logo.src" }}
+    <style>
+      #logo {
+        position: absolute;
+        top: {{ if .Param "logo.top"}}{{ .Param "logo.top" }}{{ else if .Param "logo.diag" }}{{ .Param "logo.diag" }}{{ else }}1%{{ end }};
+        left: {{ if .Param "logo.top"}}{{ .Param "logo.left" }}{{ else if .Param "logo.diag" }}{{ .Param "logo.diag" }}{{ else }}1%{{ end }};
+        width: {{ if .Param "logo.width"}}{{ .Param "logo.width" }}{{ else }}15%{{ end }};
+      }
+    </style>
+    <img id="logo" src="{{ .Param "logo.src" }}" alt="{{ .Param "logo.alt" }}">
+    {{ end }}
+    <div class="reveal">
+      <div class="slides">{{- block "main" . -}}{{- end -}}</div>
+      <!-- To insert markup at the end of the .reveal tag for all presentations,
+           create layouts/partials/reveal-hugo/end.html -->
+      {{- partial "reveal-hugo/end" . -}}
+      <!-- To insert markup at the end of the .reveal tag for a specific presentation,
+           create layouts/partials/{section}/reveal-hugo/end.html -->
+      {{- $sectionHeadPartial := printf "%s/reveal-hugo/end" (.Page.Section |
+      default "home") -}} {{- if fileExists (printf "layouts/partials/%s.html"
+      $sectionHeadPartial) -}}{{ partial $sectionHeadPartial . }}{{- end }}
     </div>
-    {{ partial "scripts.html" . }}
+    {{- partial "layout/javascript" . }}
+    <!-- To insert markup before the closing body tag for all presentations,
+         create layouts/partials/reveal-hugo/body.html -->
+    {{- partial "reveal-hugo/body" . }}
+    <!-- To insert markup at the end of the head tag for a specific presentation,
+         create layouts/partials/{section}/reveal-hugo/body.html -->
+    {{- $sectionBodyPartial := printf "%s/reveal-hugo/body" (.Page.Section |
+    default "home") -}} {{- if fileExists (printf "layouts/partials/%s.html"
+    $sectionBodyPartial) -}}{{ partial $sectionBodyPartial . }}{{- end }}
   </body>
 </html>

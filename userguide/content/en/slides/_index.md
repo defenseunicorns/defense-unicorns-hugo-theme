@@ -1,7 +1,8 @@
 ---
 title: Defense Unicorns Theme
-linkTitle: Slides
-menu: {main: {weight: 20}}
+linkTitle: Presentations
+type: docs
+menu: {main: {weight: 90}}
 ---
 
 Slides

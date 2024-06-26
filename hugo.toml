@@ -21,6 +21,11 @@
     path          = "_print"
     permalinkable = false
 
+[outputFormats.Reveal]
+    baseName  = "index"
+    isHTML    = true
+    mediaType = "text/html"
+
 [module]
     [module.hugoVersion]
         extended = true

@@ -14,5 +14,5 @@ defaultMarkdownHandler = "goldmark"
     lineNos            = false
     lineNumbersInTable = true
     noClasses          = true
-    style              = "dracula"
+    style              = "tango" #"dracula"
     tabWidth           = 2

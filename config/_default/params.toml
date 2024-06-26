@@ -14,6 +14,13 @@ offlineSearchSummaryLength = 70
 
 airgapped = false # Set to true to remove CDN dependencies
 
+[reveal_hugo]
+  history = true
+
+  [reveal_hugo.templates.grey]
+    background = "#424242"
+    transition = "convex"
+
 [drawio]
   enable = false
 
