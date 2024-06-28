@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.4.1...dependencies/v0.5.0) (2024-06-28)
+
+
+### Features
+
+* add reveal.js ([0f9015f](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/0f9015fd3b6ed24d68158f9659477775e2ec1b2b))
+
 ## [0.4.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.4.0...dependencies/v0.4.1) (2024-06-06)
 
 
