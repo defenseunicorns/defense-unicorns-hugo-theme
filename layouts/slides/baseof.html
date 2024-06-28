@@ -2,7 +2,7 @@
 <html itemscope itemtype="http://schema.org/WebPage" lang="{{ .Site.Language.Lang }}" class="no-js">
 	<head>
 		{{ partial "head.html" . }}
-		{{ partial "slides/layout/head" . -}}
+		{{ partial "slides/layout/metadata" . -}}
 		{{ partial "slides/layout/theme" . -}}
 		{{ $plugins
 			:= partial "slides/internal/plugins" .
@@ -14,14 +14,14 @@
 			{{- end -}}
 		{{ end -}}
 		<!-- To insert markup before the closing head tag for all presentations,
-         create layouts/partials/reveal-hugo/head.html -->
+         create layouts/partials/slides/reveal-hugo/head.html -->
 		{{- partial "slides/reveal-hugo/head" . -}}
 		<!-- To insert markup at the end of the head tag for a specific presentation,
-         create layouts/partials/{section}/reveal-hugo/head.html -->
-		{{- $sectionHeadPartial := printf "%s/reveal-hugo/head" (.Page.Section |
+         create layouts/partials/{section}/slides/reveal-hugo/head.html -->
+		{{- $sectionHeadPartial := printf "%s/slides/reveal-hugo/head" (.Page.Section |
 			default "home")
 		-}}
-		{{- if fileExists (printf "layouts/partials/%s.html"
+		{{- if fileExists (printf "slides/layouts/partials/%s.html"
 			$sectionHeadPartial)
 		-}}
 			{{ partial $sectionHeadPartial . }}
@@ -69,14 +69,14 @@
 		<div class="reveal">
 			<div class="slides">{{- block "main" . -}}{{- end -}}</div>
 			<!-- To insert markup at the end of the .reveal tag for all presentations,
-           create layouts/partials/reveal-hugo/end.html -->
+           create layouts/partials/slides/reveal-hugo/end.html -->
 			{{- partial "slides/reveal-hugo/end" . -}}
 			<!-- To insert markup at the end of the .reveal tag for a specific presentation,
-           create layouts/partials/{section}/reveal-hugo/end.html -->
-			{{- $sectionHeadPartial := printf "%s/reveal-hugo/end" (.Page.Section |
+           create layouts/partials/{section}/slides/reveal-hugo/end.html -->
+			{{- $sectionHeadPartial := printf "%s/slides/reveal-hugo/end" (.Page.Section |
 				default "home")
 			-}}
-			{{- if fileExists (printf "layouts/partials/%s.html"
+			{{- if fileExists (printf "slides/layouts/partials/%s.html"
 				$sectionHeadPartial)
 			-}}
 				{{ partial $sectionHeadPartial . }}
@@ -85,14 +85,14 @@
     </main>
 		{{- partial "slides/layout/javascript" . }}
 		<!-- To insert markup before the closing body tag for all presentations,
-         create layouts/partials/reveal-hugo/body.html -->
+         create layouts/partials/slides/reveal-hugo/body.html -->
 		{{- partial "slides/reveal-hugo/body" . }}
 		<!-- To insert markup at the end of the head tag for a specific presentation,
-         create layouts/partials/{section}/reveal-hugo/body.html -->
+         create layouts/partials/{section}/slides/reveal-hugo/body.html -->
 		{{- $sectionBodyPartial := printf "%s/reveal-hugo/body" (.Page.Section |
 			default "home")
 		-}}
-		{{- if fileExists (printf "layouts/partials/%s.html"
+		{{- if fileExists (printf "slides/layouts/partials/%s.html"
 			$sectionBodyPartial)
 		-}}
 			{{ partial $sectionBodyPartial . }}
