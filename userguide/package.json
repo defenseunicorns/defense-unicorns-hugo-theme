@@ -31,7 +31,7 @@
     "markmap-autoloader": "^0.17.0",
     "mermaid": "^10.9.1",
     "postcss-cli": "^11.0.0",
-    "redoc": "^2.1.4",
+    "redoc": "^2.1.5",
     "rimraf": "^5.0.7"
   }
 }
