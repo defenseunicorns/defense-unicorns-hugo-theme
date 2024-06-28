@@ -16,7 +16,7 @@
     $("#td-section-nav #{{ $mid }}-li").children("ul").children("li").addClass("show");
     $("#td-sidebar-menu").toggleClass("d-none");
     });
-  </script> {{ partialCached "reveal-hugo/sidebar-tree.html" . .FirstSection.RelPermalink }}
+  </script> {{ partialCached "slides/reveal-hugo/sidebar-tree.html" . .FirstSection.RelPermalink }}
 {{ else -}}
-	{{ partial "reveal-hugo/sidebar-tree.html" . }}
+	{{ partial "slides/reveal-hugo/sidebar-tree.html" . }}
 {{- end }}

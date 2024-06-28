@@ -2,10 +2,10 @@
 <html itemscope itemtype="http://schema.org/WebPage" lang="{{ .Site.Language.Lang }}" class="no-js">
 	<head>
 		{{ partial "head.html" . }}
-		{{ partial "layout/head" . -}}
-		{{ partial "layout/theme" . -}}
+		{{ partial "slides/layout/head" . -}}
+		{{ partial "slides/layout/theme" . -}}
 		{{ $plugins
-			:= partial "internal/plugins" .
+			:= partial "slides/internal/plugins" .
 		-}}
 
 		{{- range $plugins }}
@@ -15,7 +15,7 @@
 		{{ end -}}
 		<!-- To insert markup before the closing head tag for all presentations,
          create layouts/partials/reveal-hugo/head.html -->
-		{{- partial "reveal-hugo/head" . -}}
+		{{- partial "slides/reveal-hugo/head" . -}}
 		<!-- To insert markup at the end of the head tag for a specific presentation,
          create layouts/partials/{section}/reveal-hugo/head.html -->
 		{{- $sectionHeadPartial := printf "%s/reveal-hugo/head" (.Page.Section |
@@ -48,7 +48,7 @@
             class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none"
             aria-label="sidebar left"
           >
-            {{ partial "reveal-hugo/sidebar.html" . }}
+            {{ partial "slides/reveal-hugo/sidebar.html" . }}
           </aside>
 
           <main
@@ -70,7 +70,7 @@
 			<div class="slides">{{- block "main" . -}}{{- end -}}</div>
 			<!-- To insert markup at the end of the .reveal tag for all presentations,
            create layouts/partials/reveal-hugo/end.html -->
-			{{- partial "reveal-hugo/end" . -}}
+			{{- partial "slides/reveal-hugo/end" . -}}
 			<!-- To insert markup at the end of the .reveal tag for a specific presentation,
            create layouts/partials/{section}/reveal-hugo/end.html -->
 			{{- $sectionHeadPartial := printf "%s/reveal-hugo/end" (.Page.Section |
@@ -83,10 +83,10 @@
 			{{- end }}
 		</div>
     </main>
-		{{- partial "layout/javascript" . }}
+		{{- partial "slides/layout/javascript" . }}
 		<!-- To insert markup before the closing body tag for all presentations,
          create layouts/partials/reveal-hugo/body.html -->
-		{{- partial "reveal-hugo/body" . }}
+		{{- partial "slides/reveal-hugo/body" . }}
 		<!-- To insert markup at the end of the head tag for a specific presentation,
          create layouts/partials/{section}/reveal-hugo/body.html -->
 		{{- $sectionBodyPartial := printf "%s/reveal-hugo/body" (.Page.Section |

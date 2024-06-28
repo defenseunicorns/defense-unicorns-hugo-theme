@@ -9,7 +9,7 @@
 <script src="{{ printf "%s/dist/reveal.js" $reveal_location | relURL }}"></script>
 
 <!-- load default and user plugins -->
-{{- $plugins := partial "internal/plugins" . -}}
+{{- $plugins := partial "slides/internal/plugins" . -}}
 {{ $pluginNames := slice }}
 {{- range $plugins }}
 	<script type="text/javascript" src="{{ .source | relURL }}"></script>
@@ -35,8 +35,8 @@
   }
 
   var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
-  var revealHugoSiteParams = {{ jsonify (partial "internal/func/cleanParams" .Site.Params.reveal_hugo) | safeJS }};
-  var revealHugoPageParams = {{ jsonify (partial "internal/func/cleanParams" .Page.Params.reveal_hugo) | safeJS }};
+  var revealHugoSiteParams = {{ jsonify (partial "slides/internal/func/cleanParams" .Site.Params.reveal_hugo) | safeJS }};
+  var revealHugoPageParams = {{ jsonify (partial "slides/internal/func/cleanParams" .Page.Params.reveal_hugo) | safeJS }};
 
   var revealHugoPlugins = {
     // generate an array of javascript objects

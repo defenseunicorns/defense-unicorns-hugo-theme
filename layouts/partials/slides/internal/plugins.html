@@ -58,11 +58,11 @@
 	{{ $normalizedPlugin := $plugin }}
 
 	{{ with $plugin.css }}
-		{{ $normalizedCssPath := partial "internal/func/normalizePath" (merge $plugin (dict "path" . ) $revealLoc ) }}
+		{{ $normalizedCssPath := partial "slides/internal/func/normalizePath" (merge $plugin (dict "path" . ) $revealLoc ) }}
 		{{ $normalizedPlugin = merge $normalizedPlugin (dict "css" $normalizedCssPath) }}
 	{{ end }}
 	{{ with $plugin.source }}
-		{{ $normalizedSourcePath := partial "internal/func/normalizePath" (merge $plugin (dict "path" . ) $revealLoc ) }}
+		{{ $normalizedSourcePath := partial "slides/internal/func/normalizePath" (merge $plugin (dict "path" . ) $revealLoc ) }}
 		{{ $normalizedPlugin = merge $normalizedPlugin (dict "source" $normalizedSourcePath) }}
 	{{ end }}
 
