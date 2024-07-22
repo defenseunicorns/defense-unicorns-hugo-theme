@@ -57,7 +57,7 @@ enableRobotsTXT = true
     # show_nav_title = true
 
     [params.ui.feedback]
-      enable = true # Delete this or set to false to disable feedback
+      enable = true # Set to false to disable feedback
 
 ### Examples of versioning.
 [[params.versions]]

@@ -48,3 +48,6 @@ airgapped = false # Set to true to remove CDN dependencies
 
   [ui.readingtime]
     enable = true
+
+  [ui.feedback]
+    enable = true
