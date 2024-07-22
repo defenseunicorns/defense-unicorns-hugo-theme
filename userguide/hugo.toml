@@ -56,18 +56,21 @@ enableRobotsTXT = true
     navbar_logo = "img/uds-logo.svg" # The product logo on the navbar
     # show_nav_title = true
 
-  ### Examples of versioning.
-  [[params.versions]]
-    url     = "https://master.kubeflow.org"
-    version = "v1.0 - Latest"
+    [params.ui.feedback]
+      enable = true # Delete this or set to false to disable feedback
 
-  [[params.versions]]
-    url     = "https://v0-2.kubeflow.org"
-    version = "v0.2"
+### Examples of versioning.
+[[params.versions]]
+  url     = "https://master.kubeflow.org"
+  version = "v1.0 - Latest"
 
-  [[params.versions]]
-    url     = "https://v0-3.kubeflow.org"
-    version = "v0.3"
+[[params.versions]]
+  url     = "https://v0-2.kubeflow.org"
+  version = "v0.2"
+
+[[params.versions]]
+  url     = "https://v0-3.kubeflow.org"
+  version = "v0.3"
 
 [[module.mounts]]
   source = "content/en"

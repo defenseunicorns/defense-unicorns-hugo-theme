@@ -78,7 +78,7 @@ hide_feedback: true
 
 ### Disable feedback on all pages
 
-Set `params.ui.feedback.enable` to `false` in
+Set `params.ui.feedback.enable` to `false` or delete the value in
 `hugo.toml`/`hugo.yaml`/`hugo.json`:
 
 {{< tabpane persistLang=false >}}
