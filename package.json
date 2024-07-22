@@ -19,7 +19,7 @@
     "format:toml": "taplo format '**/**/*.toml'",
     "lint": "npm run stylelint && npm run format",
     "lint:toml": "taplo lint '**/**/*.toml'",
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "npm run cd:docs start",
     "stylelint": "stylelint '**/*.scss'",
     "stylelint:fix": "stylelint --fix '**/*.scss'",
@@ -29,7 +29,7 @@
     "update:deps": "npx npm-check-updates -u && npm install"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@fortawesome/fontawesome-free": "^6.6.0",
     "bootstrap": "5.3.3"
   },
   "devDependencies": {
@@ -37,14 +37,14 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@taplo/cli": "^0.7.0",
     "autoprefixer": "^10.4.19",
-    "hugo-extended": "0.127.0",
-    "husky": "^9.0.11",
+    "hugo-extended": "0.129.0",
+    "husky": "^9.1.1",
     "postcss-cli": "^11.0.0",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "prettier-plugin-go-template": "^0.0.15",
-    "stylelint": "^16.6.1",
+    "stylelint": "^16.7.0",
     "stylelint-config-standard-scss": "^13.1.0",
-    "stylelint-scss": "^6.3.2"
+    "stylelint-scss": "^6.4.1"
   },
   "engines": {
     "node": ">=18"
