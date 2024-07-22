@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.4.1...v0.5.0) (2024-07-22)
+
+
+### Features
+
+* add reveal.js ([0f9015f](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/0f9015fd3b6ed24d68158f9659477775e2ec1b2b))
+
+
+### Bug Fixes
+
+* bug where feedback could not be disabled ([ab065e1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/ab065e1902f9269af994dcd644d24ecc80feda07))
+* default feedback to on unless explicitly turned off ([9621835](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/9621835a4b35ee72db6d494d2797e671d7e217e7))
+
 ## [0.4.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.4.0...v0.4.1) (2024-06-06)
 
 
