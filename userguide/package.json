@@ -24,14 +24,14 @@
     "update": "hugo mod get -u ./... && hugo mod tidy && npx npm-check-updates -u && npm install"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
+    "autoprefixer": "^10.4.21",
     "jquery": "^3.7.1",
     "lunr": "^2.3.9",
     "markdownlint-cli": "^0.44.0",
-    "markmap-autoloader": "^0.18.0",
-    "mermaid": "^11.0.0",
-    "postcss-cli": "^11.0.0",
-    "redoc": "^2.1.5",
+    "markmap-autoloader": "^0.18.11",
+    "mermaid": "^11.6.0",
+    "postcss-cli": "^11.0.1",
+    "redoc": "^2.5.0",
     "rimraf": "^6.0.1"
   }
 }
