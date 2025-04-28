@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.6.1...v0.6.2) (2025-04-28)
+
+
+### Bug Fixes
+
+* bump version ([581f6f0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/581f6f041168cde6e799a673592af5600492a1a3))
+
 ## [0.6.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.6.0...v0.6.1) (2025-04-28)
 
 
