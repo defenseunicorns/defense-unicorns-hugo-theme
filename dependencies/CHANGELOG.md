@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.5.1...dependencies/v0.5.2) (2025-04-28)
+
+
+### Bug Fixes
+
+* correct syntax error ([0936b51](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/0936b5109c2a905b212ba3651dc2923d8b703c53))
+
 ## [0.5.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.5.0...dependencies/v0.5.1) (2025-04-28)
 
 
