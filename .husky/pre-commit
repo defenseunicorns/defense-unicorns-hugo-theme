@@ -1,2 +1,2 @@
 
-npm test && release-dependencies.sh
+npm test

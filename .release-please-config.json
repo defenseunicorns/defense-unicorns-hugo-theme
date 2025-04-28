@@ -7,11 +7,6 @@
         "go.mod",
         "userguide/go.mod"
       ]
-    },
-    "dependencies": {
-      "release-type": "simple",
-      "tag-separator": "/",
-      "component": "dependencies"
     }
   }
 }
