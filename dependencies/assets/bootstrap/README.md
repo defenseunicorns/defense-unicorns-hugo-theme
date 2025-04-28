@@ -4,4 +4,3 @@ This folder was added to work around a known bug in Go's module management. For 
 [Go issue 37397](https://github.com/golang/go/issues/37397)
 
 72cf6d0
-
