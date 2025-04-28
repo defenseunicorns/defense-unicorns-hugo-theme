@@ -1,4 +1,6 @@
 github.com/FortAwesome/Font-Awesome v4.7.0+incompatible h1:3trjm7NtX5NXlju1AxSWSzedDMq2hsfH78Qtqrc8EgY=
 github.com/FortAwesome/Font-Awesome v4.7.0+incompatible/go.mod h1:IUgezN/MFpCDIlFezw3L8j83oeiIuYoj28Miwr/KUYo=
+github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies v0.7.1 h1:94R4Zb7SwWScdG1vEXlXwxoENFVHQwP5/CckoQqIDPs=
+github.com/defenseunicorns/defense-unicorns-hugo-theme/dependencies v0.7.1/go.mod h1:yvZsNJdsx2RU8nHLdOZhsb+Ub4jT9jrnCOBjmup51hY=
 github.com/twbs/bootstrap v5.3.5+incompatible h1:6XrrFNMsiTTFcVTBf2886FO2XUNtwSE+QPv1os0uAA4=
 github.com/twbs/bootstrap v5.3.5+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=

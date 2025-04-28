@@ -17,6 +17,7 @@
     "format": "prettier --list-different '**/*.{js,yml,yaml}'",
     "format:fix": "prettier --write '**/*.{js,yml,yaml}'",
     "format:toml": "taplo format '**/**/*.toml'",
+    "get:hugo-modules": "node tools/getHugoModules/index.mjs",
     "lint": "npm run stylelint && npm run format",
     "lint:toml": "taplo lint '**/**/*.toml'",
     "prepare": "husky",
@@ -29,7 +30,7 @@
     "update:deps": "npx npm-check-updates -u && npm install"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-free": "6.7.2",
     "bootstrap": "5.3.5"
   },
   "devDependencies": {

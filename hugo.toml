@@ -39,6 +39,16 @@
         source = "node_modules/bootstrap"
         target = "assets/vendor/bootstrap"
 
+    # Mounts for module installations,
+    # needed to work around a known bug in Go’s module management.
+    [[module.mounts]]
+        source = "assets/_vendor/bootstrap/scss"
+        target = "assets/vendor/bootstrap/scss/vendor"
+
+    [[module.mounts]]
+        source = "../../node_modules/bootstrap"
+        target = "assets/vendor/bootstrap"
+
     [[module.mounts]]
         source = "node_modules/@fortawesome/fontawesome-free"
         target = "assets/vendor/Font-Awesome"
@@ -69,4 +79,28 @@
 
     [[module.mounts]]
         source = "../../node_modules/@fortawesome/fontawesome-free/webfonts"
+        target = "static/webfonts"
+
+[[imports]]
+    disable = false
+    path    = "github.com/twbs/bootstrap"
+
+    [[imports.mounts]]
+        source = "scss"
+        target = "assets/vendor/bootstrap/scss"
+
+    [[imports.mounts]]
+        source = "dist/js"
+        target = "assets/vendor/bootstrap/dist/js"
+
+[[imports]]
+    disable = false
+    path    = "github.com/FortAwesome/Font-Awesome"
+
+    [[imports.mounts]]
+        source = "scss"
+        target = "assets/vendor/Font-Awesome/scss"
+
+    [[imports.mounts]]
+        source = "webfonts"
         target = "static/webfonts"
