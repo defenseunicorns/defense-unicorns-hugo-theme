@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.5.0...dependencies/v0.5.1) (2025-04-28)
+
+
+### Bug Fixes
+
+* correct error in conditional-text.html and update deps ([#242](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/242)) ([a8a0a25](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/a8a0a25786cf87f305d3f40b72d73f59741be23c))
+* correct release-please config ([3a56ef2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/3a56ef23c34032e00b0887171476c710daa4bf20))
+
 ## [0.5.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/dependencies/v0.4.1...dependencies/v0.5.0) (2024-07-22)
 
 
