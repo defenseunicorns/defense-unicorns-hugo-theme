@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.3](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.6.2...v0.6.3) (2025-04-28)
+
+
+### Bug Fixes
+
+* update go deps ([9aea365](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/9aea3657633c4e049a62f66aa4a110de304c8692))
+
 ## [0.6.2](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.6.1...v0.6.2) (2025-04-28)
 
 
