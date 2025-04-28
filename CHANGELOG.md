@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.6.0...v0.6.1) (2025-04-28)
+
+
+### Bug Fixes
+
+* correct syntax error ([0936b51](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/0936b5109c2a905b212ba3651dc2923d8b703c53))
+
 ## [0.6.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.5.1...v0.6.0) (2025-04-28)
 
 
