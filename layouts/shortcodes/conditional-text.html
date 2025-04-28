@@ -3,8 +3,7 @@
 
 {{- if ne $condition "" -}}
 
-<!-- Get the parameters from the shortcode invocation and lowercase them.
->
+<!-- Get the parameters from the shortcode invocation and lowercase them. -->
     {{- $include_if := lower (.Get "include-if") -}}
     {{- $exclude_if := lower (.Get "exclude-if") -}}
 
