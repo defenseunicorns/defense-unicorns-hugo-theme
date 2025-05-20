@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v1.0.0...v1.0.1) (2025-05-20)
+
+
+### Bug Fixes
+
+* **deps:** update npm ([#250](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/issues/250)) ([d2c093d](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/commit/d2c093db0f971520b2ef417242cbd171130ed6ec))
+
 ## [1.0.0](https://github.com/defenseunicorns/defense-unicorns-hugo-theme/compare/v0.7.1...v1.0.0) (2025-04-28)
 
 
