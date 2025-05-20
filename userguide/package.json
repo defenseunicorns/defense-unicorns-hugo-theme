@@ -27,7 +27,7 @@
     "autoprefixer": "^10.4.21",
     "jquery": "^3.7.1",
     "lunr": "^2.3.9",
-    "markdownlint-cli": "^0.44.0",
+    "markdownlint-cli": "^0.45.0",
     "markmap-autoloader": "^0.18.11",
     "mermaid": "^11.6.0",
     "postcss-cli": "^11.0.1",
