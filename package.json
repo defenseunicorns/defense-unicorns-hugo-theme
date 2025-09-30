@@ -34,8 +34,8 @@
     "bootstrap": "5.3.7"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
+    "@commitlint/cli": "^20.0.0",
+    "@commitlint/config-conventional": "^20.0.0",
     "@taplo/cli": "^0.7.0",
     "autoprefixer": "^10.4.21",
     "hugo-extended": "0.148.2",
